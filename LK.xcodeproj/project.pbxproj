@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3AF90EDB106E529938280996 /* libPods-LK_DEV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1217861D75F65C1F3447EB1D /* libPods-LK_DEV.a */; };
+		712635E8C9E45FEDD4E1A986 /* libPods-LK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB6BA89CE792ACE2B88500C /* libPods-LK.a */; };
+		934AA5301E1634B900D0DDEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F17FD61E162C1000058668 /* ViewController.m */; };
+		934AA5311E1634B900D0DDEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F17FD31E162C1000058668 /* AppDelegate.m */; };
+		934AA5321E1634B900D0DDEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F17FD01E162C1000058668 /* main.m */; };
+		934AA5341E1634B900D0DDEF /* libPods-LK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB6BA89CE792ACE2B88500C /* libPods-LK.a */; };
+		934AA5361E1634B900D0DDEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F17FDD1E162C1000058668 /* LaunchScreen.storyboard */; };
+		934AA5371E1634B900D0DDEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F17FDB1E162C1000058668 /* Assets.xcassets */; };
+		934AA5381E1634B900D0DDEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F17FD81E162C1000058668 /* Main.storyboard */; };
 		93F17FD11E162C1000058668 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F17FD01E162C1000058668 /* main.m */; };
 		93F17FD41E162C1000058668 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F17FD31E162C1000058668 /* AppDelegate.m */; };
 		93F17FD71E162C1000058668 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F17FD61E162C1000058668 /* ViewController.m */; };
@@ -15,6 +24,7 @@
 		93F17FDF1E162C1000058668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F17FDD1E162C1000058668 /* LaunchScreen.storyboard */; };
 		93F17FEA1E162C1000058668 /* LKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F17FE91E162C1000058668 /* LKTests.m */; };
 		93F17FF51E162C1000058668 /* LKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F17FF41E162C1000058668 /* LKUITests.m */; };
+		E437103BC6EA0BA94324D63D /* libPods-LK_LINE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6132CA7943449F268521CF /* libPods-LK_LINE.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		93F17FCC1E162C1000058668 /* LK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1217861D75F65C1F3447EB1D /* libPods-LK_DEV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LK_DEV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E6132CA7943449F268521CF /* libPods-LK_LINE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LK_LINE.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E487252F8D09CC661183F76 /* Pods-LK_DEV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LK_DEV.release.xcconfig"; path = "Pods/Target Support Files/Pods-LK_DEV/Pods-LK_DEV.release.xcconfig"; sourceTree = "<group>"; };
+		934AA53E1E1634B900D0DDEF /* LK_LINE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LK_LINE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		934AA53F1E1634B900D0DDEF /* LK copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LK copy-Info.plist"; path = "/Users/pc/Desktop/项目代码/LK/LK copy-Info.plist"; sourceTree = "<absolute>"; };
+		93F17FCC1E162C1000058668 /* LK_DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LK_DEV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F17FD01E162C1000058668 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		93F17FD21E162C1000058668 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93F17FD31E162C1000058668 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,13 +66,32 @@
 		93F17FF01E162C1000058668 /* LKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93F17FF41E162C1000058668 /* LKUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKUITests.m; sourceTree = "<group>"; };
 		93F17FF61E162C1000058668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		972784021D064A3AEB2EA273 /* libPods-LKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACB6BA89CE792ACE2B88500C /* libPods-LK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6F8B0F7FE6F80346CF174B5 /* Pods-LK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LK/Pods-LK.debug.xcconfig"; sourceTree = "<group>"; };
+		B89296453CE5642FC3FC1D33 /* Pods-LK_LINE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LK_LINE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LK_LINE/Pods-LK_LINE.debug.xcconfig"; sourceTree = "<group>"; };
+		BD94A96AEBEC84148529A4A1 /* Pods-LK_LINE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LK_LINE.release.xcconfig"; path = "Pods/Target Support Files/Pods-LK_LINE/Pods-LK_LINE.release.xcconfig"; sourceTree = "<group>"; };
+		BE029A45C4245B3DE9326DBA /* libPods-LKUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LKUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D374F185B72AAA0CF05731C1 /* Pods-LK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LK.release.xcconfig"; path = "Pods/Target Support Files/Pods-LK/Pods-LK.release.xcconfig"; sourceTree = "<group>"; };
+		F54BFD45A03E84DC684DA293 /* Pods-LK_DEV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LK_DEV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LK_DEV/Pods-LK_DEV.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		934AA5331E1634B900D0DDEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934AA5341E1634B900D0DDEF /* libPods-LK.a in Frameworks */,
+				E437103BC6EA0BA94324D63D /* libPods-LK_LINE.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		93F17FC91E162C1000058668 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				712635E8C9E45FEDD4E1A986 /* libPods-LK.a in Frameworks */,
+				3AF90EDB106E529938280996 /* libPods-LK_DEV.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,15 +119,19 @@
 				93F17FE81E162C1000058668 /* LKTests */,
 				93F17FF31E162C1000058668 /* LKUITests */,
 				93F17FCD1E162C1000058668 /* Products */,
+				DA5A2BD1FAE8293F2FF4C0FD /* Pods */,
+				BF5B471DEF99B241DEACC6CE /* Frameworks */,
+				934AA53F1E1634B900D0DDEF /* LK copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		93F17FCD1E162C1000058668 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				93F17FCC1E162C1000058668 /* LK.app */,
+				93F17FCC1E162C1000058668 /* LK_DEV.app */,
 				93F17FE51E162C1000058668 /* LKTests.xctest */,
 				93F17FF01E162C1000058668 /* LKUITests.xctest */,
+				934AA53E1E1634B900D0DDEF /* LK_LINE.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,24 +178,72 @@
 			path = LKUITests;
 			sourceTree = "<group>";
 		};
+		BF5B471DEF99B241DEACC6CE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACB6BA89CE792ACE2B88500C /* libPods-LK.a */,
+				972784021D064A3AEB2EA273 /* libPods-LKTests.a */,
+				BE029A45C4245B3DE9326DBA /* libPods-LKUITests.a */,
+				1217861D75F65C1F3447EB1D /* libPods-LK_DEV.a */,
+				3E6132CA7943449F268521CF /* libPods-LK_LINE.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA5A2BD1FAE8293F2FF4C0FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B6F8B0F7FE6F80346CF174B5 /* Pods-LK.debug.xcconfig */,
+				D374F185B72AAA0CF05731C1 /* Pods-LK.release.xcconfig */,
+				F54BFD45A03E84DC684DA293 /* Pods-LK_DEV.debug.xcconfig */,
+				6E487252F8D09CC661183F76 /* Pods-LK_DEV.release.xcconfig */,
+				B89296453CE5642FC3FC1D33 /* Pods-LK_LINE.debug.xcconfig */,
+				BD94A96AEBEC84148529A4A1 /* Pods-LK_LINE.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		93F17FCB1E162C1000058668 /* LK */ = {
+		934AA52D1E1634B900D0DDEF /* LK_LINE */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93F17FF91E162C1000058668 /* Build configuration list for PBXNativeTarget "LK" */;
+			buildConfigurationList = 934AA53B1E1634B900D0DDEF /* Build configuration list for PBXNativeTarget "LK_LINE" */;
 			buildPhases = (
-				93F17FC81E162C1000058668 /* Sources */,
-				93F17FC91E162C1000058668 /* Frameworks */,
-				93F17FCA1E162C1000058668 /* Resources */,
+				934AA52E1E1634B900D0DDEF /* [CP] Check Pods Manifest.lock */,
+				934AA52F1E1634B900D0DDEF /* Sources */,
+				934AA5331E1634B900D0DDEF /* Frameworks */,
+				934AA5351E1634B900D0DDEF /* Resources */,
+				934AA5391E1634B900D0DDEF /* [CP] Embed Pods Frameworks */,
+				934AA53A1E1634B900D0DDEF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LK;
+			name = LK_LINE;
 			productName = LK;
-			productReference = 93F17FCC1E162C1000058668 /* LK.app */;
+			productReference = 934AA53E1E1634B900D0DDEF /* LK_LINE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		93F17FCB1E162C1000058668 /* LK_DEV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93F17FF91E162C1000058668 /* Build configuration list for PBXNativeTarget "LK_DEV" */;
+			buildPhases = (
+				D625B317B9FAD11517B44CD5 /* [CP] Check Pods Manifest.lock */,
+				93F17FC81E162C1000058668 /* Sources */,
+				93F17FC91E162C1000058668 /* Frameworks */,
+				93F17FCA1E162C1000058668 /* Resources */,
+				BB26010307CD99449FCB194F /* [CP] Embed Pods Frameworks */,
+				BA9A00371AFDAF5EEE32095B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LK_DEV;
+			productName = LK;
+			productReference = 93F17FCC1E162C1000058668 /* LK_DEV.app */;
 			productType = "com.apple.product-type.application";
 		};
 		93F17FE41E162C1000058668 /* LKTests */ = {
@@ -205,6 +291,9 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = KorzJ;
 				TargetAttributes = {
+					934AA52D1E1634B900D0DDEF = {
+						DevelopmentTeam = BN9QR57D56;
+					};
 					93F17FCB1E162C1000058668 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = BN9QR57D56;
@@ -237,14 +326,25 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				93F17FCB1E162C1000058668 /* LK */,
+				93F17FCB1E162C1000058668 /* LK_DEV */,
 				93F17FE41E162C1000058668 /* LKTests */,
 				93F17FEF1E162C1000058668 /* LKUITests */,
+				934AA52D1E1634B900D0DDEF /* LK_LINE */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		934AA5351E1634B900D0DDEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934AA5361E1634B900D0DDEF /* LaunchScreen.storyboard in Resources */,
+				934AA5371E1634B900D0DDEF /* Assets.xcassets in Resources */,
+				934AA5381E1634B900D0DDEF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		93F17FCA1E162C1000058668 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -271,7 +371,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		934AA52E1E1634B900D0DDEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		934AA5391E1634B900D0DDEF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LK_LINE/Pods-LK_LINE-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		934AA53A1E1634B900D0DDEF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LK_LINE/Pods-LK_LINE-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA9A00371AFDAF5EEE32095B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LK_DEV/Pods-LK_DEV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB26010307CD99449FCB194F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LK_DEV/Pods-LK_DEV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D625B317B9FAD11517B44CD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		934AA52F1E1634B900D0DDEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				934AA5301E1634B900D0DDEF /* ViewController.m in Sources */,
+				934AA5311E1634B900D0DDEF /* AppDelegate.m in Sources */,
+				934AA5321E1634B900D0DDEF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		93F17FC81E162C1000058668 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,12 +506,12 @@
 /* Begin PBXTargetDependency section */
 		93F17FE71E162C1000058668 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 93F17FCB1E162C1000058668 /* LK */;
+			target = 93F17FCB1E162C1000058668 /* LK_DEV */;
 			targetProxy = 93F17FE61E162C1000058668 /* PBXContainerItemProxy */;
 		};
 		93F17FF21E162C1000058668 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 93F17FCB1E162C1000058668 /* LK */;
+			target = 93F17FCB1E162C1000058668 /* LK_DEV */;
 			targetProxy = 93F17FF11E162C1000058668 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -333,6 +536,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		934AA53C1E1634B900D0DDEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B89296453CE5642FC3FC1D33 /* Pods-LK_LINE.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BN9QR57D56;
+				INFOPLIST_FILE = "LK copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KorzJ.LK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		934AA53D1E1634B900D0DDEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD94A96AEBEC84148529A4A1 /* Pods-LK_LINE.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BN9QR57D56;
+				INFOPLIST_FILE = "LK copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.KorzJ.LK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		93F17FF71E162C1000058668 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -423,6 +652,7 @@
 		};
 		93F17FFA1E162C1000058668 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F54BFD45A03E84DC684DA293 /* Pods-LK_DEV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BN9QR57D56;
@@ -435,6 +665,7 @@
 		};
 		93F17FFB1E162C1000058668 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E487252F8D09CC661183F76 /* Pods-LK_DEV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BN9QR57D56;
@@ -498,6 +729,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		934AA53B1E1634B900D0DDEF /* Build configuration list for PBXNativeTarget "LK_LINE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				934AA53C1E1634B900D0DDEF /* Debug */,
+				934AA53D1E1634B900D0DDEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		93F17FC71E162C1000058668 /* Build configuration list for PBXProject "LK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -507,13 +747,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93F17FF91E162C1000058668 /* Build configuration list for PBXNativeTarget "LK" */ = {
+		93F17FF91E162C1000058668 /* Build configuration list for PBXNativeTarget "LK_DEV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				93F17FFA1E162C1000058668 /* Debug */,
 				93F17FFB1E162C1000058668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93F17FFC1E162C1000058668 /* Build configuration list for PBXNativeTarget "LKTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +763,7 @@
 				93F17FFE1E162C1000058668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		93F17FFF1E162C1000058668 /* Build configuration list for PBXNativeTarget "LKUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +772,7 @@
 				93F180011E162C1000058668 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

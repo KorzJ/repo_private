@@ -4,14 +4,24 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>LK.xcscheme</key>
+		<key>LK_DEV.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>LK_LINE.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>934AA52D1E1634B900D0DDEF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>93F17FCB1E162C1000058668</key>
 		<dict>
 			<key>primary</key>
