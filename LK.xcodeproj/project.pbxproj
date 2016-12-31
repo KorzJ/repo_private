@@ -7,313 +7,273 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3AF90EDB106E529938280996 /* libPods-LK_DEV.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1217861D75F65C1F3447EB1D /* libPods-LK_DEV.a */; };
-		712635E8C9E45FEDD4E1A986 /* libPods-LK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB6BA89CE792ACE2B88500C /* libPods-LK.a */; };
-		934AA5301E1634B900D0DDEF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F17FD61E162C1000058668 /* ViewController.m */; };
-		934AA5311E1634B900D0DDEF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F17FD31E162C1000058668 /* AppDelegate.m */; };
-		934AA5321E1634B900D0DDEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F17FD01E162C1000058668 /* main.m */; };
-		934AA5341E1634B900D0DDEF /* libPods-LK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB6BA89CE792ACE2B88500C /* libPods-LK.a */; };
-		934AA5361E1634B900D0DDEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F17FDD1E162C1000058668 /* LaunchScreen.storyboard */; };
-		934AA5371E1634B900D0DDEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F17FDB1E162C1000058668 /* Assets.xcassets */; };
-		934AA5381E1634B900D0DDEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F17FD81E162C1000058668 /* Main.storyboard */; };
-		93F17FD11E162C1000058668 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F17FD01E162C1000058668 /* main.m */; };
-		93F17FD41E162C1000058668 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F17FD31E162C1000058668 /* AppDelegate.m */; };
-		93F17FD71E162C1000058668 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F17FD61E162C1000058668 /* ViewController.m */; };
-		93F17FDA1E162C1000058668 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F17FD81E162C1000058668 /* Main.storyboard */; };
-		93F17FDC1E162C1000058668 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93F17FDB1E162C1000058668 /* Assets.xcassets */; };
-		93F17FDF1E162C1000058668 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93F17FDD1E162C1000058668 /* LaunchScreen.storyboard */; };
-		93F17FEA1E162C1000058668 /* LKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F17FE91E162C1000058668 /* LKTests.m */; };
-		93F17FF51E162C1000058668 /* LKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F17FF41E162C1000058668 /* LKUITests.m */; };
-		E437103BC6EA0BA94324D63D /* libPods-LK_LINE.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6132CA7943449F268521CF /* libPods-LK_LINE.a */; };
+		190AF4D46DA2A66C206061A7 /* libPods-LK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B752448B67C9D1319C2E7D4 /* libPods-LK.a */; };
+		55E89C0919FAB716A26758E4 /* libPods-LKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 166BCEC2BC3985AAB2EE92B8 /* libPods-LKTests.a */; };
+		9334A01D1E181BB40063A6A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334A01C1E181BB40063A6A1 /* main.m */; };
+		9334A0201E181BB40063A6A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334A01F1E181BB40063A6A1 /* AppDelegate.m */; };
+		9334A0231E181BB40063A6A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334A0221E181BB40063A6A1 /* ViewController.m */; };
+		9334A0261E181BB40063A6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9334A0241E181BB40063A6A1 /* Main.storyboard */; };
+		9334A0281E181BB40063A6A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9334A0271E181BB40063A6A1 /* Assets.xcassets */; };
+		9334A02B1E181BB40063A6A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9334A0291E181BB40063A6A1 /* LaunchScreen.storyboard */; };
+		9334A0361E181BB40063A6A1 /* LKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334A0351E181BB40063A6A1 /* LKTests.m */; };
+		9334A0411E181BB40063A6A1 /* LKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334A0401E181BB40063A6A1 /* LKUITests.m */; };
+		F96C452D2666863E923B3F52 /* libPods-LKUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7A642E0591D094066CA67F /* libPods-LKUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		93F17FE61E162C1000058668 /* PBXContainerItemProxy */ = {
+		9334A0321E181BB40063A6A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 93F17FC41E162C1000058668 /* Project object */;
+			containerPortal = 9334A0101E181BB30063A6A1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 93F17FCB1E162C1000058668;
+			remoteGlobalIDString = 9334A0171E181BB30063A6A1;
 			remoteInfo = LK;
 		};
-		93F17FF11E162C1000058668 /* PBXContainerItemProxy */ = {
+		9334A03D1E181BB40063A6A1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 93F17FC41E162C1000058668 /* Project object */;
+			containerPortal = 9334A0101E181BB30063A6A1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 93F17FCB1E162C1000058668;
+			remoteGlobalIDString = 9334A0171E181BB30063A6A1;
 			remoteInfo = LK;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1217861D75F65C1F3447EB1D /* libPods-LK_DEV.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LK_DEV.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3E6132CA7943449F268521CF /* libPods-LK_LINE.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LK_LINE.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E487252F8D09CC661183F76 /* Pods-LK_DEV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LK_DEV.release.xcconfig"; path = "Pods/Target Support Files/Pods-LK_DEV/Pods-LK_DEV.release.xcconfig"; sourceTree = "<group>"; };
-		934AA53E1E1634B900D0DDEF /* LK_LINE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LK_LINE.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		934AA53F1E1634B900D0DDEF /* LK copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "LK copy-Info.plist"; path = "/Users/pc/Desktop/项目代码/LK/LK copy-Info.plist"; sourceTree = "<absolute>"; };
-		93F17FCC1E162C1000058668 /* LK_DEV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LK_DEV.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		93F17FD01E162C1000058668 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		93F17FD21E162C1000058668 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		93F17FD31E162C1000058668 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		93F17FD51E162C1000058668 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		93F17FD61E162C1000058668 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		93F17FD91E162C1000058668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		93F17FDB1E162C1000058668 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		93F17FDE1E162C1000058668 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		93F17FE01E162C1000058668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93F17FE51E162C1000058668 /* LKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		93F17FE91E162C1000058668 /* LKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKTests.m; sourceTree = "<group>"; };
-		93F17FEB1E162C1000058668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93F17FF01E162C1000058668 /* LKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		93F17FF41E162C1000058668 /* LKUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKUITests.m; sourceTree = "<group>"; };
-		93F17FF61E162C1000058668 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		972784021D064A3AEB2EA273 /* libPods-LKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACB6BA89CE792ACE2B88500C /* libPods-LK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6F8B0F7FE6F80346CF174B5 /* Pods-LK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LK/Pods-LK.debug.xcconfig"; sourceTree = "<group>"; };
-		B89296453CE5642FC3FC1D33 /* Pods-LK_LINE.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LK_LINE.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LK_LINE/Pods-LK_LINE.debug.xcconfig"; sourceTree = "<group>"; };
-		BD94A96AEBEC84148529A4A1 /* Pods-LK_LINE.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LK_LINE.release.xcconfig"; path = "Pods/Target Support Files/Pods-LK_LINE/Pods-LK_LINE.release.xcconfig"; sourceTree = "<group>"; };
-		BE029A45C4245B3DE9326DBA /* libPods-LKUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LKUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D374F185B72AAA0CF05731C1 /* Pods-LK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LK.release.xcconfig"; path = "Pods/Target Support Files/Pods-LK/Pods-LK.release.xcconfig"; sourceTree = "<group>"; };
-		F54BFD45A03E84DC684DA293 /* Pods-LK_DEV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LK_DEV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LK_DEV/Pods-LK_DEV.debug.xcconfig"; sourceTree = "<group>"; };
+		1183F29ED15FAF0595B07302 /* Pods-LKUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LKUITests/Pods-LKUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		15E4FAE28CEA0DDE18735F4C /* Pods-LK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LK.release.xcconfig"; path = "Pods/Target Support Files/Pods-LK/Pods-LK.release.xcconfig"; sourceTree = "<group>"; };
+		166BCEC2BC3985AAB2EE92B8 /* libPods-LKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4612A4BF8DA8810AF80444BE /* Pods-LKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LKTests/Pods-LKTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6B752448B67C9D1319C2E7D4 /* libPods-LK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		783463C0A7AD7491CBE6739F /* Pods-LK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LK/Pods-LK.debug.xcconfig"; sourceTree = "<group>"; };
+		7E8FBDC2E1AD7E49F263328E /* Pods-LKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LKTests/Pods-LKTests.release.xcconfig"; sourceTree = "<group>"; };
+		9334A0181E181BB40063A6A1 /* LK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9334A01C1E181BB40063A6A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9334A01E1E181BB40063A6A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9334A01F1E181BB40063A6A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9334A0211E181BB40063A6A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9334A0221E181BB40063A6A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9334A0251E181BB40063A6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9334A0271E181BB40063A6A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9334A02A1E181BB40063A6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9334A02C1E181BB40063A6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9334A0311E181BB40063A6A1 /* LKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9334A0351E181BB40063A6A1 /* LKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKTests.m; sourceTree = "<group>"; };
+		9334A0371E181BB40063A6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9334A03C1E181BB40063A6A1 /* LKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9334A0401E181BB40063A6A1 /* LKUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKUITests.m; sourceTree = "<group>"; };
+		9334A0421E181BB40063A6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99A413A343DC3F81739280DF /* Pods-LKUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LKUITests/Pods-LKUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FD7A642E0591D094066CA67F /* libPods-LKUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LKUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		934AA5331E1634B900D0DDEF /* Frameworks */ = {
+		9334A0151E181BB30063A6A1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				934AA5341E1634B900D0DDEF /* libPods-LK.a in Frameworks */,
-				E437103BC6EA0BA94324D63D /* libPods-LK_LINE.a in Frameworks */,
+				190AF4D46DA2A66C206061A7 /* libPods-LK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93F17FC91E162C1000058668 /* Frameworks */ = {
+		9334A02E1E181BB40063A6A1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				712635E8C9E45FEDD4E1A986 /* libPods-LK.a in Frameworks */,
-				3AF90EDB106E529938280996 /* libPods-LK_DEV.a in Frameworks */,
+				55E89C0919FAB716A26758E4 /* libPods-LKTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93F17FE21E162C1000058668 /* Frameworks */ = {
+		9334A0391E181BB40063A6A1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		93F17FED1E162C1000058668 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				F96C452D2666863E923B3F52 /* libPods-LKUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		93F17FC31E162C1000058668 = {
+		06EBC5A9D5B3813FFC9A5F4D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				93F17FCE1E162C1000058668 /* LK */,
-				93F17FE81E162C1000058668 /* LKTests */,
-				93F17FF31E162C1000058668 /* LKUITests */,
-				93F17FCD1E162C1000058668 /* Products */,
-				DA5A2BD1FAE8293F2FF4C0FD /* Pods */,
-				BF5B471DEF99B241DEACC6CE /* Frameworks */,
-				934AA53F1E1634B900D0DDEF /* LK copy-Info.plist */,
+				783463C0A7AD7491CBE6739F /* Pods-LK.debug.xcconfig */,
+				15E4FAE28CEA0DDE18735F4C /* Pods-LK.release.xcconfig */,
+				4612A4BF8DA8810AF80444BE /* Pods-LKTests.debug.xcconfig */,
+				7E8FBDC2E1AD7E49F263328E /* Pods-LKTests.release.xcconfig */,
+				1183F29ED15FAF0595B07302 /* Pods-LKUITests.debug.xcconfig */,
+				99A413A343DC3F81739280DF /* Pods-LKUITests.release.xcconfig */,
 			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		93F17FCD1E162C1000058668 /* Products */ = {
+		51805CC7DA10F3C87D3E3976 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				93F17FCC1E162C1000058668 /* LK_DEV.app */,
-				93F17FE51E162C1000058668 /* LKTests.xctest */,
-				93F17FF01E162C1000058668 /* LKUITests.xctest */,
-				934AA53E1E1634B900D0DDEF /* LK_LINE.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		93F17FCE1E162C1000058668 /* LK */ = {
-			isa = PBXGroup;
-			children = (
-				93F17FD21E162C1000058668 /* AppDelegate.h */,
-				93F17FD31E162C1000058668 /* AppDelegate.m */,
-				93F17FD51E162C1000058668 /* ViewController.h */,
-				93F17FD61E162C1000058668 /* ViewController.m */,
-				93F17FD81E162C1000058668 /* Main.storyboard */,
-				93F17FDB1E162C1000058668 /* Assets.xcassets */,
-				93F17FDD1E162C1000058668 /* LaunchScreen.storyboard */,
-				93F17FE01E162C1000058668 /* Info.plist */,
-				93F17FCF1E162C1000058668 /* Supporting Files */,
-			);
-			path = LK;
-			sourceTree = "<group>";
-		};
-		93F17FCF1E162C1000058668 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				93F17FD01E162C1000058668 /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		93F17FE81E162C1000058668 /* LKTests */ = {
-			isa = PBXGroup;
-			children = (
-				93F17FE91E162C1000058668 /* LKTests.m */,
-				93F17FEB1E162C1000058668 /* Info.plist */,
-			);
-			path = LKTests;
-			sourceTree = "<group>";
-		};
-		93F17FF31E162C1000058668 /* LKUITests */ = {
-			isa = PBXGroup;
-			children = (
-				93F17FF41E162C1000058668 /* LKUITests.m */,
-				93F17FF61E162C1000058668 /* Info.plist */,
-			);
-			path = LKUITests;
-			sourceTree = "<group>";
-		};
-		BF5B471DEF99B241DEACC6CE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				ACB6BA89CE792ACE2B88500C /* libPods-LK.a */,
-				972784021D064A3AEB2EA273 /* libPods-LKTests.a */,
-				BE029A45C4245B3DE9326DBA /* libPods-LKUITests.a */,
-				1217861D75F65C1F3447EB1D /* libPods-LK_DEV.a */,
-				3E6132CA7943449F268521CF /* libPods-LK_LINE.a */,
+				6B752448B67C9D1319C2E7D4 /* libPods-LK.a */,
+				166BCEC2BC3985AAB2EE92B8 /* libPods-LKTests.a */,
+				FD7A642E0591D094066CA67F /* libPods-LKUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DA5A2BD1FAE8293F2FF4C0FD /* Pods */ = {
+		9334A00F1E181BB30063A6A1 = {
 			isa = PBXGroup;
 			children = (
-				B6F8B0F7FE6F80346CF174B5 /* Pods-LK.debug.xcconfig */,
-				D374F185B72AAA0CF05731C1 /* Pods-LK.release.xcconfig */,
-				F54BFD45A03E84DC684DA293 /* Pods-LK_DEV.debug.xcconfig */,
-				6E487252F8D09CC661183F76 /* Pods-LK_DEV.release.xcconfig */,
-				B89296453CE5642FC3FC1D33 /* Pods-LK_LINE.debug.xcconfig */,
-				BD94A96AEBEC84148529A4A1 /* Pods-LK_LINE.release.xcconfig */,
+				9334A01A1E181BB40063A6A1 /* LK */,
+				9334A0341E181BB40063A6A1 /* LKTests */,
+				9334A03F1E181BB40063A6A1 /* LKUITests */,
+				9334A0191E181BB40063A6A1 /* Products */,
+				06EBC5A9D5B3813FFC9A5F4D /* Pods */,
+				51805CC7DA10F3C87D3E3976 /* Frameworks */,
 			);
-			name = Pods;
+			sourceTree = "<group>";
+		};
+		9334A0191E181BB40063A6A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9334A0181E181BB40063A6A1 /* LK.app */,
+				9334A0311E181BB40063A6A1 /* LKTests.xctest */,
+				9334A03C1E181BB40063A6A1 /* LKUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9334A01A1E181BB40063A6A1 /* LK */ = {
+			isa = PBXGroup;
+			children = (
+				9334A01E1E181BB40063A6A1 /* AppDelegate.h */,
+				9334A01F1E181BB40063A6A1 /* AppDelegate.m */,
+				9334A0211E181BB40063A6A1 /* ViewController.h */,
+				9334A0221E181BB40063A6A1 /* ViewController.m */,
+				9334A0241E181BB40063A6A1 /* Main.storyboard */,
+				9334A0271E181BB40063A6A1 /* Assets.xcassets */,
+				9334A0291E181BB40063A6A1 /* LaunchScreen.storyboard */,
+				9334A02C1E181BB40063A6A1 /* Info.plist */,
+				9334A01B1E181BB40063A6A1 /* Supporting Files */,
+			);
+			path = LK;
+			sourceTree = "<group>";
+		};
+		9334A01B1E181BB40063A6A1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9334A01C1E181BB40063A6A1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9334A0341E181BB40063A6A1 /* LKTests */ = {
+			isa = PBXGroup;
+			children = (
+				9334A0351E181BB40063A6A1 /* LKTests.m */,
+				9334A0371E181BB40063A6A1 /* Info.plist */,
+			);
+			path = LKTests;
+			sourceTree = "<group>";
+		};
+		9334A03F1E181BB40063A6A1 /* LKUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9334A0401E181BB40063A6A1 /* LKUITests.m */,
+				9334A0421E181BB40063A6A1 /* Info.plist */,
+			);
+			path = LKUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		934AA52D1E1634B900D0DDEF /* LK_LINE */ = {
+		9334A0171E181BB30063A6A1 /* LK */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 934AA53B1E1634B900D0DDEF /* Build configuration list for PBXNativeTarget "LK_LINE" */;
+			buildConfigurationList = 9334A0451E181BB40063A6A1 /* Build configuration list for PBXNativeTarget "LK" */;
 			buildPhases = (
-				934AA52E1E1634B900D0DDEF /* [CP] Check Pods Manifest.lock */,
-				934AA52F1E1634B900D0DDEF /* Sources */,
-				934AA5331E1634B900D0DDEF /* Frameworks */,
-				934AA5351E1634B900D0DDEF /* Resources */,
-				934AA5391E1634B900D0DDEF /* [CP] Embed Pods Frameworks */,
-				934AA53A1E1634B900D0DDEF /* [CP] Copy Pods Resources */,
+				360CDF7D7F547115C6656C5B /* [CP] Check Pods Manifest.lock */,
+				9334A0141E181BB30063A6A1 /* Sources */,
+				9334A0151E181BB30063A6A1 /* Frameworks */,
+				9334A0161E181BB30063A6A1 /* Resources */,
+				51012C62ED8D5E7270D2B3F6 /* [CP] Embed Pods Frameworks */,
+				C558920F19B20FB4A2E80D7E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LK_LINE;
+			name = LK;
 			productName = LK;
-			productReference = 934AA53E1E1634B900D0DDEF /* LK_LINE.app */;
+			productReference = 9334A0181E181BB40063A6A1 /* LK.app */;
 			productType = "com.apple.product-type.application";
 		};
-		93F17FCB1E162C1000058668 /* LK_DEV */ = {
+		9334A0301E181BB40063A6A1 /* LKTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93F17FF91E162C1000058668 /* Build configuration list for PBXNativeTarget "LK_DEV" */;
+			buildConfigurationList = 9334A0481E181BB40063A6A1 /* Build configuration list for PBXNativeTarget "LKTests" */;
 			buildPhases = (
-				D625B317B9FAD11517B44CD5 /* [CP] Check Pods Manifest.lock */,
-				93F17FC81E162C1000058668 /* Sources */,
-				93F17FC91E162C1000058668 /* Frameworks */,
-				93F17FCA1E162C1000058668 /* Resources */,
-				BB26010307CD99449FCB194F /* [CP] Embed Pods Frameworks */,
-				BA9A00371AFDAF5EEE32095B /* [CP] Copy Pods Resources */,
+				9849A5237C29AA73ACE2D035 /* [CP] Check Pods Manifest.lock */,
+				9334A02D1E181BB40063A6A1 /* Sources */,
+				9334A02E1E181BB40063A6A1 /* Frameworks */,
+				9334A02F1E181BB40063A6A1 /* Resources */,
+				BD53361618AD4E772D397C84 /* [CP] Embed Pods Frameworks */,
+				0EF99A0E2B188569AB599F45 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = LK_DEV;
-			productName = LK;
-			productReference = 93F17FCC1E162C1000058668 /* LK_DEV.app */;
-			productType = "com.apple.product-type.application";
-		};
-		93F17FE41E162C1000058668 /* LKTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 93F17FFC1E162C1000058668 /* Build configuration list for PBXNativeTarget "LKTests" */;
-			buildPhases = (
-				93F17FE11E162C1000058668 /* Sources */,
-				93F17FE21E162C1000058668 /* Frameworks */,
-				93F17FE31E162C1000058668 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				93F17FE71E162C1000058668 /* PBXTargetDependency */,
+				9334A0331E181BB40063A6A1 /* PBXTargetDependency */,
 			);
 			name = LKTests;
 			productName = LKTests;
-			productReference = 93F17FE51E162C1000058668 /* LKTests.xctest */;
+			productReference = 9334A0311E181BB40063A6A1 /* LKTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		93F17FEF1E162C1000058668 /* LKUITests */ = {
+		9334A03B1E181BB40063A6A1 /* LKUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93F17FFF1E162C1000058668 /* Build configuration list for PBXNativeTarget "LKUITests" */;
+			buildConfigurationList = 9334A04B1E181BB40063A6A1 /* Build configuration list for PBXNativeTarget "LKUITests" */;
 			buildPhases = (
-				93F17FEC1E162C1000058668 /* Sources */,
-				93F17FED1E162C1000058668 /* Frameworks */,
-				93F17FEE1E162C1000058668 /* Resources */,
+				345113A93811E0B10BE32D17 /* [CP] Check Pods Manifest.lock */,
+				9334A0381E181BB40063A6A1 /* Sources */,
+				9334A0391E181BB40063A6A1 /* Frameworks */,
+				9334A03A1E181BB40063A6A1 /* Resources */,
+				A9E28DD6B69D76EF8F10530A /* [CP] Embed Pods Frameworks */,
+				5908CD5D61A06B0C637521B7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				93F17FF21E162C1000058668 /* PBXTargetDependency */,
+				9334A03E1E181BB40063A6A1 /* PBXTargetDependency */,
 			);
 			name = LKUITests;
 			productName = LKUITests;
-			productReference = 93F17FF01E162C1000058668 /* LKUITests.xctest */;
+			productReference = 9334A03C1E181BB40063A6A1 /* LKUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		93F17FC41E162C1000058668 /* Project object */ = {
+		9334A0101E181BB30063A6A1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = KorzJ;
 				TargetAttributes = {
-					934AA52D1E1634B900D0DDEF = {
-						DevelopmentTeam = BN9QR57D56;
-					};
-					93F17FCB1E162C1000058668 = {
+					9334A0171E181BB30063A6A1 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = BN9QR57D56;
 						ProvisioningStyle = Automatic;
 					};
-					93F17FE41E162C1000058668 = {
+					9334A0301E181BB40063A6A1 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = BN9QR57D56;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 93F17FCB1E162C1000058668;
+						TestTargetID = 9334A0171E181BB30063A6A1;
 					};
-					93F17FEF1E162C1000058668 = {
+					9334A03B1E181BB40063A6A1 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = BN9QR57D56;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 93F17FCB1E162C1000058668;
+						TestTargetID = 9334A0171E181BB30063A6A1;
 					};
 				};
 			};
-			buildConfigurationList = 93F17FC71E162C1000058668 /* Build configuration list for PBXProject "LK" */;
+			buildConfigurationList = 9334A0131E181BB30063A6A1 /* Build configuration list for PBXProject "LK" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -321,48 +281,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 93F17FC31E162C1000058668;
-			productRefGroup = 93F17FCD1E162C1000058668 /* Products */;
+			mainGroup = 9334A00F1E181BB30063A6A1;
+			productRefGroup = 9334A0191E181BB40063A6A1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				93F17FCB1E162C1000058668 /* LK_DEV */,
-				93F17FE41E162C1000058668 /* LKTests */,
-				93F17FEF1E162C1000058668 /* LKUITests */,
-				934AA52D1E1634B900D0DDEF /* LK_LINE */,
+				9334A0171E181BB30063A6A1 /* LK */,
+				9334A0301E181BB40063A6A1 /* LKTests */,
+				9334A03B1E181BB40063A6A1 /* LKUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		934AA5351E1634B900D0DDEF /* Resources */ = {
+		9334A0161E181BB30063A6A1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				934AA5361E1634B900D0DDEF /* LaunchScreen.storyboard in Resources */,
-				934AA5371E1634B900D0DDEF /* Assets.xcassets in Resources */,
-				934AA5381E1634B900D0DDEF /* Main.storyboard in Resources */,
+				9334A02B1E181BB40063A6A1 /* LaunchScreen.storyboard in Resources */,
+				9334A0281E181BB40063A6A1 /* Assets.xcassets in Resources */,
+				9334A0261E181BB40063A6A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93F17FCA1E162C1000058668 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				93F17FDF1E162C1000058668 /* LaunchScreen.storyboard in Resources */,
-				93F17FDC1E162C1000058668 /* Assets.xcassets in Resources */,
-				93F17FDA1E162C1000058668 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		93F17FE31E162C1000058668 /* Resources */ = {
+		9334A02F1E181BB40063A6A1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93F17FEE1E162C1000058668 /* Resources */ = {
+		9334A03A1E181BB40063A6A1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -372,7 +321,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		934AA52E1E1634B900D0DDEF /* [CP] Check Pods Manifest.lock */ = {
+		0EF99A0E2B188569AB599F45 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LKTests/Pods-LKTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		345113A93811E0B10BE32D17 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -387,67 +351,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		934AA5391E1634B900D0DDEF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LK_LINE/Pods-LK_LINE-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		934AA53A1E1634B900D0DDEF /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LK_LINE/Pods-LK_LINE-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BA9A00371AFDAF5EEE32095B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LK_DEV/Pods-LK_DEV-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BB26010307CD99449FCB194F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LK_DEV/Pods-LK_DEV-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D625B317B9FAD11517B44CD5 /* [CP] Check Pods Manifest.lock */ = {
+		360CDF7D7F547115C6656C5B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -460,75 +364,155 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		51012C62ED8D5E7270D2B3F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LK/Pods-LK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5908CD5D61A06B0C637521B7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LKUITests/Pods-LKUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9849A5237C29AA73ACE2D035 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A9E28DD6B69D76EF8F10530A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LKUITests/Pods-LKUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD53361618AD4E772D397C84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LKTests/Pods-LKTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C558920F19B20FB4A2E80D7E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LK/Pods-LK-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		934AA52F1E1634B900D0DDEF /* Sources */ = {
+		9334A0141E181BB30063A6A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				934AA5301E1634B900D0DDEF /* ViewController.m in Sources */,
-				934AA5311E1634B900D0DDEF /* AppDelegate.m in Sources */,
-				934AA5321E1634B900D0DDEF /* main.m in Sources */,
+				9334A0231E181BB40063A6A1 /* ViewController.m in Sources */,
+				9334A0201E181BB40063A6A1 /* AppDelegate.m in Sources */,
+				9334A01D1E181BB40063A6A1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93F17FC81E162C1000058668 /* Sources */ = {
+		9334A02D1E181BB40063A6A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93F17FD71E162C1000058668 /* ViewController.m in Sources */,
-				93F17FD41E162C1000058668 /* AppDelegate.m in Sources */,
-				93F17FD11E162C1000058668 /* main.m in Sources */,
+				9334A0361E181BB40063A6A1 /* LKTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93F17FE11E162C1000058668 /* Sources */ = {
+		9334A0381E181BB40063A6A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93F17FEA1E162C1000058668 /* LKTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		93F17FEC1E162C1000058668 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				93F17FF51E162C1000058668 /* LKUITests.m in Sources */,
+				9334A0411E181BB40063A6A1 /* LKUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		93F17FE71E162C1000058668 /* PBXTargetDependency */ = {
+		9334A0331E181BB40063A6A1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 93F17FCB1E162C1000058668 /* LK_DEV */;
-			targetProxy = 93F17FE61E162C1000058668 /* PBXContainerItemProxy */;
+			target = 9334A0171E181BB30063A6A1 /* LK */;
+			targetProxy = 9334A0321E181BB40063A6A1 /* PBXContainerItemProxy */;
 		};
-		93F17FF21E162C1000058668 /* PBXTargetDependency */ = {
+		9334A03E1E181BB40063A6A1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 93F17FCB1E162C1000058668 /* LK_DEV */;
-			targetProxy = 93F17FF11E162C1000058668 /* PBXContainerItemProxy */;
+			target = 9334A0171E181BB30063A6A1 /* LK */;
+			targetProxy = 9334A03D1E181BB40063A6A1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		93F17FD81E162C1000058668 /* Main.storyboard */ = {
+		9334A0241E181BB40063A6A1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				93F17FD91E162C1000058668 /* Base */,
+				9334A0251E181BB40063A6A1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		93F17FDD1E162C1000058668 /* LaunchScreen.storyboard */ = {
+		9334A0291E181BB40063A6A1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				93F17FDE1E162C1000058668 /* Base */,
+				9334A02A1E181BB40063A6A1 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -536,33 +520,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		934AA53C1E1634B900D0DDEF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B89296453CE5642FC3FC1D33 /* Pods-LK_LINE.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BN9QR57D56;
-				INFOPLIST_FILE = "LK copy-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.KorzJ.LK;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		934AA53D1E1634B900D0DDEF /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD94A96AEBEC84148529A4A1 /* Pods-LK_LINE.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BN9QR57D56;
-				INFOPLIST_FILE = "LK copy-Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.KorzJ.LK;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		93F17FF71E162C1000058668 /* Debug */ = {
+		9334A0431E181BB40063A6A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -609,7 +567,7 @@
 			};
 			name = Debug;
 		};
-		93F17FF81E162C1000058668 /* Release */ = {
+		9334A0441E181BB40063A6A1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -650,9 +608,9 @@
 			};
 			name = Release;
 		};
-		93F17FFA1E162C1000058668 /* Debug */ = {
+		9334A0461E181BB40063A6A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F54BFD45A03E84DC684DA293 /* Pods-LK_DEV.debug.xcconfig */;
+			baseConfigurationReference = 783463C0A7AD7491CBE6739F /* Pods-LK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BN9QR57D56;
@@ -663,9 +621,9 @@
 			};
 			name = Debug;
 		};
-		93F17FFB1E162C1000058668 /* Release */ = {
+		9334A0471E181BB40063A6A1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E487252F8D09CC661183F76 /* Pods-LK_DEV.release.xcconfig */;
+			baseConfigurationReference = 15E4FAE28CEA0DDE18735F4C /* Pods-LK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BN9QR57D56;
@@ -676,8 +634,9 @@
 			};
 			name = Release;
 		};
-		93F17FFD1E162C1000058668 /* Debug */ = {
+		9334A0491E181BB40063A6A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4612A4BF8DA8810AF80444BE /* Pods-LKTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = BN9QR57D56;
@@ -689,8 +648,9 @@
 			};
 			name = Debug;
 		};
-		93F17FFE1E162C1000058668 /* Release */ = {
+		9334A04A1E181BB40063A6A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E8FBDC2E1AD7E49F263328E /* Pods-LKTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = BN9QR57D56;
@@ -702,8 +662,9 @@
 			};
 			name = Release;
 		};
-		93F180001E162C1000058668 /* Debug */ = {
+		9334A04C1E181BB40063A6A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1183F29ED15FAF0595B07302 /* Pods-LKUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = BN9QR57D56;
 				INFOPLIST_FILE = LKUITests/Info.plist;
@@ -714,8 +675,9 @@
 			};
 			name = Debug;
 		};
-		93F180011E162C1000058668 /* Release */ = {
+		9334A04D1E181BB40063A6A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99A413A343DC3F81739280DF /* Pods-LKUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = BN9QR57D56;
 				INFOPLIST_FILE = LKUITests/Info.plist;
@@ -729,52 +691,40 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		934AA53B1E1634B900D0DDEF /* Build configuration list for PBXNativeTarget "LK_LINE" */ = {
+		9334A0131E181BB30063A6A1 /* Build configuration list for PBXProject "LK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				934AA53C1E1634B900D0DDEF /* Debug */,
-				934AA53D1E1634B900D0DDEF /* Release */,
+				9334A0431E181BB40063A6A1 /* Debug */,
+				9334A0441E181BB40063A6A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93F17FC71E162C1000058668 /* Build configuration list for PBXProject "LK" */ = {
+		9334A0451E181BB40063A6A1 /* Build configuration list for PBXNativeTarget "LK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				93F17FF71E162C1000058668 /* Debug */,
-				93F17FF81E162C1000058668 /* Release */,
+				9334A0461E181BB40063A6A1 /* Debug */,
+				9334A0471E181BB40063A6A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		93F17FF91E162C1000058668 /* Build configuration list for PBXNativeTarget "LK_DEV" */ = {
+		9334A0481E181BB40063A6A1 /* Build configuration list for PBXNativeTarget "LKTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				93F17FFA1E162C1000058668 /* Debug */,
-				93F17FFB1E162C1000058668 /* Release */,
+				9334A0491E181BB40063A6A1 /* Debug */,
+				9334A04A1E181BB40063A6A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		93F17FFC1E162C1000058668 /* Build configuration list for PBXNativeTarget "LKTests" */ = {
+		9334A04B1E181BB40063A6A1 /* Build configuration list for PBXNativeTarget "LKUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				93F17FFD1E162C1000058668 /* Debug */,
-				93F17FFE1E162C1000058668 /* Release */,
+				9334A04C1E181BB40063A6A1 /* Debug */,
+				9334A04D1E181BB40063A6A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		93F17FFF1E162C1000058668 /* Build configuration list for PBXNativeTarget "LKUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				93F180001E162C1000058668 /* Debug */,
-				93F180011E162C1000058668 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 93F17FC41E162C1000058668 /* Project object */;
+	rootObject = 9334A0101E181BB30063A6A1 /* Project object */;
 }
