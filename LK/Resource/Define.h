@@ -9,12 +9,11 @@
 #ifndef Define_h
 #define Define_h
 
+#define notifyCenter ([NSNotificationCenter defaultCenter]) //通知
 /**
  *  FONT
  */
-//#define Font(a) [UIFont fontWithName:@"PingFangSC-Regular" size:(a)]
 #define Font(a)  [UIFont systemFontOfSize:(a)]
-
 #define BoldFont(a) [UIFont boldSystemFontOfSize:(a)]
 /**
  *  photo
@@ -25,21 +24,7 @@
  */
 #define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 #define RGBFromHexadecimal(value) [UIColor colorWithRed:((float)((value & 0xFF0000) >> 16))/255.0 green:((float)((value & 0xFF00) >> 8))/255.0 blue:((float)(value & 0xFF))/255.0 alpha:1.0]
-//字体 浅灰
-#define COLORE_FONT_GRAY_LIGHT [UIColor colorWithRed:(153)/255.0 green:(153)/255.0 blue:(153)/255.0 alpha:(1)]
-//字体 中灰
-#define COLORE_FONT_GRAY_MIDDLE [UIColor colorWithRed:(102)/255.0 green:(102)/255.0 blue:(102)/255.0 alpha:(1)]
-//字体 深灰
-#define COLORE_FONT_GRAY_DARK [UIColor colorWithRed:(51)/255.0 green:(51)/255.0 blue:(51)/255.0 alpha:(1)]
-//红色
-#define COLORE_GLOBLE_RED [UIColor colorWithRed:(228)/255.0 green:(81)/255.0 blue:(74)/255.0 alpha:(1)]
-//顶部分割线
-#define COLORE_TOP_LINE [UIColor colorWithRed:(212)/255.0 green:(212)/255.0 blue:(212)/255.0 alpha:(1)]
-#define COLORE_TOP_BG [UIColor colorWithRed:(255.0)/255.0 green:(255.0)/255.0 blue:(255.0)/255.0 alpha:(1)]
-//内容分割线（灰色）
-#define COLORE_CONTENT_LINE [UIColor colorWithRed:(235)/255.0 green:(235)/255.0 blue:(235)/255.0 alpha:(1)]
-//内容背景色（灰色）
-#define COLORE_BACKGROUNDCOLOR_LIGHTGRAY [UIColor colorWithRed:(235)/255.0 green:(235)/255.0 blue:(235)/255.0 alpha:(1)]
+
 
 /**
  *  判断是否为IOS8以上的系统
@@ -64,5 +49,3 @@
 #endif
 
 #endif /* Define_h */
-
-#define notifyCenter ([NSNotificationCenter defaultCenter]) //通知

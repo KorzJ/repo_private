@@ -14,7 +14,11 @@ target 'LK' do
     pod "DZNEmptyDataSet"
     pod "SVProgressHUD"
     pod "BlocksKit"
+    pod "pop"
+    pod "YYModel"
     
+    pod 'MJRefresh'
+    pod 'FMDB'
     pod 'SDWebImage'
     pod 'IQKeyboardManager'
 
