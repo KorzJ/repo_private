@@ -9,14 +9,17 @@
 /* Begin PBXBuildFile section */
 		190AF4D46DA2A66C206061A7 /* libPods-LK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B752448B67C9D1319C2E7D4 /* libPods-LK.a */; };
 		55E89C0919FAB716A26758E4 /* libPods-LKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 166BCEC2BC3985AAB2EE92B8 /* libPods-LKTests.a */; };
+		930CA8891E181F80007E5B4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA8881E181F80007E5B4F /* ViewController.m */; };
+		930CA88B1E181FD6007E5B4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930CA88A1E181FD6007E5B4F /* Assets.xcassets */; };
+		930CA89C1E182357007E5B4F /* LKSuperVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA89B1E182357007E5B4F /* LKSuperVc.m */; };
+		930CA89F1E18236F007E5B4F /* LKSuperExtendVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA89E1E18236F007E5B4F /* LKSuperExtendVc.m */; };
+		930CA8A21E1A6BF1007E5B4F /* LKNetworkOffVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA8A11E1A6BF1007E5B4F /* LKNetworkOffVc.m */; };
 		9334A01D1E181BB40063A6A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334A01C1E181BB40063A6A1 /* main.m */; };
-		9334A0201E181BB40063A6A1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334A01F1E181BB40063A6A1 /* AppDelegate.m */; };
-		9334A0231E181BB40063A6A1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334A0221E181BB40063A6A1 /* ViewController.m */; };
 		9334A0261E181BB40063A6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9334A0241E181BB40063A6A1 /* Main.storyboard */; };
-		9334A0281E181BB40063A6A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9334A0271E181BB40063A6A1 /* Assets.xcassets */; };
-		9334A02B1E181BB40063A6A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9334A0291E181BB40063A6A1 /* LaunchScreen.storyboard */; };
 		9334A0361E181BB40063A6A1 /* LKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334A0351E181BB40063A6A1 /* LKTests.m */; };
 		9334A0411E181BB40063A6A1 /* LKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334A0401E181BB40063A6A1 /* LKUITests.m */; };
+		93D6C5CD1E181EA700FB14CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6C5C41E181EA700FB14CB /* AppDelegate.m */; };
+		93D6C5CF1E181ED900FB14CB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93D6C5CE1E181ED900FB14CB /* Info.plist */; };
 		F96C452D2666863E923B3F52 /* libPods-LKUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7A642E0591D094066CA67F /* libPods-LKUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -45,22 +48,28 @@
 		6B752448B67C9D1319C2E7D4 /* libPods-LK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		783463C0A7AD7491CBE6739F /* Pods-LK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LK/Pods-LK.debug.xcconfig"; sourceTree = "<group>"; };
 		7E8FBDC2E1AD7E49F263328E /* Pods-LKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LKTests/Pods-LKTests.release.xcconfig"; sourceTree = "<group>"; };
+		930CA8871E181F80007E5B4F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		930CA8881E181F80007E5B4F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		930CA88A1E181FD6007E5B4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		930CA88D1E1820F9007E5B4F /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		930CA89A1E182357007E5B4F /* LKSuperVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSuperVc.h; sourceTree = "<group>"; };
+		930CA89B1E182357007E5B4F /* LKSuperVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSuperVc.m; sourceTree = "<group>"; };
+		930CA89E1E18236F007E5B4F /* LKSuperExtendVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSuperExtendVc.m; sourceTree = "<group>"; };
+		930CA8A01E1A6BF1007E5B4F /* LKNetworkOffVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKNetworkOffVc.h; sourceTree = "<group>"; };
+		930CA8A11E1A6BF1007E5B4F /* LKNetworkOffVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKNetworkOffVc.m; sourceTree = "<group>"; };
+		930CA8A31E1A6C5D007E5B4F /* LKSuperExtendVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSuperExtendVc.h; sourceTree = "<group>"; };
 		9334A0181E181BB40063A6A1 /* LK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9334A01C1E181BB40063A6A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9334A01E1E181BB40063A6A1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9334A01F1E181BB40063A6A1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9334A0211E181BB40063A6A1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9334A0221E181BB40063A6A1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9334A0251E181BB40063A6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9334A0271E181BB40063A6A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9334A02A1E181BB40063A6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9334A02C1E181BB40063A6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9334A0311E181BB40063A6A1 /* LKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9334A0351E181BB40063A6A1 /* LKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKTests.m; sourceTree = "<group>"; };
 		9334A0371E181BB40063A6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9334A03C1E181BB40063A6A1 /* LKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9334A0401E181BB40063A6A1 /* LKUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKUITests.m; sourceTree = "<group>"; };
 		9334A0421E181BB40063A6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93D6C5C31E181EA700FB14CB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		93D6C5C41E181EA700FB14CB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		93D6C5CE1E181ED900FB14CB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99A413A343DC3F81739280DF /* Pods-LKUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LKUITests/Pods-LKUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FD7A642E0591D094066CA67F /* libPods-LKUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LKUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -141,14 +150,16 @@
 		9334A01A1E181BB40063A6A1 /* LK */ = {
 			isa = PBXGroup;
 			children = (
-				9334A01E1E181BB40063A6A1 /* AppDelegate.h */,
-				9334A01F1E181BB40063A6A1 /* AppDelegate.m */,
-				9334A0211E181BB40063A6A1 /* ViewController.h */,
-				9334A0221E181BB40063A6A1 /* ViewController.m */,
+				93D6C5C21E181EA700FB14CB /* Application */,
+				93D6C5C51E181EA700FB14CB /* Base */,
+				93D6C5C61E181EA700FB14CB /* Controller */,
+				93D6C5C71E181EA700FB14CB /* Handler */,
+				93D6C5C81E181EA700FB14CB /* Model */,
+				93D6C5C91E181EA700FB14CB /* Network */,
+				93D6C5CA1E181EA700FB14CB /* Resource */,
+				93D6C5CB1E181EA700FB14CB /* Utils */,
+				93D6C5CC1E181EA700FB14CB /* View */,
 				9334A0241E181BB40063A6A1 /* Main.storyboard */,
-				9334A0271E181BB40063A6A1 /* Assets.xcassets */,
-				9334A0291E181BB40063A6A1 /* LaunchScreen.storyboard */,
-				9334A02C1E181BB40063A6A1 /* Info.plist */,
 				9334A01B1E181BB40063A6A1 /* Supporting Files */,
 			);
 			path = LK;
@@ -178,6 +189,82 @@
 				9334A0421E181BB40063A6A1 /* Info.plist */,
 			);
 			path = LKUITests;
+			sourceTree = "<group>";
+		};
+		93D6C5C21E181EA700FB14CB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				93D6C5CE1E181ED900FB14CB /* Info.plist */,
+				930CA88D1E1820F9007E5B4F /* PrefixHeader.pch */,
+				93D6C5C31E181EA700FB14CB /* AppDelegate.h */,
+				93D6C5C41E181EA700FB14CB /* AppDelegate.m */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		93D6C5C51E181EA700FB14CB /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				930CA89A1E182357007E5B4F /* LKSuperVc.h */,
+				930CA89B1E182357007E5B4F /* LKSuperVc.m */,
+				930CA8A31E1A6C5D007E5B4F /* LKSuperExtendVc.h */,
+				930CA89E1E18236F007E5B4F /* LKSuperExtendVc.m */,
+				930CA8A01E1A6BF1007E5B4F /* LKNetworkOffVc.h */,
+				930CA8A11E1A6BF1007E5B4F /* LKNetworkOffVc.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		93D6C5C61E181EA700FB14CB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				930CA8871E181F80007E5B4F /* ViewController.h */,
+				930CA8881E181F80007E5B4F /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		93D6C5C71E181EA700FB14CB /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		93D6C5C81E181EA700FB14CB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		93D6C5C91E181EA700FB14CB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		93D6C5CA1E181EA700FB14CB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				930CA88A1E181FD6007E5B4F /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		93D6C5CB1E181EA700FB14CB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		93D6C5CC1E181EA700FB14CB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,9 +385,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9334A02B1E181BB40063A6A1 /* LaunchScreen.storyboard in Resources */,
-				9334A0281E181BB40063A6A1 /* Assets.xcassets in Resources */,
+				93D6C5CF1E181ED900FB14CB /* Info.plist in Resources */,
 				9334A0261E181BB40063A6A1 /* Main.storyboard in Resources */,
+				930CA88B1E181FD6007E5B4F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,9 +550,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9334A0231E181BB40063A6A1 /* ViewController.m in Sources */,
-				9334A0201E181BB40063A6A1 /* AppDelegate.m in Sources */,
+				93D6C5CD1E181EA700FB14CB /* AppDelegate.m in Sources */,
+				930CA8891E181F80007E5B4F /* ViewController.m in Sources */,
 				9334A01D1E181BB40063A6A1 /* main.m in Sources */,
+				930CA89F1E18236F007E5B4F /* LKSuperExtendVc.m in Sources */,
+				930CA8A21E1A6BF1007E5B4F /* LKNetworkOffVc.m in Sources */,
+				930CA89C1E182357007E5B4F /* LKSuperVc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,14 +597,6 @@
 				9334A0251E181BB40063A6A1 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9334A0291E181BB40063A6A1 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9334A02A1E181BB40063A6A1 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -614,6 +696,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BN9QR57D56;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/pc/Desktop/项目代码/repo_private/LK/Application/PrefixHeader.pch";
 				INFOPLIST_FILE = LK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KorzJ.LK;
@@ -627,6 +711,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BN9QR57D56;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "/Users/pc/Desktop/项目代码/repo_private/LK/Application/PrefixHeader.pch";
 				INFOPLIST_FILE = LK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KorzJ.LK;
@@ -707,6 +793,7 @@
 				9334A0471E181BB40063A6A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9334A0481E181BB40063A6A1 /* Build configuration list for PBXNativeTarget "LKTests" */ = {
 			isa = XCConfigurationList;
@@ -715,6 +802,7 @@
 				9334A04A1E181BB40063A6A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9334A04B1E181BB40063A6A1 /* Build configuration list for PBXNativeTarget "LKUITests" */ = {
 			isa = XCConfigurationList;
@@ -723,6 +811,7 @@
 				9334A04D1E181BB40063A6A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
