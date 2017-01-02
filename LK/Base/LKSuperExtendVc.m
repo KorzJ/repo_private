@@ -31,6 +31,8 @@
 #pragma mark -
 #pragma mark PRIVATE METHD 
 
+- (void)cmdExit{}
+
 #pragma mark -
 #pragma mark SERVICE
 

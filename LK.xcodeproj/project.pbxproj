@@ -14,6 +14,8 @@
 		930CA89C1E182357007E5B4F /* LKSuperVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA89B1E182357007E5B4F /* LKSuperVc.m */; };
 		930CA89F1E18236F007E5B4F /* LKSuperExtendVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA89E1E18236F007E5B4F /* LKSuperExtendVc.m */; };
 		930CA8A21E1A6BF1007E5B4F /* LKNetworkOffVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA8A11E1A6BF1007E5B4F /* LKNetworkOffVc.m */; };
+		930CA8A81E1A786B007E5B4F /* LKNetoworkReqHandle+block.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA8A51E1A786B007E5B4F /* LKNetoworkReqHandle+block.m */; };
+		930CA8AC1E1A7B20007E5B4F /* LKNetoworkReqHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA8AB1E1A7B20007E5B4F /* LKNetoworkReqHandle.m */; };
 		9334A01D1E181BB40063A6A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334A01C1E181BB40063A6A1 /* main.m */; };
 		9334A0261E181BB40063A6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9334A0241E181BB40063A6A1 /* Main.storyboard */; };
 		9334A0361E181BB40063A6A1 /* LKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334A0351E181BB40063A6A1 /* LKTests.m */; };
@@ -58,6 +60,14 @@
 		930CA8A01E1A6BF1007E5B4F /* LKNetworkOffVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKNetworkOffVc.h; sourceTree = "<group>"; };
 		930CA8A11E1A6BF1007E5B4F /* LKNetworkOffVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKNetworkOffVc.m; sourceTree = "<group>"; };
 		930CA8A31E1A6C5D007E5B4F /* LKSuperExtendVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSuperExtendVc.h; sourceTree = "<group>"; };
+		930CA8A41E1A786B007E5B4F /* LKNetoworkReqHandle+block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LKNetoworkReqHandle+block.h"; sourceTree = "<group>"; };
+		930CA8A51E1A786B007E5B4F /* LKNetoworkReqHandle+block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LKNetoworkReqHandle+block.m"; sourceTree = "<group>"; };
+		930CA8AA1E1A7B20007E5B4F /* LKNetoworkReqHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKNetoworkReqHandle.h; sourceTree = "<group>"; };
+		930CA8AB1E1A7B20007E5B4F /* LKNetoworkReqHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKNetoworkReqHandle.m; sourceTree = "<group>"; };
+		930CA8AD1E1A866F007E5B4F /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		930CA8AE1E1A8CBC007E5B4F /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		930CA8AF1E1A8CBC007E5B4F /* const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = const.h; sourceTree = "<group>"; };
+		930CA8B01E1A8CBC007E5B4F /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		9334A0181E181BB40063A6A1 /* LK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9334A01C1E181BB40063A6A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9334A0251E181BB40063A6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -241,6 +251,10 @@
 		93D6C5C91E181EA700FB14CB /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				930CA8AA1E1A7B20007E5B4F /* LKNetoworkReqHandle.h */,
+				930CA8AB1E1A7B20007E5B4F /* LKNetoworkReqHandle.m */,
+				930CA8A41E1A786B007E5B4F /* LKNetoworkReqHandle+block.h */,
+				930CA8A51E1A786B007E5B4F /* LKNetoworkReqHandle+block.m */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -249,6 +263,10 @@
 			isa = PBXGroup;
 			children = (
 				930CA88A1E181FD6007E5B4F /* Assets.xcassets */,
+				930CA8AD1E1A866F007E5B4F /* API.h */,
+				930CA8AE1E1A8CBC007E5B4F /* Account.h */,
+				930CA8AF1E1A8CBC007E5B4F /* const.h */,
+				930CA8B01E1A8CBC007E5B4F /* Define.h */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -550,12 +568,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				930CA8A81E1A786B007E5B4F /* LKNetoworkReqHandle+block.m in Sources */,
 				93D6C5CD1E181EA700FB14CB /* AppDelegate.m in Sources */,
 				930CA8891E181F80007E5B4F /* ViewController.m in Sources */,
 				9334A01D1E181BB40063A6A1 /* main.m in Sources */,
 				930CA89F1E18236F007E5B4F /* LKSuperExtendVc.m in Sources */,
 				930CA8A21E1A6BF1007E5B4F /* LKNetworkOffVc.m in Sources */,
 				930CA89C1E182357007E5B4F /* LKSuperVc.m in Sources */,
+				930CA8AC1E1A7B20007E5B4F /* LKNetoworkReqHandle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

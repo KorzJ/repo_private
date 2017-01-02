@@ -9,11 +9,11 @@ target 'LK' do
 
     pod "Bugtags"
     pod "ReactiveCocoa"
-    pod "AFNetworking-RACExtensions"
-    pod "JSONModel-RACExtensions"
+    pod "AFNetworking"
     pod "Masonry"
     pod "DZNEmptyDataSet"
     pod "SVProgressHUD"
+    pod "BlocksKit"
     
     pod 'SDWebImage'
     pod 'IQKeyboardManager'
