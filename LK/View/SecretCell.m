@@ -17,8 +17,8 @@
     [self.input setBk_shouldChangeCharactersInRangeWithReplacementStringBlock:^BOOL(UITextField *tf, NSRange rang, NSString *str) {
         NSString *secret = [tf.text stringByAppendingString:str];
         
-        if (weakSelf.valid && [weakSelf checkSecretValid:secret]) weakSelf.valid(YES,secret);
-        if (weakSelf.valid && ![weakSelf checkSecretValid:secret]) weakSelf.valid(NO,secret);
+        if (weakSelf.textChanged && [weakSelf checkSecretValid:secret]) weakSelf.textChanged(YES,secret);
+        if (weakSelf.textChanged && ![weakSelf checkSecretValid:secret]) weakSelf.textChanged(NO,secret);
         return YES;
     }];
     
@@ -26,9 +26,6 @@
     [self.eye setImage:Image(@"eyes_red") forState:UIControlStateSelected];
 }
 
-- (void)check:(valid)valid{
-    self.valid  =[valid copy];
-}
     
 - (IBAction)eyesClick:(UIButton *)sender {
     sender.selected = !sender.selected;

@@ -8,12 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^valid)(BOOL valid,NSString *secret);
 @interface SecretCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UITextField *input;
 @property (weak, nonatomic) IBOutlet UIButton *eye;
 
-@property (nonatomic,copy) valid valid;
-- (void)check:(valid)valid;
+@property (nonatomic,copy) void(^textChanged)(BOOL valid,NSString *secret);
 @end

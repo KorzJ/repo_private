@@ -16,8 +16,5 @@ typedef void (^codeBtnClick)();
 @property (weak, nonatomic) IBOutlet UIButton *codeBtn;
 @property (weak, nonatomic) IBOutlet UITextField *telInput;
 
-@property (nonatomic,copy) codeBtnClick block_code;
-@property (nonatomic,copy) valid valid;
-- (void)check:(valid)valid;
-- (void)codeBtnClick:(codeBtnClick)block;
+@property (nonatomic,copy) void(^textChanged)(BOOL valid,NSString *mobile);
 @end

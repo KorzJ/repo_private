@@ -15,6 +15,8 @@
     
     self.backgroundColor = [UIColor clearColor];
     self.loginBtn.enabled = NO;
+    [self.loginBtn setTitle:@"登录" forState:UIControlStateNormal];
+    [self.loginBtn setTitle:@"不能登录" forState:UIControlStateDisabled];
     // Initialization code
 }
 

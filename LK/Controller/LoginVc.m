@@ -7,6 +7,7 @@
 
 #import "LoginVc.h"
 @implementation LoginVc
+
 #pragma mark -
 #pragma mark LIFE CYCLE
 
@@ -31,10 +32,6 @@
     self.numCell = (NSMutableArray *)@[@[@"AccountCell",@"SecretCell",@"EmptyCell",@"SignInCell"]];
     [self.tableview registerClass:NSClassFromString(@"EmptyCell") forCellReuseIdentifier:@"EmptyCell"];
     self.items = (NSMutableArray *)@[@[@"",@"",@"",@""]];
-    
-    [RACObserve(self, vaild) subscribeNext:^(id x) {
-    }];
-    
 }
 
 #pragma mark -
@@ -42,20 +39,31 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *cellName = self.numCell[indexPath.section][indexPath.row];
+    
+    @weakify(self);
+
     if ([cellName isEqualToString:@"EmptyCell"])return [tableView dequeueReusableCellWithIdentifier:@"EmptyCell" forIndexPath:indexPath];
     UITableViewCell *cell = [[NSBundle mainBundle] loadNibNamed:cellName owner:self options:nil][0];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     if ([cellName isEqualToString:@"SecretCell"]) {
+        SecretCell *secretCell  = (SecretCell *)cell;
+        secretCell.textChanged = ^(BOOL valid, NSString *secret){
+            self_weak_.dto.passoword = secret;
+        };
     }
     
     if ([self.numCell[indexPath.section][indexPath.row] isEqualToString:@"AccountCell"]) {
         AccountCell *accountCell  = (AccountCell *)cell;
-        [accountCell check:^(BOOL valid, NSString *mobile) {
-            self.vaild = valid;
-        }];
+        accountCell.textChanged = ^(BOOL valid, NSString *mobile){
+            self_weak_.dto.telephone = mobile;
+        };
     }
     
     if ([self.numCell[indexPath.section][indexPath.row] isEqualToString:@"SignInCell"]) {
+        SignInCell *signCell  = (SignInCell *)cell;
+        RAC(signCell.loginBtn,enabled) = [RACObserve(self.dto, vaildInput) map:^id(id value) {
+            return value;
+        }];
     }
     
     return cell;
@@ -102,4 +110,10 @@
 
 #pragma mark -
 #pragma mark GET
+
+- (DTO_Login *)dto{
+    if (_dto)return _dto;
+    _dto = [DTO_Login new];
+    return _dto;
+}
 @end

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+#import "DTO_Login.h"
 #import "SignInCell.h"
 #import "AccountCell.h"
 #import "SecretCell.h"
@@ -28,4 +29,6 @@
     BOOL _isAgreePro;
 }
 @property (nonatomic,assign) BOOL vaild;
+
+@property (nonatomic,strong) DTO_Login *dto;
 @end

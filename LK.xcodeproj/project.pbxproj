@@ -31,6 +31,8 @@
 		9334A0261E181BB40063A6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9334A0241E181BB40063A6A1 /* Main.storyboard */; };
 		9334A0361E181BB40063A6A1 /* LKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334A0351E181BB40063A6A1 /* LKTests.m */; };
 		9334A0411E181BB40063A6A1 /* LKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334A0401E181BB40063A6A1 /* LKUITests.m */; };
+		9398E06D1E1B897F0008A4C9 /* DTO_Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 9398E06C1E1B897F0008A4C9 /* DTO_Login.m */; };
+		9398E0711E1BC9960008A4C9 /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9398E0701E1BC9960008A4C9 /* NSString+Helper.m */; };
 		93D6C5CD1E181EA700FB14CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6C5C41E181EA700FB14CB /* AppDelegate.m */; };
 		93D6C5CF1E181ED900FB14CB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93D6C5CE1E181ED900FB14CB /* Info.plist */; };
 		F96C452D2666863E923B3F52 /* libPods-LKUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7A642E0591D094066CA67F /* libPods-LKUITests.a */; };
@@ -96,7 +98,7 @@
 		930CA8B01E1A8CBC007E5B4F /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		930CA8B11E1A9376007E5B4F /* LKObjectUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKObjectUtil.h; sourceTree = "<group>"; };
 		930CA8B21E1A9376007E5B4F /* LKObjectUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKObjectUtil.m; sourceTree = "<group>"; };
-		9334A0181E181BB40063A6A1 /* LK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9334A0181E181BB40063A6A1 /* 私人订制.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "私人订制.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9334A01C1E181BB40063A6A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9334A0251E181BB40063A6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9334A0311E181BB40063A6A1 /* LKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +107,10 @@
 		9334A03C1E181BB40063A6A1 /* LKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9334A0401E181BB40063A6A1 /* LKUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKUITests.m; sourceTree = "<group>"; };
 		9334A0421E181BB40063A6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9398E06B1E1B897F0008A4C9 /* DTO_Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTO_Login.h; sourceTree = "<group>"; };
+		9398E06C1E1B897F0008A4C9 /* DTO_Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTO_Login.m; sourceTree = "<group>"; };
+		9398E06F1E1BC9960008A4C9 /* NSString+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Helper.h"; sourceTree = "<group>"; };
+		9398E0701E1BC9960008A4C9 /* NSString+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helper.m"; sourceTree = "<group>"; };
 		93D6C5C31E181EA700FB14CB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93D6C5C41E181EA700FB14CB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		93D6C5CE1E181ED900FB14CB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -178,7 +184,7 @@
 		9334A0191E181BB40063A6A1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9334A0181E181BB40063A6A1 /* LK.app */,
+				9334A0181E181BB40063A6A1 /* 私人订制.app */,
 				9334A0311E181BB40063A6A1 /* LKTests.xctest */,
 				9334A03C1E181BB40063A6A1 /* LKUITests.xctest */,
 			);
@@ -192,6 +198,7 @@
 				93D6C5C51E181EA700FB14CB /* Base */,
 				93D6C5C61E181EA700FB14CB /* Controller */,
 				93D6C5C71E181EA700FB14CB /* Handler */,
+				9398E06A1E1B89260008A4C9 /* DTO */,
 				93D6C5C81E181EA700FB14CB /* Model */,
 				93D6C5C91E181EA700FB14CB /* Network */,
 				93D6C5CA1E181EA700FB14CB /* Resource */,
@@ -228,6 +235,24 @@
 				9334A0421E181BB40063A6A1 /* Info.plist */,
 			);
 			path = LKUITests;
+			sourceTree = "<group>";
+		};
+		9398E06A1E1B89260008A4C9 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				9398E06B1E1B897F0008A4C9 /* DTO_Login.h */,
+				9398E06C1E1B897F0008A4C9 /* DTO_Login.m */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		9398E06E1E1BC9470008A4C9 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9398E06F1E1BC9960008A4C9 /* NSString+Helper.h */,
+				9398E0701E1BC9960008A4C9 /* NSString+Helper.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		93D6C5C21E181EA700FB14CB /* Application */ = {
@@ -306,6 +331,7 @@
 		93D6C5CB1E181EA700FB14CB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9398E06E1E1BC9470008A4C9 /* Categories */,
 				930CA8B11E1A9376007E5B4F /* LKObjectUtil.h */,
 				930CA8B21E1A9376007E5B4F /* LKObjectUtil.m */,
 			);
@@ -350,7 +376,7 @@
 			);
 			name = LK;
 			productName = LK;
-			productReference = 9334A0181E181BB40063A6A1 /* LK.app */;
+			productReference = 9334A0181E181BB40063A6A1 /* 私人订制.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9334A0301E181BB40063A6A1 /* LKTests */ = {
@@ -624,6 +650,7 @@
 				930CA8891E181F80007E5B4F /* LoginVc.m in Sources */,
 				93052C5E1E1ABCDF00BD8D4A /* AccountCell.m in Sources */,
 				9334A01D1E181BB40063A6A1 /* main.m in Sources */,
+				9398E06D1E1B897F0008A4C9 /* DTO_Login.m in Sources */,
 				93052C611E1ABCDF00BD8D4A /* SecretCell.m in Sources */,
 				93052C601E1ABCDF00BD8D4A /* EmptyCell.m in Sources */,
 				930CA8B31E1A9376007E5B4F /* LKObjectUtil.m in Sources */,
@@ -632,6 +659,7 @@
 				930CA8A21E1A6BF1007E5B4F /* LKNetworkOffVc.m in Sources */,
 				930CA89C1E182357007E5B4F /* LKSuperVc.m in Sources */,
 				930CA8AC1E1A7B20007E5B4F /* LKNetoworkReqHandle.m in Sources */,
+				9398E0711E1BC9960008A4C9 /* NSString+Helper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -777,7 +805,7 @@
 				INFOPLIST_FILE = LK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KorzJ.LK;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "私人订制";
 			};
 			name = Debug;
 		};
@@ -792,7 +820,7 @@
 				INFOPLIST_FILE = LK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KorzJ.LK;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "私人订制";
 			};
 			name = Release;
 		};

@@ -21,48 +21,10 @@
 
 @implementation LKObjectUtil
 
-+ (BOOL)validateNumber:(NSString *)number
-{
-    BOOL res = YES;
-    NSCharacterSet *tmpSet = [NSCharacterSet characterSetWithCharactersInString:@"0123456789"];
-    int i = 0;
-    while (i < number.length) {
-        NSString * string = [number substringWithRange:NSMakeRange(i, 1)];
-        NSRange range = [string rangeOfCharacterFromSet:tmpSet];
-        if (range.length == 0) {
-            res = NO;
-            break;
-        }
-        i++;
-    }
-    return res;
-}
-
-+ (BOOL)validMobile:(NSString *)mobile{
-    NSString *mobileRegex = @"^((13[0-9])|(147)|(170)|(15[^4,\\D])|(18[^4]))\\d{8}$";
-    NSPredicate *mobileTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",mobileRegex];
-    return [mobileTest evaluateWithObject:mobile];
-}
-
-+ (BOOL)isValidateEmail:(NSString *)Email
-{
-    NSString *emailCheck = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
-    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES%@",emailCheck];
-    return [emailTest evaluateWithObject:Email];
-}
-
-
-//身份证号
-+ (BOOL)validateIdentityCard: (NSString *)identityCard
-{
-    BOOL flag;
-    if (identityCard.length <= 0) {
-        flag = NO;
-        return flag;
-    }
-    NSString *regex2 = @"^(\\d{14}|\\d{17})(\\d|[xX])$";
-    NSPredicate *identityCardPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex2];
-    return [identityCardPredicate evaluateWithObject:identityCard];
++ (NSString *)stringByObject:(id)object{
+    if (object == nil || object == NULL) return @"";
+    if ([object isKindOfClass:[NSString class]])return (NSString *)object;
+    return [NSString stringWithFormat:@"%@",object];
 }
 
 + (UIImage *)resizableImageByName:(NSString *)name

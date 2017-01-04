@@ -10,26 +10,7 @@
 
 @interface LKObjectUtil : NSObject
 
-/*
- * 是否全是数字
- */
-+ (BOOL)validateNumber:(NSString *)number;
-
-/*
- * 手机号是否正确
- */
-+ (BOOL)validMobile:(NSString *)mobile;
-
-/*
- 判断邮箱是否正确
- */
-+ (BOOL)isValidateEmail:(NSString *)Email;
-
-/*
- 判断身份证号码格式是否正确
- */
-+ (BOOL)validateIdentityCard: (NSString *)identityCard;
-
++ (NSString *)stringByObject:(id)object;
 /*
  * 返回拉伸的图片
  * 拉伸参数：
