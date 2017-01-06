@@ -12,11 +12,14 @@
 /**
  *  默认为YES
  */
-@property (nonatomic, assign) BOOL ignorePushFooter,ignorePullHeader,hasNext;
+@property (nonatomic, assign) BOOL  ignorePushFooter,
+                                                                ignorePullHeader,
+                                                                hasNext;
 
 @property (nonatomic, assign) NSInteger iPage;//页码
 
 @property (nonatomic, strong) UITableView *tableview;
-@property (nonatomic, strong) NSMutableArray *items, *numCell;
+@property (nonatomic, strong) NSMutableArray *items,
+                                                                                *numCell;
 
 @end

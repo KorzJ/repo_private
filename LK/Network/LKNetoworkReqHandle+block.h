@@ -9,22 +9,31 @@
 #import "LKNetoworkReqHandle.h"
 #import <AFHTTPSessionManager.h>
 
-typedef void(^requestSuccess_block)(id reponse);
-typedef void(^requestFail_block)(id reponse);
+typedef void(^ServiceSuccess)(id reponse);
+typedef void(^ServiceFail)(id reponse);
 
 @interface LKNetoworkReqHandle (block)
 
 /**
- 统一添加请求头报文
+ *头报文
  */
 + (NSMutableDictionary *)formatedicKeyAndValue:(NSDictionary *)dicKeyAndValue;
 /**
- 统一添加URL
+ *URL
  */
 + (NSString *)formateServiceURL;
 
-- (void)getDictionaryByURL:(NSString *)url requestType:(NSRequestNetworkServiceType)type parameters:(NSDictionary *)parameters success:(requestSuccess_block)success failure:(requestFail_block)failure;
+- (void)fetchJSONByURL:(NSString *)url
+                            requestType:(NSRequestNetworkServiceType)type
+                            parameters:(NSDictionary *)parameters
+                            success:(ServiceSuccess)success
+                            failure:(ServiceFail)failure;
 
-- (void)uploadImagesByURL:(NSString *)url parameters:(NSDictionary *)parameters images:(NSArray *)imgs imgKeys:(NSArray *)keys success:(requestSuccess_block)success failure:(requestFail_block)failure;
+- (void)uploadImagesByURL:(NSString *)url
+                            parameters:(NSDictionary *)parameters
+                            images:(NSArray *)imgs
+                            imgKeys:(NSArray *)keys
+                            success:(ServiceSuccess)success
+                            failure:(ServiceFail)failure;
 
 @end

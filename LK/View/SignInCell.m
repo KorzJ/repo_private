@@ -20,23 +20,9 @@
     // Initialization code
 }
 
-- (void)signInClick:(signInClick)click{
-    self.signIn = [click copy];
-}
-
 - (IBAction)signIn:(UIButton *)sender {
-    if (self.signIn) {
-        self.signIn(1);
-    }
-}
-- (IBAction)regist:(UIButton *)sender {
-    if (self.signIn) {
-        self.signIn(2);
-    }
-}
-- (IBAction)forget:(id)sender {
-    if (self.signIn) {
-        self.signIn(3);
+    if (self.signInClick) {
+        self.signInClick();
     }
 }
 

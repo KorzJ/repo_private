@@ -9,20 +9,14 @@
 #import <UIKit/UIKit.h>
 
 
-/**
- type
-
- @param type 1:登陆 2:注册 3:忘记密码
- */
-typedef void (^signInClick)(NSUInteger type);
+typedef void (^signInClick)();
 
 @interface SignInCell : UITableViewCell
-@property (nonatomic,copy) signInClick signIn;
+@property (nonatomic,copy) void (^signInClick)();
 
 @property (weak, nonatomic) IBOutlet UIButton *loginBtn;
 @property (weak, nonatomic) IBOutlet UIButton *registBtn;
 @property (weak, nonatomic) IBOutlet UIButton *forgetBtn;
 
-- (void)signInClick:(signInClick)click;
 
 @end

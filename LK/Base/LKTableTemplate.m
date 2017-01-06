@@ -1,10 +1,9 @@
-//
-//  TGTableViewController.m
-//  TakeGoods
-//
-//  Created by 靳鹏飞 on 16/6/8.
-//  Copyright © 2016年 靳鹏飞. All rights reserved.
-//
+//  Created by KorzJ on 2017/1/1.
+
+//==============================
+//代码规范：美，简洁，高内聚，低耦合
+//要        点：编码认真，切记心浮气躁
+//==============================
 
 #import "LKTableTemplate.h"
 
@@ -59,21 +58,22 @@ UITableViewDataSource>
         return tableview;
     }
     tableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height-64) style:UITableViewStyleGrouped];
-    tableview.backgroundColor = [UIColor clearColor];
-    
-    tableview.dataSource = self;
-    tableview.delegate = self;
     
     for (NSString *cell in self.numCell) {
         [tableview registerNib:[UINib nibWithNibName:cell bundle:nil] forCellReuseIdentifier:cell];
     }
-    tableview.tableFooterView = [UIView new];
-    tableview.separatorColor = [UIColor clearColor];
+    
+    [tableview setTableFooterView:[UIView new]];
+    [tableview setSeparatorColor:[UIColor clearColor]];
     [tableview setShowsVerticalScrollIndicator:NO];
     [tableview setShowsHorizontalScrollIndicator:NO];
+    [tableview setBackgroundColor:[UIColor clearColor]];
     
+    tableview.dataSource = self;
+    tableview.delegate = self;
     tableview.emptyDataSetSource = self;
     tableview.emptyDataSetDelegate = self;
+    
     return tableview;
 }
 
@@ -124,7 +124,6 @@ UITableViewDataSource>
 #pragma mark -
 #pragma mark DZNEmptyDataSetSource
 
-
 //============================================
 //基类，不做空数据处理，子类继承即可
 //============================================
@@ -165,11 +164,9 @@ UITableViewDataSource>
 #pragma mark Private Method
 
 /**
- *  监听网络状态 子类重写
+ *  网络状态改变 子类重写
  */
-- (void)networdHasChanged{
-    
-}
+- (void)networdHasChanged{}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

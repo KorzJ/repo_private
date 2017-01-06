@@ -8,27 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-#import "DTO_Login.h"
+#import "D_Login.h"
+
 #import "SignInCell.h"
 #import "AccountCell.h"
 #import "SecretCell.h"
-@interface LoginVc : LKTableTemplate{
-    UIButton *_loginBtn;
-    UIButton *_codeBtn;
-    UITextField *_codeTF;
-    UIButton  *_eyes;
-    
-    NSString *_mobile;
-    NSString *_code;
-    NSString *_secret;
-    
-    BOOL _vaildMobile;
-    BOOL _vaildSecret;
-    BOOL _vaildCode;
-    
-    BOOL _isAgreePro;
-}
+
+@interface LoginVc : LKTableTemplate{}
 @property (nonatomic,assign) BOOL vaild;
 
-@property (nonatomic,strong) DTO_Login *dto;
+@property (nonatomic,strong) D_Login *dto;
 @end

@@ -14,11 +14,13 @@
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
 }
-- (void)viewDidLoad {
+
+- (void)viewDidLoad{
     [super viewDidLoad];
     
     [self J_initNavBar];
     [self J_initUI];
+    [self J_initRacObvser];
 }
 
 #pragma mark -
@@ -27,11 +29,21 @@
 - (void)J_initNavBar{
     self.sNavTitle.text = @"登录";
 }
+
 - (void)J_initUI{
     [self.tableview setTableHeaderView:[[NSBundle mainBundle]loadNibNamed:@"LoginTopView" owner:nil options:nil][0]];
-    self.numCell = (NSMutableArray *)@[@[@"AccountCell",@"SecretCell",@"EmptyCell",@"SignInCell"]];
     [self.tableview registerClass:NSClassFromString(@"EmptyCell") forCellReuseIdentifier:@"EmptyCell"];
+    
     self.items = (NSMutableArray *)@[@[@"",@"",@"",@""]];
+    self.numCell = (NSMutableArray *)@[@[@"AccountCell",@"SecretCell",@"EmptyCell",@"SignInCell"]];
+}
+
+- (void)J_initRacObvser{
+    [RACObserve(self.dto, success) subscribeNext:^(id x) {
+        if (![x boolValue])
+            return;
+        [UIAlertView bk_showAlertViewWithTitle:@"提示" message:@"登录成功" cancelButtonTitle:@"OK" otherButtonTitles:nil handler:nil];
+    }];
 }
 
 #pragma mark -
@@ -40,31 +52,18 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     NSString *cellName = self.numCell[indexPath.section][indexPath.row];
     
-    @weakify(self);
-
-    if ([cellName isEqualToString:@"EmptyCell"])return [tableView dequeueReusableCellWithIdentifier:@"EmptyCell" forIndexPath:indexPath];
+    if ([cellName isEqualToString:@"EmptyCell"])
+        return [tableView dequeueReusableCellWithIdentifier:@"EmptyCell" forIndexPath:indexPath];
+    
     UITableViewCell *cell = [[NSBundle mainBundle] loadNibNamed:cellName owner:self options:nil][0];
-    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    if ([cellName isEqualToString:@"SecretCell"]) {
-        SecretCell *secretCell  = (SecretCell *)cell;
-        secretCell.textChanged = ^(BOOL valid, NSString *secret){
-            self_weak_.dto.passoword = secret;
-        };
-    }
+    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     
-    if ([self.numCell[indexPath.section][indexPath.row] isEqualToString:@"AccountCell"]) {
-        AccountCell *accountCell  = (AccountCell *)cell;
-        accountCell.textChanged = ^(BOOL valid, NSString *mobile){
-            self_weak_.dto.telephone = mobile;
-        };
-    }
-    
-    if ([self.numCell[indexPath.section][indexPath.row] isEqualToString:@"SignInCell"]) {
-        SignInCell *signCell  = (SignInCell *)cell;
-        RAC(signCell.loginBtn,enabled) = [RACObserve(self.dto, vaildInput) map:^id(id value) {
-            return value;
-        }];
-    }
+    if ([cellName isEqualToString:@"SecretCell"])
+        return [self configSecretCell:(SecretCell *)cell indexPath:indexPath];
+    if ([self.numCell[indexPath.section][indexPath.row] isEqualToString:@"AccountCell"])
+        return [self configAccountCell:(AccountCell *)cell indexPath:indexPath];
+    if ([self.numCell[indexPath.section][indexPath.row] isEqualToString:@"SignInCell"])
+        return [self configSignCell:(SignInCell *)cell indexPath:indexPath];
     
     return cell;
 }
@@ -75,7 +74,6 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     CGFloat height = 0;
-    
     switch (indexPath.row) {
             case 0:
             height = 60;
@@ -105,15 +103,50 @@
 #pragma mark -
 #pragma mark PRIVATE METHD 
 
+- (AccountCell *)configAccountCell:(AccountCell *)cell indexPath:(NSIndexPath *)indexPath{
+    @weakify(self);
+    cell.textChanged
+    = ^(BOOL valid, NSString *mobile){
+        self.dto.telephone = mobile;
+    };
+    return cell;
+}
+
+- (SignInCell *)configSignCell:(SignInCell *)cell indexPath:(NSIndexPath *)indexPath{
+    @weakify(self);
+    RAC(cell.loginBtn,enabled)
+    = [RACObserve(self.dto, vaildInput) map:^id(id value) {
+        return value;
+    }];
+    cell.signInClick = ^(){
+        [self.dto loginWithTelephone:@"" password:@""];
+    };
+    return cell;
+}
+
+- (SecretCell *)configSecretCell:(SecretCell *)cell indexPath:(NSIndexPath *)indexPath{
+    @weakify(self);
+    cell.textChanged
+    =  ^(BOOL valid, NSString *secret){
+        self.dto.passoword = secret;
+    };
+    return cell;
+}
+
 #pragma mark -
 #pragma mark SERVICE
 
 #pragma mark -
 #pragma mark GET
 
-- (DTO_Login *)dto{
-    if (_dto)return _dto;
-    _dto = [DTO_Login new];
+- (D_Login *)dto{
+    if (_dto)
+        return _dto;
+    _dto = [D_Login new];
     return _dto;
+}
+
+- (void)dealloc{
+    self.dto = nil;
 }
 @end
