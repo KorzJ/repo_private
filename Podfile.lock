@@ -31,9 +31,6 @@ PODS:
     - BlocksKit/DynamicDelegate
   - Bugtags (1.2.8)
   - DZNEmptyDataSet (1.8.1)
-  - FMDB (2.6.2):
-    - FMDB/standard (= 2.6.2)
-  - FMDB/standard (2.6.2)
   - IQKeyboardManager (4.0.4)
   - Masonry (1.0.1)
   - MJRefresh (3.1.9)
@@ -49,6 +46,7 @@ PODS:
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
   - SVProgressHUD (2.0.3)
+  - YYCache (1.0.3)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
@@ -56,7 +54,6 @@ DEPENDENCIES:
   - BlocksKit
   - Bugtags
   - DZNEmptyDataSet
-  - FMDB
   - IQKeyboardManager
   - Masonry
   - MJRefresh
@@ -64,6 +61,7 @@ DEPENDENCIES:
   - ReactiveCocoa
   - SDWebImage
   - SVProgressHUD
+  - YYCache
   - YYModel
 
 SPEC CHECKSUMS:
@@ -71,7 +69,6 @@ SPEC CHECKSUMS:
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   Bugtags: be7726c9bd65ace4223cd278c205f6db981667d0
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
-  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   IQKeyboardManager: 4a6f83b540283c2645aaeba2bd8dc0f09b5c77f8
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MJRefresh: c5f1f1653e5a1b932c90f78074f2bc86f3f9bd5e
@@ -79,8 +76,9 @@ SPEC CHECKSUMS:
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  YYCache: 282f35b5b0990833d0b7a06d864a87141a021da2
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: a28006143830c75dd1f18c2897b0892d41ebb2ef
+PODFILE CHECKSUM: c019f3c3b389ff027655db1ea6beb8e73fe8b530
 
 COCOAPODS: 1.2.0.beta.1

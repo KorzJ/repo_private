@@ -8,6 +8,7 @@
 
 #import "LKNetoworkReqHandle+block.h"
 
+#import <YYCache.h>
 @implementation LKNetoworkReqHandle (block)
 
 - (void)fetchJSONByURL:(NSString *)url
@@ -16,14 +17,18 @@
                success:(ServiceSuccess)success
                failure:(ServiceFail)failure
 {
-    if (!self.ignoreHUD)[SVProgressHUD show];  //等待界面
+    if (!self.ignoreHUD)
+        [SVProgressHUD show];  //等待界面
+    
     /**
      *  检验参数是否为空
      */
     if (![parameters bk_all:^BOOL(id key, id obj) {
         //obj !字符串 不做校验
-        if (![obj isKindOfClass:[NSString class]]) return YES;
-        if (![obj isEqualToString:@""])return YES;
+        if (![obj isKindOfClass:[NSString class]])
+            return YES;
+        if (![obj isEqualToString:@""])
+            return YES;
         return NO;
     }]){
         [SVProgressHUD showErrorWithStatus:K_SERVICE_REQUEST_ERROR];
@@ -37,38 +42,41 @@
             return NO;
     }];
     
-    [LKNetoworkReqHandle requsetData:url
+    [LKNetoworkReqHandle
+                                requsetUrl:url
                                 body:parameters
                                 requestType:type
                                 ignoreHTML:self.ignoreHTML
                                 ignoreJSON:self.ignoreReqJSON
                                 success:^(id responseObject) {
-                                    
-        if ([SVProgressHUD isVisible])
-            [SVProgressHUD dismiss];
-        if (success)
-            success(responseObject[@"data"]);
-    }
-                             failure:^(NSError *error, NSDictionary *errorInfo) {
-        //关闭等待界面
-        if ([SVProgressHUD isVisible])
-            [SVProgressHUD dismiss];
-        NSLog(@"Failure == %@", error);
-        if (!self.ignoreReqJSON)
-        {
-            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-                if (error){
-                    [SVProgressHUD showErrorWithStatus:K_SERVICE_RESPONSE_ERROR];
-                }else{
-                    if ([errorInfo.allKeys containsObject:@"msg"] &&errorInfo[@"msg"])
-                        [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",errorInfo[@"msg"]]];
-                    if (![errorInfo.allKeys containsObject:@"msg"] || !errorInfo[@"msg"])
-                        [SVProgressHUD showErrorWithStatus:K_SERVICE_RESPONSE_ERROR];
-                }
-            });
-        }
-        failure(errorInfo);
-    }];
+
+                                    if ([SVProgressHUD isVisible])
+                                        [SVProgressHUD dismiss];
+                                    if (success)
+                                        success(responseObject[@"data"]);
+                                    [self logServiceInfo:NO httpType:type fullURL:[self fullURL:url params:parameters]reponse:responseObject];
+                                }
+                                failure:^(NSError *error, NSDictionary *errorInfo) {
+    
+                                    if ([SVProgressHUD isVisible])
+                                        [SVProgressHUD dismiss];
+                                    NSLog(@"Failure == %@", error);
+                                    if (!self.ignoreReqJSON)
+                                    {
+                                        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                                            if (error){
+                                                [SVProgressHUD showErrorWithStatus:K_SERVICE_RESPONSE_ERROR];
+                                            }else{
+                                                if ([errorInfo.allKeys containsObject:@"msg"] &&errorInfo[@"msg"])
+                                                    [SVProgressHUD showErrorWithStatus:[NSString stringWithFormat:@"%@",errorInfo[@"msg"]]];
+                                                if (![errorInfo.allKeys containsObject:@"msg"] || !errorInfo[@"msg"])
+                                                    [SVProgressHUD showErrorWithStatus:K_SERVICE_RESPONSE_ERROR];
+                                            }
+                                        });
+                                    }
+                                    [self logServiceInfo:NO httpType:type fullURL:[self fullURL:url params:parameters]reponse:errorInfo];
+                                    failure(errorInfo);
+                                    }];
 }
 
 - (void)uploadImagesByURL:(NSString *)url
@@ -83,8 +91,13 @@
                                               images:imgs
                                               imgKeys:keys
                                               success:success
-                                              failure:^(NSError *error, NSDictionary *errorInfo) {}];
+                                              failure:^(NSError *error, NSDictionary *errorInfo) {
+                                                  failure(errorInfo);
+                                              }];
 }
+
+#pragma mark -
+#pragma mark PRIVATE METHOD
 
 - (NSString *)fullURL:(NSString*)baseUrl params:(NSDictionary*)params
 {
@@ -111,10 +124,10 @@
     return urlPath;
 }
 
-- (void)logServiceInfo:(BOOL)succeed httpType:(NSRequestNetworkServiceType)type fullURL:(NSString*)fullURL
+- (void)logServiceInfo:(BOOL)succeed httpType:(NSRequestNetworkServiceType)type fullURL:(NSString*)fullURL reponse:(id)reponseObject
 {
     // 打印网络请求日志
-    NSString *httpMethod = nil;
+    NSString *httpMethod;
     switch (type) {
         case GET:
             httpMethod = @"GET";
@@ -128,7 +141,22 @@
         default:
             break;
     }
-    NSLog(@"[%@][%@]: %@", succeed?@"succeed":@"fail", httpMethod, fullURL);
+    NSLog(@"\n[%@] \n[%@]: %@ \n%@", succeed?@"succeed":@"fail", httpMethod, fullURL,reponseObject);
+}
+
+//根据标识符取缓存
+- (id)cachesByIdentify:(NSString *)identify{
+    YYCache *cache = [self cachesbyindentify:identify];
+    id cacheObject = [cache objectForKey:identify];
+    if (cacheObject)
+        return nil;
+    return cacheObject;
+}
+
+//根据标识符缓存
+- (void)cachesToDb:(id)reponse byIdentify:(NSString *)identify{
+    YYCache *cache = [self cachesbyindentify:identify];
+    [cache setObject:reponse forKey:identify];
 }
 
 + (NSMutableDictionary *)formatedicKeyAndValue:(NSDictionary *)dicKeyAndValue{
@@ -139,4 +167,15 @@
 + (NSString *)formateServiceURL{
     return[NSString stringWithFormat:@"%@%@%@",K_SERVICE_HOST,K_SERVICE_PORT,K_SERVICE_PATH];
 }
+
+#pragma mark-
+#pragma mark GET
+
+- (YYCache *)cachesbyindentify:(NSString *)identify{
+    YYCache *cache = [[YYCache alloc] initWithName:[identify stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
+    cache.memoryCache.shouldRemoveAllObjectsOnMemoryWarning = YES;
+    cache.memoryCache.shouldRemoveAllObjectsWhenEnteringBackground = YES;
+    return cache;
+}
+
 @end

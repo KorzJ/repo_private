@@ -9,7 +9,7 @@
 #import "LKNetoworkReqHandle.h"
 @implementation LKNetoworkReqHandle
 
-+ (void)requsetData:(NSString *)url body:(NSDictionary *)body requestType:(NSRequestNetworkServiceType)type ignoreHTML:(BOOL)ignoreHTML ignoreJSON:(BOOL)ignoreJSON success:(void (^)(id responseObject))success failure:(void(^)(NSError *error,NSDictionary *errorInfo))failure
++ (void)requsetUrl:(NSString *)url body:(NSDictionary *)body requestType:(NSRequestNetworkServiceType)type ignoreHTML:(BOOL)ignoreHTML ignoreJSON:(BOOL)ignoreJSON success:(void (^)(id responseObject))success failure:(void(^)(NSError *error,NSDictionary *errorInfo))failure
 {
     AFHTTPSessionManager *manager = [self manger];
     if (!ignoreJSON) manager.requestSerializer = [AFJSONRequestSerializer serializer];
@@ -47,7 +47,8 @@
                 continue;
             }
             UIImage *newImg = img;
-            if (img.size.width > [UIScreen mainScreen].bounds.size.width)newImg = [self imageCompressForWidth:newImg targetWidth:[UIScreen mainScreen].bounds.size.height];
+            if (img.size.width > [UIScreen mainScreen].bounds.size.width)
+                newImg = [self imageCompressForWidth:newImg targetWidth:[UIScreen mainScreen].bounds.size.height];
             NSData *imageData = UIImagePNGRepresentation(newImg);
             NSString *fileName = [NSString stringWithFormat:@"%@%@.png",[self date],@(imgCount)];
             [formData appendPartWithFileData:imageData name:keys[imgCount] fileName:fileName mimeType:@"image/png"];
@@ -108,9 +109,8 @@
     }];
 }
 
-/**
- *  压缩图片 按照一定的长宽比例
- */
+#pragma mark -
+#pragma mark 图片压缩
 + (UIImage *)imageCompressForWidth:(UIImage *)sourceImage targetWidth:(CGFloat)defineWidth
 {
     CGSize imageSize = sourceImage.size;
@@ -130,8 +130,10 @@
     if (webServiceSuccess && [reponseStatus isEqualToString:K_SERVICE_SUCCESS]){
         webServiceSuccess(responseObject);
         return;};
-    if ([reponseStatus isEqualToString:K_SERVICE_INVAILD])[[NSNotificationCenter defaultCenter] postNotificationName:@"" object:nil];
-    if (webServiceFailure)webServiceFailure(nil,responseObject);
+    if ([reponseStatus isEqualToString:K_SERVICE_INVAILD])
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"" object:nil];
+    if (webServiceFailure)
+        webServiceFailure(nil,responseObject);
 }
 
 + (void)failHandle:(NSError *)error fail:(void(^)(NSError *error,NSDictionary *errorInfo))webServiceFailure{
@@ -142,6 +144,19 @@
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     formatter.dateFormat = @"yyyyMMddHHmmssSSS";
     return [formatter stringFromDate:[NSDate date]];
+}
+
+#pragma mark -
+#pragma mark 处理json格式的字符串中的换行符、回车符
+- (NSString *)deleteSpecialCodeWithStr:(NSString *)str {
+    NSString *string = [str stringByReplacingOccurrencesOfString:@"\r" withString:@""];
+    string = [string stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    string = [string stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+    string = [string stringByReplacingOccurrencesOfString:@"\t" withString:@""];
+    string = [string stringByReplacingOccurrencesOfString:@" " withString:@""];
+    string = [string stringByReplacingOccurrencesOfString:@"(" withString:@""];
+    string = [string stringByReplacingOccurrencesOfString:@")" withString:@""];
+    return string;
 }
 
 @end

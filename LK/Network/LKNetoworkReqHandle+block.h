@@ -14,15 +14,6 @@ typedef void(^ServiceFail)(id reponse);
 
 @interface LKNetoworkReqHandle (block)
 
-/**
- *头报文
- */
-+ (NSMutableDictionary *)formatedicKeyAndValue:(NSDictionary *)dicKeyAndValue;
-/**
- *URL
- */
-+ (NSString *)formateServiceURL;
-
 - (void)fetchJSONByURL:(NSString *)url
                             requestType:(NSRequestNetworkServiceType)type
                             parameters:(NSDictionary *)parameters
@@ -36,4 +27,12 @@ typedef void(^ServiceFail)(id reponse);
                             success:(ServiceSuccess)success
                             failure:(ServiceFail)failure;
 
+/**
+ *头报文
+ */
++ (NSMutableDictionary *)formatedicKeyAndValue:(NSDictionary *)dicKeyAndValue;
+/**
+ *URL
+ */
++ (NSString *)formateServiceURL;
 @end

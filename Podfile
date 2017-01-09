@@ -18,7 +18,7 @@ target 'LK' do
     pod "YYModel"
     
     pod 'MJRefresh'
-    pod 'FMDB'
+    pod 'YYCache'
     pod 'SDWebImage'
     pod 'IQKeyboardManager'
 
