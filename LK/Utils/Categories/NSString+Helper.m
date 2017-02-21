@@ -49,7 +49,7 @@
     return [identityCardPredicate evaluateWithObject:self];
 }
 
-+ (BOOL)validByURL{
+- (BOOL)validByURL{
     NSString *pattern = @"^(http|https)://.*?$(net|com|.com.cn|org|me|)";
     NSPredicate *urlPredicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
     return [urlPredicate evaluateWithObject:self];

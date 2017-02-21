@@ -13,17 +13,16 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     
-    K_WS(weakSelf);
     [self.input setBk_shouldChangeCharactersInRangeWithReplacementStringBlock:^BOOL(UITextField *tf, NSRange rang, NSString *str) {
         NSString *secret = [tf.text stringByAppendingString:str];
         
-        if (weakSelf.textChanged && [weakSelf checkSecretValid:secret]) weakSelf.textChanged(YES,secret);
-        if (weakSelf.textChanged && ![weakSelf checkSecretValid:secret]) weakSelf.textChanged(NO,secret);
+        if (self.textChanged && [self checkSecretValid:secret]) self.textChanged(YES,secret);
+        if (self.textChanged && ![self checkSecretValid:secret]) self.textChanged(NO,secret);
         return YES;
     }];
     
-    [self.eye setImage:Image(@"eyes_gray") forState:UIControlStateNormal];
-    [self.eye setImage:Image(@"eyes_red") forState:UIControlStateSelected];
+    [self.eye setImage:IMG(@"eyes_gray") forState:UIControlStateNormal];
+    [self.eye setImage:IMG(@"eyes_red") forState:UIControlStateSelected];
 }
 
     

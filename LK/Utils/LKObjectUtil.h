@@ -69,4 +69,24 @@
 
 //获取字符长度
 + (int)convertToByte:(NSString*)str;
+
+// get an objective-c dictionary from a plist file
++ (NSDictionary *)dictionaryFromConfig:(NSString *)configFileName;
++ (id)objectForKey:(NSString *)key fromConfig:(NSString *)configFileName;
+
+// get an objective-c array from a plist file
++ (NSArray *)arrayFromConfig:(NSString *)configFileName;
+
+// get file name from an url, for network data cache
++ (NSString *)fileNameFromURL:(NSString *)url;
+
+// file attribute
++ (NSDate *)fileModifyTime:(NSString *)path;
++ (NSDate *)fileCreateTime:(NSString *)path;
+
+// file paths for app file and data cache
++ (NSString *)deviceDocumentsPath;
++ (NSString *)deviceCachePath;
++ (NSString *)appDataCachePath;
++ (NSString *)appDataObjectCachePath;
 @end

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>tencentQQScheme</key>
+	<string>tencent1105890418</string>
+	<key>qqScheme</key>
+	<string>QQ41ea8c72</string>
+	<key>sinaScheme</key>
+	<string>wb7571170</string>
+	<key>bugtagsAppKey</key>
+	<string>09c09235bd3ea45559ae7948701cb06a</string>
+	<key>JpushAppSecret</key>
+	<string>40ff589496bf5467006f00be</string>
+	<key>JpushAppKey</key>
+	<string>cd42b7fbac765f986fd3d781</string>
+	<key>SinaAppSecret</key>
+	<string>0ae360c52e183375ebdb6a6de6ed6365</string>
+	<key>SinaAppkey</key>
+	<string>7571170</string>
+	<key>SinaURLCallBack</key>
+	<string>http://sns.whalecloud.com/sina2/callback</string>
+	<key>UmengSocialAppKey</key>
+	<string>582aa198c62dca40e7000275</string>
+	<key>QQAppSecret</key>
+	<string>0nz4E5JzFBw5n5sN</string>
+	<key>QQAppKey</key>
+	<string>1105890418</string>
+	<key>weiXinAppSecret</key>
+	<string>8f21b8d1e7362f5873df931f3b5eee7a</string>
+	<key>weiXinAppKey</key>
+	<string>wxd50b89c404ae1634</string>
+	<key>appScheme</key>
+	<string>DianShangDev</string>
+	<key>serverBaseURL</key>
+	<string>https://buy.9hds.com/</string>
+	<key>appStoreID</key>
+	<string>1118260167</string>
+	<key>imageUrlSeparator</key>
+	<string>,</string>
+	<key>fileUrlSeparator</key>
+	<string>,</string>
+</dict>
+</plist>

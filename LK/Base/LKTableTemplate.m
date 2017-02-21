@@ -85,7 +85,7 @@ UITableViewDataSource>
     if (!self.ignorePullHeader && self.tableview.mj_header) {
        MJRefreshNormalHeader *head = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRereshing)];
         head.lastUpdatedTimeLabel.hidden = YES;
-        head.stateLabel.font = Font(13.0f);
+        head.stateLabel.font = FONT(13.0f);
         head.stateLabel.hidden = YES;
         self.tableview.mj_header  = head;;
     }

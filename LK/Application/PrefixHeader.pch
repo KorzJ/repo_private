@@ -15,11 +15,12 @@
 #import "API.h"
 #import "Define.h"
 #import "const.h"
-#import "Account.h"
 
 #import "LKObjectUtil.h"
 
 #import "NSString+Helper.h"
+#import "UIView+Additions.h"
+#import "UIButton+touch.h"
 
 #import "LKNetoworkReqHandle+block.h"
 
@@ -30,6 +31,7 @@
 #import <BlocksKit+UIKit.h>
 #import <UIScrollView+EmptyDataSet.h>
 #import <MJRefresh.h>
+#import <IQKeyboardManager.h>
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 

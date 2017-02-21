@@ -15,5 +15,5 @@
 - (BOOL)validByEmail;
 - (BOOL)validByPassword;
 - (BOOL)validByIdentityCard;
-+ (BOOL)validByURL;
+- (BOOL)validByURL;
 @end

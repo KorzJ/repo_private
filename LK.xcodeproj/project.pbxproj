@@ -35,6 +35,11 @@
 		9398E0711E1BC9960008A4C9 /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9398E0701E1BC9960008A4C9 /* NSString+Helper.m */; };
 		93D6C5CD1E181EA700FB14CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6C5C41E181EA700FB14CB /* AppDelegate.m */; };
 		93D6C5CF1E181ED900FB14CB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93D6C5CE1E181ED900FB14CB /* Info.plist */; };
+		93DC848A1E5AD09E00711F48 /* applicationDevelop.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93DC84891E5AD09E00711F48 /* applicationDevelop.plist */; };
+		93DC848D1E5AD20300711F48 /* AppConfigContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DC848C1E5AD20300711F48 /* AppConfigContext.m */; };
+		93DC84901E5AD77900711F48 /* UIButton+touch.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DC848F1E5AD77900711F48 /* UIButton+touch.m */; };
+		93DC84931E5AD79600711F48 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DC84921E5AD79600711F48 /* UIView+Additions.m */; };
+		93DC84951E5BCD1A00711F48 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93DC84941E5BCD1A00711F48 /* View.xib */; };
 		F96C452D2666863E923B3F52 /* libPods-LKUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7A642E0591D094066CA67F /* libPods-LKUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -81,7 +86,7 @@
 		930CA8871E181F80007E5B4F /* LoginVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVc.h; sourceTree = "<group>"; };
 		930CA8881E181F80007E5B4F /* LoginVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVc.m; sourceTree = "<group>"; };
 		930CA88A1E181FD6007E5B4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		930CA88D1E1820F9007E5B4F /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		930CA88D1E1820F9007E5B4F /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../Application/PrefixHeader.pch; sourceTree = "<group>"; };
 		930CA89A1E182357007E5B4F /* LKSuperVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSuperVc.h; sourceTree = "<group>"; };
 		930CA89B1E182357007E5B4F /* LKSuperVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSuperVc.m; sourceTree = "<group>"; };
 		930CA89E1E18236F007E5B4F /* LKSuperExtendVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKSuperExtendVc.m; sourceTree = "<group>"; };
@@ -93,7 +98,6 @@
 		930CA8AA1E1A7B20007E5B4F /* LKNetoworkReqHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKNetoworkReqHandle.h; sourceTree = "<group>"; };
 		930CA8AB1E1A7B20007E5B4F /* LKNetoworkReqHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKNetoworkReqHandle.m; sourceTree = "<group>"; };
 		930CA8AD1E1A866F007E5B4F /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
-		930CA8AE1E1A8CBC007E5B4F /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
 		930CA8AF1E1A8CBC007E5B4F /* const.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = const.h; sourceTree = "<group>"; };
 		930CA8B01E1A8CBC007E5B4F /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		930CA8B11E1A9376007E5B4F /* LKObjectUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKObjectUtil.h; sourceTree = "<group>"; };
@@ -113,7 +117,15 @@
 		9398E0701E1BC9960008A4C9 /* NSString+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Helper.m"; sourceTree = "<group>"; };
 		93D6C5C31E181EA700FB14CB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93D6C5C41E181EA700FB14CB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		93D6C5CE1E181ED900FB14CB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93D6C5CE1E181ED900FB14CB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Application/Info.plist; sourceTree = "<group>"; };
+		93DC84891E5AD09E00711F48 /* applicationDevelop.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = applicationDevelop.plist; sourceTree = "<group>"; };
+		93DC848B1E5AD20300711F48 /* AppConfigContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfigContext.h; sourceTree = "<group>"; };
+		93DC848C1E5AD20300711F48 /* AppConfigContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConfigContext.m; sourceTree = "<group>"; };
+		93DC848E1E5AD77900711F48 /* UIButton+touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+touch.h"; sourceTree = "<group>"; };
+		93DC848F1E5AD77900711F48 /* UIButton+touch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+touch.m"; sourceTree = "<group>"; };
+		93DC84911E5AD79600711F48 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
+		93DC84921E5AD79600711F48 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
+		93DC84941E5BCD1A00711F48 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		99A413A343DC3F81739280DF /* Pods-LKUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LKUITests/Pods-LKUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FD7A642E0591D094066CA67F /* libPods-LKUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LKUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -249,6 +261,10 @@
 		9398E06E1E1BC9470008A4C9 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				93DC84911E5AD79600711F48 /* UIView+Additions.h */,
+				93DC84921E5AD79600711F48 /* UIView+Additions.m */,
+				93DC848E1E5AD77900711F48 /* UIButton+touch.h */,
+				93DC848F1E5AD77900711F48 /* UIButton+touch.m */,
 				9398E06F1E1BC9960008A4C9 /* NSString+Helper.h */,
 				9398E0701E1BC9960008A4C9 /* NSString+Helper.m */,
 			);
@@ -258,10 +274,10 @@
 		93D6C5C21E181EA700FB14CB /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				93D6C5CE1E181ED900FB14CB /* Info.plist */,
-				930CA88D1E1820F9007E5B4F /* PrefixHeader.pch */,
 				93D6C5C31E181EA700FB14CB /* AppDelegate.h */,
 				93D6C5C41E181EA700FB14CB /* AppDelegate.m */,
+				93DC848B1E5AD20300711F48 /* AppConfigContext.h */,
+				93DC848C1E5AD20300711F48 /* AppConfigContext.m */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -321,9 +337,11 @@
 				930CA88A1E181FD6007E5B4F /* Assets.xcassets */,
 				93052C671E1AC1B700BD8D4A /* Media.xcassets */,
 				930CA8AD1E1A866F007E5B4F /* API.h */,
-				930CA8AE1E1A8CBC007E5B4F /* Account.h */,
 				930CA8AF1E1A8CBC007E5B4F /* const.h */,
 				930CA8B01E1A8CBC007E5B4F /* Define.h */,
+				930CA88D1E1820F9007E5B4F /* PrefixHeader.pch */,
+				93D6C5CE1E181ED900FB14CB /* Info.plist */,
+				93DC84891E5AD09E00711F48 /* applicationDevelop.plist */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -352,6 +370,7 @@
 				93052C5B1E1ABCDF00BD8D4A /* SignInCell.h */,
 				93052C5C1E1ABCDF00BD8D4A /* SignInCell.m */,
 				93052C651E1AC0BA00BD8D4A /* LoginTopView.xib */,
+				93DC84941E5BCD1A00711F48 /* View.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -476,9 +495,11 @@
 			files = (
 				93052C661E1AC0BA00BD8D4A /* LoginTopView.xib in Resources */,
 				93D6C5CF1E181ED900FB14CB /* Info.plist in Resources */,
+				93DC848A1E5AD09E00711F48 /* applicationDevelop.plist in Resources */,
 				93052C681E1AC1B700BD8D4A /* Media.xcassets in Resources */,
 				93052C5F1E1ABCDF00BD8D4A /* AccountCell.xib in Resources */,
 				9334A0261E181BB40063A6A1 /* Main.storyboard in Resources */,
+				93DC84951E5BCD1A00711F48 /* View.xib in Resources */,
 				93052C621E1ABCDF00BD8D4A /* SecretCell.xib in Resources */,
 				930CA88B1E181FD6007E5B4F /* Assets.xcassets in Resources */,
 				93052C641E1ABCDF00BD8D4A /* SignInCell.xib in Resources */,
@@ -651,15 +672,18 @@
 				93052C5E1E1ABCDF00BD8D4A /* AccountCell.m in Sources */,
 				9334A01D1E181BB40063A6A1 /* main.m in Sources */,
 				9398E06D1E1B897F0008A4C9 /* D_Login.m in Sources */,
+				93DC84931E5AD79600711F48 /* UIView+Additions.m in Sources */,
 				93052C611E1ABCDF00BD8D4A /* SecretCell.m in Sources */,
 				93052C601E1ABCDF00BD8D4A /* EmptyCell.m in Sources */,
 				930CA8B31E1A9376007E5B4F /* LKObjectUtil.m in Sources */,
 				930CA89F1E18236F007E5B4F /* LKSuperExtendVc.m in Sources */,
+				93DC84901E5AD77900711F48 /* UIButton+touch.m in Sources */,
 				93052C521E1AB79300BD8D4A /* LKTableTemplate.m in Sources */,
 				930CA8A21E1A6BF1007E5B4F /* LKNetworkOffVc.m in Sources */,
 				930CA89C1E182357007E5B4F /* LKSuperVc.m in Sources */,
 				930CA8AC1E1A7B20007E5B4F /* LKNetoworkReqHandle.m in Sources */,
 				9398E0711E1BC9960008A4C9 /* NSString+Helper.m in Sources */,
+				93DC848D1E5AD20300711F48 /* AppConfigContext.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     
-    K_WS(weakSelf);
+    @weakify(self);
     [self.telInput setBk_shouldChangeCharactersInRangeWithReplacementStringBlock:^BOOL(UITextField *tf, NSRange rang, NSString *str) {
         NSString *mobile = [tf.text stringByAppendingString:str];
         
@@ -21,14 +21,14 @@
             return NO;
         }
         
-        if (weakSelf.textChanged && [mobile validByMobile]) weakSelf.textChanged(YES,mobile);
-        if (weakSelf.textChanged && ![mobile validByMobile]) weakSelf.textChanged(NO,mobile);
+        if (self.textChanged && [mobile validByMobile]) self.textChanged(YES,mobile);
+        if (self.textChanged && ![mobile validByMobile]) self.textChanged(NO,mobile);
         
         //手机号码无效，验证码不能点击
         if ([mobile validByMobile]){
-            weakSelf.codeBtn.enabled = YES;
+            self.codeBtn.enabled = YES;
         }else{
-            weakSelf.codeBtn.enabled = NO;
+            self.codeBtn.enabled = NO;
         }
         return YES;
     }];
