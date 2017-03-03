@@ -31,6 +31,10 @@
 }
 
 - (void)J_initUI{
+    UIImageView *bg = [[UIImageView alloc] initWithImage:IMG(@"on_page")];
+    [bg setFrame:(CGRect){0,K_NAV_HEIGHT,K_SCREEN_WIDTH,K_SCREEN_HEIGHT-K_NAV_HEIGHT}];
+    [self.view insertSubview:bg belowSubview:self.tableview];
+    
     [self.tableview setTableHeaderView:[[NSBundle mainBundle]loadNibNamed:@"LoginTopView" owner:nil options:nil][0]];
     [self.tableview registerClass:NSClassFromString(@"EmptyCell") forCellReuseIdentifier:@"EmptyCell"];
     
@@ -39,10 +43,9 @@
 }
 
 - (void)J_initRacObvser{
-    [RACObserve(self.dto, success) subscribeNext:^(id x) {
+    [RACObserve(self.dto, success_code) subscribeNext:^(id x) {
         if (![x boolValue])
             return;
-        [UIAlertView bk_showAlertViewWithTitle:@"提示" message:@"登录成功" cancelButtonTitle:@"OK" otherButtonTitles:nil handler:nil];
     }];
 }
 
@@ -79,13 +82,13 @@
             height = 60;
             break;
             case 1:
-            height = 53;
+            height = 60;
             break;
             case 2:
             height = 30;
             break;
             case 3:
-            height = 93;
+            height = 50;
             break;
         default:
             break;

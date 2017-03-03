@@ -34,5 +34,5 @@ typedef void(^ServiceFail)(id reponse);
 /**
  *URL
  */
-+ (NSString *)formateServiceURL;
++ (NSString *)formateServiceURL:(NSString *)path;
 @end

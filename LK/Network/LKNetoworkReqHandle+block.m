@@ -43,8 +43,8 @@
     }];
     
     [LKNetoworkReqHandle
-                                requsetUrl:url
-                                body:parameters
+                                requsetUrl:[LKNetoworkReqHandle formateServiceURL:url]
+                                body:[LKNetoworkReqHandle formatedicKeyAndValue:parameters]
                                 requestType:type
                                 ignoreHTML:self.ignoreHTML
                                 ignoreJSON:self.ignoreReqJSON
@@ -161,11 +161,12 @@
 
 + (NSMutableDictionary *)formatedicKeyAndValue:(NSDictionary *)dicKeyAndValue{
     NSMutableDictionary *parames = [NSMutableDictionary dictionaryWithDictionary:dicKeyAndValue];
+    [parames setObject:@"" forKey:@""];
     return parames;
 }
 
-+ (NSString *)formateServiceURL{
-    return[NSString stringWithFormat:@"%@%@%@",K_SERVICE_HOST,K_SERVICE_PORT,K_SERVICE_PATH];
++ (NSString *)formateServiceURL:(NSString *)path{
+    return[NSString stringWithFormat:@"%@:%@/%@%@/",K_SERVICE_HOST,K_SERVICE_PORT,K_SERVICE_PATH,path];
 }
 
 #pragma mark-

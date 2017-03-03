@@ -10,20 +10,20 @@
 #define API_h
 
 #ifdef DEBUG
-#define K_SERVICE_PORT  @"2000/"
+#define K_SERVICE_PORT  @"5000"
 #else
-#define K_SERVICE_PORT  @"2000/"
+#define K_SERVICE_PORT  @"5000"
 #endif
 
 /**
  *  URL
  */
 #ifdef DEBUG
-#define K_SERVICE_HOST  @"http://114.55.74.245:"//开发IP
+#define K_SERVICE_HOST  @"http://121.199.5.148"//开发IP
 #else
-#define K_SERVICE_HOST  @"http://120.27.198.26:"//测试IP
+#define K_SERVICE_HOST  @"http://121.199.5.148"//测试IP
 #endif
-#define K_SERVICE_PATH  @"jiuhao-buy/"
+#define K_SERVICE_PATH  @"sd-huodai"
 
 /**
  *  RESPONSE STATUS
@@ -40,8 +40,5 @@
 #define K_SERVICE_ERROR @"NACK"// 系统错误 服务器默认code
 #define K_SERVICE_RESPONSE_ERROR @"系统错误，请重试"// 系统错误
 #define K_SERVICE_REQUEST_ERROR @"输入有误"// 参数错误
-/**
- * SERVICE API
- */
 
 #endif /* API_h */

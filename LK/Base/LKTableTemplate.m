@@ -100,6 +100,10 @@ UITableViewDataSource>
 #pragma mark -
 #pragma mark  UITableViewDataSource
 
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return [UITableViewCell new];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [self.items[section] count];
 }

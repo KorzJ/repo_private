@@ -10,15 +10,14 @@
 
 @interface D_Login : NSObject
 
-@property (nonatomic,strong) NSString   *telephone,
-                                                                    *passoword;
+@property (nonatomic,strong)
+NSString *telephone,*passoword;
 
-@property (nonatomic,assign,readwrite) BOOL   vaildTel,
-                                                                              vaildSecret,
-                                                                              vaildInput,
-                                                                              success;
+@property (nonatomic,assign,readwrite)
+BOOL vaildTel,vaildSecret,vaildInput,success_code;
 
-@property (nonatomic,strong) NSDictionary *dataSource;
+@property (nonatomic,strong)
+NSDictionary *dataSource;
 
 - (void)loginWithTelephone:(NSString *)tel
                               password:(NSString *)password;

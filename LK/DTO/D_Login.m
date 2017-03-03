@@ -49,17 +49,15 @@
 - (void)loginWithTelephone:(NSString *)tel password:(NSString *)password{
     @weakify(self);
     LKNetoworkReqHandle *req = [LKNetoworkReqHandle new];
-    [req fetchJSONByURL:@"http://114.55.74.245:2000/jiuhao-buy/buyers/authCode"
+    [req fetchJSONByURL:@"users/authCode"
                     requestType:GET
                     parameters:@{
-                              @"mobile":@"13022127999",
-                              @"type":@"1"}
+                              @"mobile":@"13022127999"}
                     success:^(id reponse) {
-                        self.success = YES;
-                        self.dataSource = reponse;
+                        @strongify(self);
+                        self.success_code = YES;
                     }
                     failure:^(id reponse) {
-                        self.success = YES;
                     }];
 }
 

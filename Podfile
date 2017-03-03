@@ -2,6 +2,9 @@
 # platform :ios, '9.0'
 
 target 'LK' do
+    
+    inhibit_all_warnings!
+
   # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
   # use_frameworks!
 
@@ -10,7 +13,7 @@ target 'LK' do
     pod "Bugtags"
     pod "ReactiveCocoa"
     pod "AFNetworking"
-    pod "Masonry"
+    pod "SDAutoLayout"
     pod "DZNEmptyDataSet"
     pod "SVProgressHUD"
     pod "BlocksKit"

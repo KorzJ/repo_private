@@ -15,33 +15,30 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入手机号码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eNK-qf-X4M">
-                        <rect key="frame" x="15" y="0.0" width="220" height="43.5"/>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入手机号码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eNK-qf-X4M">
+                        <rect key="frame" x="15" y="5" width="290" height="33.5"/>
                         <nil key="textColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </textField>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3l-SJ-IeT">
-                        <rect key="frame" x="15" y="43" width="290" height="0.5"/>
-                        <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="0.5" id="nvb-va-pn3"/>
-                        </constraints>
-                    </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="eNK-qf-X4M" secondAttribute="trailing" constant="85" id="ESh-qM-rjH"/>
+                    <constraint firstAttribute="trailing" secondItem="eNK-qf-X4M" secondAttribute="trailing" constant="15" id="ESh-qM-rjH"/>
                     <constraint firstItem="eNK-qf-X4M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="agb-Gu-FUd"/>
-                    <constraint firstItem="eNK-qf-X4M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cy9-WO-TL7"/>
-                    <constraint firstItem="c3l-SJ-IeT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="d8N-Sn-PJb"/>
-                    <constraint firstAttribute="bottom" secondItem="eNK-qf-X4M" secondAttribute="bottom" id="gxT-QN-DAb"/>
-                    <constraint firstAttribute="bottom" secondItem="c3l-SJ-IeT" secondAttribute="bottom" id="xNb-g0-I0f"/>
-                    <constraint firstAttribute="trailing" secondItem="c3l-SJ-IeT" secondAttribute="trailing" constant="15" id="xxp-Hk-iA0"/>
+                    <constraint firstItem="eNK-qf-X4M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="cy9-WO-TL7"/>
+                    <constraint firstAttribute="bottom" secondItem="eNK-qf-X4M" secondAttribute="bottom" constant="5" id="gxT-QN-DAb"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="telInput" destination="eNK-qf-X4M" id="LfI-Ny-7WA"/>
             </connections>

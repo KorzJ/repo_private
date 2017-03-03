@@ -13,8 +13,30 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     
+    self.telInput.layer.borderWidth = 1.0f;
+    self.telInput.layer.borderColor = [UIColor whiteColor].CGColor;
+
+    UIImageView *leftTelephoneview = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 20)];
+    leftTelephoneview.image = [IMG(@"telephone") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    leftTelephoneview.contentMode = UIViewContentModeScaleAspectFit;
+    self.telInput.leftView = leftTelephoneview;
+    self.telInput.leftViewMode = UITextFieldViewModeAlways;
+    
     @weakify(self);
+    [[self.telInput rac_signalForControlEvents:UIControlEventEditingDidBegin] subscribeNext:^(id x) {
+        @strongify(self);
+        self.telInput.backgroundColor = [UIColor whiteColor];
+        self.telInput.layer.borderColor = [UIColor orangeColor].CGColor;
+        self.telInput.layer.borderWidth = 1.0f;
+    }];
+    [[self.telInput rac_signalForControlEvents:UIControlEventEditingDidEnd] subscribeNext:^(id x) {
+        @strongify(self);
+        self.telInput.backgroundColor = RGB(239, 239, 239, 1);
+        self.telInput.layer.borderColor = [UIColor clearColor].CGColor;
+    }];
+
     [self.telInput setBk_shouldChangeCharactersInRangeWithReplacementStringBlock:^BOOL(UITextField *tf, NSRange rang, NSString *str) {
+        @strongify(self);
         NSString *mobile = [tf.text stringByAppendingString:str];
         
         if (mobile.length > 11) {
@@ -32,8 +54,7 @@
         }
         return YES;
     }];
-    
-    // Initialization code
+    [self.telInput becomeFirstResponder];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

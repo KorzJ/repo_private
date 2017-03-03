@@ -31,6 +31,8 @@
 		9334A0261E181BB40063A6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9334A0241E181BB40063A6A1 /* Main.storyboard */; };
 		9334A0361E181BB40063A6A1 /* LKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334A0351E181BB40063A6A1 /* LKTests.m */; };
 		9334A0411E181BB40063A6A1 /* LKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334A0401E181BB40063A6A1 /* LKUITests.m */; };
+		9390971D1E692E5F00B82AC8 /* StateTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 9390971C1E692E5F00B82AC8 /* StateTextField.m */; };
+		9390971F1E69333900B82AC8 /* Pictures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9390971E1E69333900B82AC8 /* Pictures.xcassets */; };
 		9398E06D1E1B897F0008A4C9 /* D_Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 9398E06C1E1B897F0008A4C9 /* D_Login.m */; };
 		9398E0711E1BC9960008A4C9 /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9398E0701E1BC9960008A4C9 /* NSString+Helper.m */; };
 		93D6C5CD1E181EA700FB14CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6C5C41E181EA700FB14CB /* AppDelegate.m */; };
@@ -39,7 +41,6 @@
 		93DC848D1E5AD20300711F48 /* AppConfigContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DC848C1E5AD20300711F48 /* AppConfigContext.m */; };
 		93DC84901E5AD77900711F48 /* UIButton+touch.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DC848F1E5AD77900711F48 /* UIButton+touch.m */; };
 		93DC84931E5AD79600711F48 /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 93DC84921E5AD79600711F48 /* UIView+Additions.m */; };
-		93DC84951E5BCD1A00711F48 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93DC84941E5BCD1A00711F48 /* View.xib */; };
 		F96C452D2666863E923B3F52 /* libPods-LKUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7A642E0591D094066CA67F /* libPods-LKUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -80,7 +81,7 @@
 		93052C5A1E1ABCDF00BD8D4A /* SecretCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecretCell.xib; sourceTree = "<group>"; };
 		93052C5B1E1ABCDF00BD8D4A /* SignInCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInCell.h; sourceTree = "<group>"; };
 		93052C5C1E1ABCDF00BD8D4A /* SignInCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInCell.m; sourceTree = "<group>"; };
-		93052C5D1E1ABCDF00BD8D4A /* SignInCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SignInCell.xib; path = View/SignInCell.xib; sourceTree = "<group>"; };
+		93052C5D1E1ABCDF00BD8D4A /* SignInCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInCell.xib; sourceTree = "<group>"; };
 		93052C651E1AC0BA00BD8D4A /* LoginTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginTopView.xib; sourceTree = "<group>"; };
 		93052C671E1AC1B700BD8D4A /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		930CA8871E181F80007E5B4F /* LoginVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVc.h; sourceTree = "<group>"; };
@@ -111,6 +112,9 @@
 		9334A03C1E181BB40063A6A1 /* LKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9334A0401E181BB40063A6A1 /* LKUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKUITests.m; sourceTree = "<group>"; };
 		9334A0421E181BB40063A6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9390971B1E692E5F00B82AC8 /* StateTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateTextField.h; sourceTree = "<group>"; };
+		9390971C1E692E5F00B82AC8 /* StateTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateTextField.m; sourceTree = "<group>"; };
+		9390971E1E69333900B82AC8 /* Pictures.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Pictures.xcassets; sourceTree = "<group>"; };
 		9398E06B1E1B897F0008A4C9 /* D_Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = D_Login.h; sourceTree = "<group>"; };
 		9398E06C1E1B897F0008A4C9 /* D_Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = D_Login.m; sourceTree = "<group>"; };
 		9398E06F1E1BC9960008A4C9 /* NSString+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Helper.h"; sourceTree = "<group>"; };
@@ -125,7 +129,6 @@
 		93DC848F1E5AD77900711F48 /* UIButton+touch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+touch.m"; sourceTree = "<group>"; };
 		93DC84911E5AD79600711F48 /* UIView+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Additions.h"; sourceTree = "<group>"; };
 		93DC84921E5AD79600711F48 /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
-		93DC84941E5BCD1A00711F48 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		99A413A343DC3F81739280DF /* Pods-LKUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LKUITests/Pods-LKUITests.release.xcconfig"; sourceTree = "<group>"; };
 		FD7A642E0591D094066CA67F /* libPods-LKUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LKUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -206,6 +209,7 @@
 		9334A01A1E181BB40063A6A1 /* LK */ = {
 			isa = PBXGroup;
 			children = (
+				9390971A1E692DBD00B82AC8 /* DIY */,
 				93D6C5C21E181EA700FB14CB /* Application */,
 				93D6C5C51E181EA700FB14CB /* Base */,
 				93D6C5C61E181EA700FB14CB /* Controller */,
@@ -216,7 +220,6 @@
 				93D6C5CA1E181EA700FB14CB /* Resource */,
 				93D6C5CB1E181EA700FB14CB /* Utils */,
 				93D6C5CC1E181EA700FB14CB /* View */,
-				93052C5D1E1ABCDF00BD8D4A /* SignInCell.xib */,
 				9334A0241E181BB40063A6A1 /* Main.storyboard */,
 				9334A01B1E181BB40063A6A1 /* Supporting Files */,
 			);
@@ -247,6 +250,15 @@
 				9334A0421E181BB40063A6A1 /* Info.plist */,
 			);
 			path = LKUITests;
+			sourceTree = "<group>";
+		};
+		9390971A1E692DBD00B82AC8 /* DIY */ = {
+			isa = PBXGroup;
+			children = (
+				9390971B1E692E5F00B82AC8 /* StateTextField.h */,
+				9390971C1E692E5F00B82AC8 /* StateTextField.m */,
+			);
+			path = DIY;
 			sourceTree = "<group>";
 		};
 		9398E06A1E1B89260008A4C9 /* DTO */ = {
@@ -334,6 +346,7 @@
 		93D6C5CA1E181EA700FB14CB /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				9390971E1E69333900B82AC8 /* Pictures.xcassets */,
 				930CA88A1E181FD6007E5B4F /* Assets.xcassets */,
 				93052C671E1AC1B700BD8D4A /* Media.xcassets */,
 				930CA8AD1E1A866F007E5B4F /* API.h */,
@@ -370,7 +383,7 @@
 				93052C5B1E1ABCDF00BD8D4A /* SignInCell.h */,
 				93052C5C1E1ABCDF00BD8D4A /* SignInCell.m */,
 				93052C651E1AC0BA00BD8D4A /* LoginTopView.xib */,
-				93DC84941E5BCD1A00711F48 /* View.xib */,
+				93052C5D1E1ABCDF00BD8D4A /* SignInCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -497,9 +510,9 @@
 				93D6C5CF1E181ED900FB14CB /* Info.plist in Resources */,
 				93DC848A1E5AD09E00711F48 /* applicationDevelop.plist in Resources */,
 				93052C681E1AC1B700BD8D4A /* Media.xcassets in Resources */,
+				9390971F1E69333900B82AC8 /* Pictures.xcassets in Resources */,
 				93052C5F1E1ABCDF00BD8D4A /* AccountCell.xib in Resources */,
 				9334A0261E181BB40063A6A1 /* Main.storyboard in Resources */,
-				93DC84951E5BCD1A00711F48 /* View.xib in Resources */,
 				93052C621E1ABCDF00BD8D4A /* SecretCell.xib in Resources */,
 				930CA88B1E181FD6007E5B4F /* Assets.xcassets in Resources */,
 				93052C641E1ABCDF00BD8D4A /* SignInCell.xib in Resources */,
@@ -678,6 +691,7 @@
 				930CA8B31E1A9376007E5B4F /* LKObjectUtil.m in Sources */,
 				930CA89F1E18236F007E5B4F /* LKSuperExtendVc.m in Sources */,
 				93DC84901E5AD77900711F48 /* UIButton+touch.m in Sources */,
+				9390971D1E692E5F00B82AC8 /* StateTextField.m in Sources */,
 				93052C521E1AB79300BD8D4A /* LKTableTemplate.m in Sources */,
 				930CA8A21E1A6BF1007E5B4F /* LKNetworkOffVc.m in Sources */,
 				930CA89C1E182357007E5B4F /* LKSuperVc.m in Sources */,
