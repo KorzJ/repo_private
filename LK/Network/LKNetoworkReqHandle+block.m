@@ -166,7 +166,7 @@
 }
 
 + (NSString *)formateServiceURL:(NSString *)path{
-    return[NSString stringWithFormat:@"%@:%@/%@%@/",K_SERVICE_HOST,K_SERVICE_PORT,K_SERVICE_PATH,path];
+    return[NSString stringWithFormat:@"%@:%@/%@/%@",K_SERVICE_HOST,K_SERVICE_PORT,K_SERVICE_PATH,path];
 }
 
 #pragma mark-

@@ -6,6 +6,11 @@
 //==============================
 
 #import "LoginVc.h"
+
+#import "SignInCell.h"
+#import "AccountCell.h"
+#import "SecretCell.h"
+
 @implementation LoginVc
 
 #pragma mark -
@@ -43,9 +48,11 @@
 }
 
 - (void)J_initRacObvser{
-    [RACObserve(self.dto, success_code) subscribeNext:^(id x) {
-        if (![x boolValue])
-            return;
+    @weakify(self);
+    [RACObserve(self.dto, success_login) subscribeNext:^(id x) {
+        @strongify(self);
+        if ([x boolValue])
+            [self jumpToHomeVc];
     }];
 }
 
@@ -103,6 +110,10 @@
 #pragma mark -
 #pragma mark EVENT 
 
+- (void)jumpToHomeVc{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 #pragma mark -
 #pragma mark PRIVATE METHD 
 
@@ -110,6 +121,7 @@
     @weakify(self);
     cell.textChanged
     = ^(BOOL valid, NSString *mobile){
+        @strongify(self);
         self.dto.telephone = mobile;
     };
     return cell;
@@ -118,21 +130,35 @@
 - (SignInCell *)configSignCell:(SignInCell *)cell indexPath:(NSIndexPath *)indexPath{
     @weakify(self);
     RAC(cell.loginBtn,enabled)
-    = [RACObserve(self.dto, vaildInput) map:^id(id value) {
+    = [RACObserve(self.dto, vaild_input) map:^id(id value) {
         return value;
     }];
     cell.signInClick = ^(){
-        [self.dto loginWithTelephone:@"" password:@""];
+        @strongify(self);
+        [self.dto handleServiceLoginByTel:self.dto.telephone Code:self.dto.passoword];
     };
     return cell;
 }
 
 - (SecretCell *)configSecretCell:(SecretCell *)cell indexPath:(NSIndexPath *)indexPath{
     @weakify(self);
+    RAC(cell.eye,enabled) = [RACObserve(self.dto, vaild_tel) map:^id(id value) {
+        return value;
+    }];
+    [RACObserve(self.dto, success_code) subscribeNext:^(id x) {
+        if ([x boolValue])
+            [cell.eye
+             startWithTime:59 title:@"重新获取" countDownTitle:@"s" mainColor:RGB(255, 133, 0, 1) countColor:RGB(255, 133, 0, 1)];
+    }];
     cell.textChanged
     =  ^(BOOL valid, NSString *secret){
+        @strongify(self);
         self.dto.passoword = secret;
     };
+    cell.getCodeEvent = ^(){
+        [self.dto handleServiceCodeByTel:self.dto.telephone];
+    };
+    
     return cell;
 }
 

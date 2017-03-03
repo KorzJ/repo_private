@@ -10,10 +10,6 @@
 
 #import "D_Login.h"
 
-#import "SignInCell.h"
-#import "AccountCell.h"
-#import "SecretCell.h"
-
 @interface LoginVc : LKTableTemplate{}
 @property (nonatomic,assign) BOOL vaild;
 

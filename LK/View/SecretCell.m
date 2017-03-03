@@ -13,21 +13,43 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     
+    [self initModuleStyle];
+    [self initRAC];
+}
+
+- (IBAction)eyesClick:(UIButton *)sender {
+    if (self.getCodeEvent)
+        self.getCodeEvent();
+}
+
+/**
+ *  检验密码有效性 6-16位
+ */
+- (BOOL)checkSecretValid:(NSString *)secret{
+    return secret.length>=6 && secret.length<=16;
+}
+
+//module style
+- (void)initModuleStyle{
     self.input.layer.borderWidth = 1.0f;
     self.input.layer.borderColor = [UIColor whiteColor].CGColor;
+    
+    [self.eye setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.eye setTitleColor:RGB(219, 219, 219, 1) forState:UIControlStateDisabled];
     
     UIImageView *leftTelephoneview = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 50, 20)];
     leftTelephoneview.image = [IMG(@"") imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     leftTelephoneview.contentMode = UIViewContentModeScaleAspectFit;
     self.input.leftView = leftTelephoneview;
     self.input.leftViewMode = UITextFieldViewModeAlways;
-    
+}
+
+- (void)initRAC{
     @weakify(self);
     [[self.input rac_signalForControlEvents:UIControlEventEditingDidBegin] subscribeNext:^(id x) {
         @strongify(self);
         self.input.backgroundColor = [UIColor whiteColor];
         self.input.layer.borderColor = [UIColor orangeColor].CGColor;
-        self.input.layer.borderWidth = 1.0f;
     }];
     [[self.input rac_signalForControlEvents:UIControlEventEditingDidEnd] subscribeNext:^(id x) {
         @strongify(self);
@@ -42,19 +64,6 @@
         if (self.textChanged && ![self checkSecretValid:secret]) self.textChanged(NO,secret);
         return YES;
     }];
-    
-}
-
-    
-- (IBAction)eyesClick:(UIButton *)sender {
-   self.input.secureTextEntry= sender.selected = !sender.selected ? NO : YES;
-}
-
-/**
- *  检验密码有效性 6-16位
- */
-- (BOOL)checkSecretValid:(NSString *)secret{
-    return secret.length>=6 && secret.length<=16;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

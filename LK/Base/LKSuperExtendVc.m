@@ -14,6 +14,8 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    
+    [self logicJump];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,6 +35,10 @@
 
 - (void)cmdExit{}
 
+- (void)logicJump{
+    if ([LoginUserInfo sharedLoginUserInfo].memberAccessToken.length == 0)
+        [self presentViewController:[NSClassFromString(@"LoginVc") new] animated:YES completion:nil];
+}
 #pragma mark -
 #pragma mark SERVICE
 

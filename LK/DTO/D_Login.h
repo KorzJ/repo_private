@@ -14,11 +14,12 @@
 NSString *telephone,*passoword;
 
 @property (nonatomic,assign,readwrite)
-BOOL vaildTel,vaildSecret,vaildInput,success_code;
+BOOL vaild_tel,vaild_secret,vaild_input,success_code,success_login;
 
 @property (nonatomic,strong)
 NSDictionary *dataSource;
 
-- (void)loginWithTelephone:(NSString *)tel
-                              password:(NSString *)password;
+- (void)handleServiceCodeByTel:(NSString *)telephone;
+- (void)handleServiceLoginByTel:(NSString *)telephone Code:(NSString *)code;
+
 @end

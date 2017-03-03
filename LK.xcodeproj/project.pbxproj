@@ -19,7 +19,6 @@
 		93052C641E1ABCDF00BD8D4A /* SignInCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93052C5D1E1ABCDF00BD8D4A /* SignInCell.xib */; };
 		93052C661E1AC0BA00BD8D4A /* LoginTopView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93052C651E1AC0BA00BD8D4A /* LoginTopView.xib */; };
 		93052C681E1AC1B700BD8D4A /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93052C671E1AC1B700BD8D4A /* Media.xcassets */; };
-		930CA8891E181F80007E5B4F /* LoginVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA8881E181F80007E5B4F /* LoginVc.m */; };
 		930CA88B1E181FD6007E5B4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 930CA88A1E181FD6007E5B4F /* Assets.xcassets */; };
 		930CA89C1E182357007E5B4F /* LKSuperVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA89B1E182357007E5B4F /* LKSuperVc.m */; };
 		930CA89F1E18236F007E5B4F /* LKSuperExtendVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA89E1E18236F007E5B4F /* LKSuperExtendVc.m */; };
@@ -33,6 +32,15 @@
 		9334A0411E181BB40063A6A1 /* LKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334A0401E181BB40063A6A1 /* LKUITests.m */; };
 		9390971D1E692E5F00B82AC8 /* StateTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 9390971C1E692E5F00B82AC8 /* StateTextField.m */; };
 		9390971F1E69333900B82AC8 /* Pictures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9390971E1E69333900B82AC8 /* Pictures.xcassets */; };
+		939097251E69636700B82AC8 /* LoginVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 939097241E69636700B82AC8 /* LoginVc.m */; };
+		939097281E69640700B82AC8 /* HomeVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 939097271E69640700B82AC8 /* HomeVc.m */; };
+		939097301E6967B200B82AC8 /* FindVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 9390972F1E6967B200B82AC8 /* FindVc.m */; };
+		939097331E6967BD00B82AC8 /* BBSVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 939097321E6967BD00B82AC8 /* BBSVc.m */; };
+		939097361E6967C900B82AC8 /* IssueVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 939097351E6967C900B82AC8 /* IssueVc.m */; };
+		939097391E6967D600B82AC8 /* POIVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 939097381E6967D600B82AC8 /* POIVc.m */; };
+		9390973C1E6967E200B82AC8 /* PersonVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 9390973B1E6967E200B82AC8 /* PersonVc.m */; };
+		939097401E6968F900B82AC8 /* LoginUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9390973F1E6968F900B82AC8 /* LoginUserInfo.m */; };
+		939097431E6972B800B82AC8 /* LKNavVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 939097421E6972B800B82AC8 /* LKNavVc.m */; };
 		9398E06D1E1B897F0008A4C9 /* D_Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 9398E06C1E1B897F0008A4C9 /* D_Login.m */; };
 		9398E0711E1BC9960008A4C9 /* NSString+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9398E0701E1BC9960008A4C9 /* NSString+Helper.m */; };
 		93D6C5CD1E181EA700FB14CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93D6C5C41E181EA700FB14CB /* AppDelegate.m */; };
@@ -84,8 +92,6 @@
 		93052C5D1E1ABCDF00BD8D4A /* SignInCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SignInCell.xib; sourceTree = "<group>"; };
 		93052C651E1AC0BA00BD8D4A /* LoginTopView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginTopView.xib; sourceTree = "<group>"; };
 		93052C671E1AC1B700BD8D4A /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		930CA8871E181F80007E5B4F /* LoginVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVc.h; sourceTree = "<group>"; };
-		930CA8881E181F80007E5B4F /* LoginVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVc.m; sourceTree = "<group>"; };
 		930CA88A1E181FD6007E5B4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		930CA88D1E1820F9007E5B4F /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../Application/PrefixHeader.pch; sourceTree = "<group>"; };
 		930CA89A1E182357007E5B4F /* LKSuperVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKSuperVc.h; sourceTree = "<group>"; };
@@ -115,6 +121,24 @@
 		9390971B1E692E5F00B82AC8 /* StateTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateTextField.h; sourceTree = "<group>"; };
 		9390971C1E692E5F00B82AC8 /* StateTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateTextField.m; sourceTree = "<group>"; };
 		9390971E1E69333900B82AC8 /* Pictures.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Pictures.xcassets; sourceTree = "<group>"; };
+		939097231E69636700B82AC8 /* LoginVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVc.h; sourceTree = "<group>"; };
+		939097241E69636700B82AC8 /* LoginVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVc.m; sourceTree = "<group>"; };
+		939097261E69640700B82AC8 /* HomeVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVc.h; sourceTree = "<group>"; };
+		939097271E69640700B82AC8 /* HomeVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVc.m; sourceTree = "<group>"; };
+		9390972E1E6967B200B82AC8 /* FindVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindVc.h; sourceTree = "<group>"; };
+		9390972F1E6967B200B82AC8 /* FindVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindVc.m; sourceTree = "<group>"; };
+		939097311E6967BD00B82AC8 /* BBSVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBSVc.h; sourceTree = "<group>"; };
+		939097321E6967BD00B82AC8 /* BBSVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBSVc.m; sourceTree = "<group>"; };
+		939097341E6967C900B82AC8 /* IssueVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueVc.h; sourceTree = "<group>"; };
+		939097351E6967C900B82AC8 /* IssueVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueVc.m; sourceTree = "<group>"; };
+		939097371E6967D600B82AC8 /* POIVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = POIVc.h; sourceTree = "<group>"; };
+		939097381E6967D600B82AC8 /* POIVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = POIVc.m; sourceTree = "<group>"; };
+		9390973A1E6967E200B82AC8 /* PersonVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonVc.h; sourceTree = "<group>"; };
+		9390973B1E6967E200B82AC8 /* PersonVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonVc.m; sourceTree = "<group>"; };
+		9390973E1E6968F900B82AC8 /* LoginUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginUserInfo.h; sourceTree = "<group>"; };
+		9390973F1E6968F900B82AC8 /* LoginUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginUserInfo.m; sourceTree = "<group>"; };
+		939097411E6972B800B82AC8 /* LKNavVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKNavVc.h; sourceTree = "<group>"; };
+		939097421E6972B800B82AC8 /* LKNavVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKNavVc.m; sourceTree = "<group>"; };
 		9398E06B1E1B897F0008A4C9 /* D_Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = D_Login.h; sourceTree = "<group>"; };
 		9398E06C1E1B897F0008A4C9 /* D_Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = D_Login.m; sourceTree = "<group>"; };
 		9398E06F1E1BC9960008A4C9 /* NSString+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Helper.h"; sourceTree = "<group>"; };
@@ -209,6 +233,7 @@
 		9334A01A1E181BB40063A6A1 /* LK */ = {
 			isa = PBXGroup;
 			children = (
+				9390973D1E6968B500B82AC8 /* Storage */,
 				9390971A1E692DBD00B82AC8 /* DIY */,
 				93D6C5C21E181EA700FB14CB /* Application */,
 				93D6C5C51E181EA700FB14CB /* Base */,
@@ -261,6 +286,91 @@
 			path = DIY;
 			sourceTree = "<group>";
 		};
+		939097201E69634A00B82AC8 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		939097211E69634A00B82AC8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				939097261E69640700B82AC8 /* HomeVc.h */,
+				939097271E69640700B82AC8 /* HomeVc.m */,
+				939097291E6964CC00B82AC8 /* Person */,
+				9390972A1E6964CC00B82AC8 /* POI */,
+				9390972B1E6964CC00B82AC8 /* Issue */,
+				9390972C1E6964CC00B82AC8 /* BBS */,
+				9390972D1E6964CC00B82AC8 /* FindVc */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		939097221E69634A00B82AC8 /* Entrance */ = {
+			isa = PBXGroup;
+			children = (
+				939097231E69636700B82AC8 /* LoginVc.h */,
+				939097241E69636700B82AC8 /* LoginVc.m */,
+			);
+			path = Entrance;
+			sourceTree = "<group>";
+		};
+		939097291E6964CC00B82AC8 /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				9390973A1E6967E200B82AC8 /* PersonVc.h */,
+				9390973B1E6967E200B82AC8 /* PersonVc.m */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		9390972A1E6964CC00B82AC8 /* POI */ = {
+			isa = PBXGroup;
+			children = (
+				939097371E6967D600B82AC8 /* POIVc.h */,
+				939097381E6967D600B82AC8 /* POIVc.m */,
+			);
+			path = POI;
+			sourceTree = "<group>";
+		};
+		9390972B1E6964CC00B82AC8 /* Issue */ = {
+			isa = PBXGroup;
+			children = (
+				939097341E6967C900B82AC8 /* IssueVc.h */,
+				939097351E6967C900B82AC8 /* IssueVc.m */,
+			);
+			name = Issue;
+			path = issue;
+			sourceTree = "<group>";
+		};
+		9390972C1E6964CC00B82AC8 /* BBS */ = {
+			isa = PBXGroup;
+			children = (
+				939097311E6967BD00B82AC8 /* BBSVc.h */,
+				939097321E6967BD00B82AC8 /* BBSVc.m */,
+			);
+			path = BBS;
+			sourceTree = "<group>";
+		};
+		9390972D1E6964CC00B82AC8 /* FindVc */ = {
+			isa = PBXGroup;
+			children = (
+				9390972E1E6967B200B82AC8 /* FindVc.h */,
+				9390972F1E6967B200B82AC8 /* FindVc.m */,
+			);
+			path = FindVc;
+			sourceTree = "<group>";
+		};
+		9390973D1E6968B500B82AC8 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				9390973E1E6968F900B82AC8 /* LoginUserInfo.h */,
+				9390973F1E6968F900B82AC8 /* LoginUserInfo.m */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
 		9398E06A1E1B89260008A4C9 /* DTO */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +407,8 @@
 		93D6C5C51E181EA700FB14CB /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				939097411E6972B800B82AC8 /* LKNavVc.h */,
+				939097421E6972B800B82AC8 /* LKNavVc.m */,
 				930CA89A1E182357007E5B4F /* LKSuperVc.h */,
 				930CA89B1E182357007E5B4F /* LKSuperVc.m */,
 				930CA8A31E1A6C5D007E5B4F /* LKSuperExtendVc.h */,
@@ -312,8 +424,9 @@
 		93D6C5C61E181EA700FB14CB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				930CA8871E181F80007E5B4F /* LoginVc.h */,
-				930CA8881E181F80007E5B4F /* LoginVc.m */,
+				939097201E69634A00B82AC8 /* Other */,
+				939097211E69634A00B82AC8 /* Home */,
+				939097221E69634A00B82AC8 /* Entrance */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -679,25 +792,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				930CA8A81E1A786B007E5B4F /* LKNetoworkReqHandle+block.m in Sources */,
+				939097301E6967B200B82AC8 /* FindVc.m in Sources */,
 				93052C631E1ABCDF00BD8D4A /* SignInCell.m in Sources */,
+				939097251E69636700B82AC8 /* LoginVc.m in Sources */,
 				93D6C5CD1E181EA700FB14CB /* AppDelegate.m in Sources */,
-				930CA8891E181F80007E5B4F /* LoginVc.m in Sources */,
 				93052C5E1E1ABCDF00BD8D4A /* AccountCell.m in Sources */,
+				939097361E6967C900B82AC8 /* IssueVc.m in Sources */,
 				9334A01D1E181BB40063A6A1 /* main.m in Sources */,
 				9398E06D1E1B897F0008A4C9 /* D_Login.m in Sources */,
 				93DC84931E5AD79600711F48 /* UIView+Additions.m in Sources */,
 				93052C611E1ABCDF00BD8D4A /* SecretCell.m in Sources */,
+				9390973C1E6967E200B82AC8 /* PersonVc.m in Sources */,
 				93052C601E1ABCDF00BD8D4A /* EmptyCell.m in Sources */,
+				939097431E6972B800B82AC8 /* LKNavVc.m in Sources */,
 				930CA8B31E1A9376007E5B4F /* LKObjectUtil.m in Sources */,
+				939097331E6967BD00B82AC8 /* BBSVc.m in Sources */,
 				930CA89F1E18236F007E5B4F /* LKSuperExtendVc.m in Sources */,
 				93DC84901E5AD77900711F48 /* UIButton+touch.m in Sources */,
+				939097281E69640700B82AC8 /* HomeVc.m in Sources */,
 				9390971D1E692E5F00B82AC8 /* StateTextField.m in Sources */,
 				93052C521E1AB79300BD8D4A /* LKTableTemplate.m in Sources */,
 				930CA8A21E1A6BF1007E5B4F /* LKNetworkOffVc.m in Sources */,
+				939097401E6968F900B82AC8 /* LoginUserInfo.m in Sources */,
 				930CA89C1E182357007E5B4F /* LKSuperVc.m in Sources */,
 				930CA8AC1E1A7B20007E5B4F /* LKNetoworkReqHandle.m in Sources */,
 				9398E0711E1BC9960008A4C9 /* NSString+Helper.m in Sources */,
 				93DC848D1E5AD20300711F48 /* AppConfigContext.m in Sources */,
+				939097391E6967D600B82AC8 /* POIVc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

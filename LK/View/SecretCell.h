@@ -14,4 +14,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *eye;
 
 @property (nonatomic,copy) void(^textChanged)(BOOL valid,NSString *secret);
+@property (nonatomic,copy) void(^getCodeEvent)();
+
 @end

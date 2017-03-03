@@ -34,9 +34,9 @@
 
 - (void)J_initUI
 {
-    LoginVc *loginVc = [LoginVc new];
+    HomeVc *homeVc = [HomeVc sharedManger];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:loginVc];
+    self.window.rootViewController = [[LKNavVc alloc] initWithRootViewController:homeVc];
     [self.window makeKeyAndVisible];
 }
 

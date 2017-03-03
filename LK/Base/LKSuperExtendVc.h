@@ -10,8 +10,8 @@
 #import "LKSuperVc.h"
 
 @interface LKSuperExtendVc :LKSuperVc
-@property (nonatomic,assign) BOOL bNetworkYes,
-                                                             ignoreLogin;
+@property (nonatomic,assign)
+BOOL bNetworkYes,ignoreLogin;
 
 - (void)cmdExit;
 @end

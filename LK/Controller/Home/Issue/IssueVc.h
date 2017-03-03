@@ -1,13 +1,13 @@
 //
-//  MenuVc.h
+//  IssueVc.h
 //  LK
 //
-//  Created by KorzJ on 2017/1/16.
+//  Created by KorzJ on 2017/3/3.
 //  Copyright © 2017年 KorzJ. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface MenuVc : UIViewController
+@interface IssueVc : LKSuperExtendVc
 
 @end
