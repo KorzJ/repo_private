@@ -15,6 +15,8 @@
 #define RGB(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
 #define RGBFromHexadecimal(value) [UIColor colorWithRed:((float)((value & 0xFF0000) >> 16))/255.0 green:((float)((value & 0xFF00) >> 8))/255.0 blue:((float)(value & 0xFF))/255.0 alpha:1.0]
 
+#define COLORE_SYSTEM [UIColor colorWithRed:250/255.0 green:116/255.0 blue:10/255.0 alpha:(1)]
+
 //SCREEN
 #define K_SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 #define K_SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height

@@ -1,14 +1,16 @@
 //
-//  StateTextField.m
-//  LK
+//  ScrollImageView.m
+//  Ios_HYCom_Demo
 //
-//  Created by KorzJ on 2017/3/3.
-//  Copyright © 2017年 KorzJ. All rights reserved.
+//  Created by yixiaoshan on 16/3/2.
+//  Copyright © 2016年 BourneYao. All rights reserved.
 //
 
-#import "StateTextField.h"
+#import "ScrollImageView.h"
 
-@implementation StateTextField
+@implementation ScrollImageView
+
+
 
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -17,7 +19,5 @@
     // Drawing code
 }
 */
-
-
 
 @end

@@ -26,11 +26,16 @@
 		930CA8A81E1A786B007E5B4F /* LKNetoworkReqHandle+block.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA8A51E1A786B007E5B4F /* LKNetoworkReqHandle+block.m */; };
 		930CA8AC1E1A7B20007E5B4F /* LKNetoworkReqHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA8AB1E1A7B20007E5B4F /* LKNetoworkReqHandle.m */; };
 		930CA8B31E1A9376007E5B4F /* LKObjectUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA8B21E1A9376007E5B4F /* LKObjectUtil.m */; };
+		932FAFFB1E6A855300A12E4E /* DIYImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 932FAFF81E6A855300A12E4E /* DIYImageScrollView.m */; };
+		932FAFFC1E6A855300A12E4E /* ScrollImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 932FAFFA1E6A855300A12E4E /* ScrollImageView.m */; };
+		932FB0001E6A861E00A12E4E /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 932FAFFE1E6A861E00A12E4E /* TableViewCell.m */; };
+		932FB0011E6A861E00A12E4E /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 932FAFFF1E6A861E00A12E4E /* TableViewCell.xib */; };
+		932FB0041E6A8A4F00A12E4E /* D_Find.m in Sources */ = {isa = PBXBuildFile; fileRef = 932FB0031E6A8A4F00A12E4E /* D_Find.m */; };
+		932FB0071E6A8E1A00A12E4E /* NearMsgs.m in Sources */ = {isa = PBXBuildFile; fileRef = 932FB0061E6A8E1A00A12E4E /* NearMsgs.m */; };
 		9334A01D1E181BB40063A6A1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334A01C1E181BB40063A6A1 /* main.m */; };
 		9334A0261E181BB40063A6A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9334A0241E181BB40063A6A1 /* Main.storyboard */; };
 		9334A0361E181BB40063A6A1 /* LKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334A0351E181BB40063A6A1 /* LKTests.m */; };
 		9334A0411E181BB40063A6A1 /* LKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9334A0401E181BB40063A6A1 /* LKUITests.m */; };
-		9390971D1E692E5F00B82AC8 /* StateTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 9390971C1E692E5F00B82AC8 /* StateTextField.m */; };
 		9390971F1E69333900B82AC8 /* Pictures.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9390971E1E69333900B82AC8 /* Pictures.xcassets */; };
 		939097251E69636700B82AC8 /* LoginVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 939097241E69636700B82AC8 /* LoginVc.m */; };
 		939097281E69640700B82AC8 /* HomeVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 939097271E69640700B82AC8 /* HomeVc.m */; };
@@ -109,6 +114,17 @@
 		930CA8B01E1A8CBC007E5B4F /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		930CA8B11E1A9376007E5B4F /* LKObjectUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKObjectUtil.h; sourceTree = "<group>"; };
 		930CA8B21E1A9376007E5B4F /* LKObjectUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKObjectUtil.m; sourceTree = "<group>"; };
+		932FAFF71E6A855300A12E4E /* DIYImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYImageScrollView.h; sourceTree = "<group>"; };
+		932FAFF81E6A855300A12E4E /* DIYImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYImageScrollView.m; sourceTree = "<group>"; };
+		932FAFF91E6A855300A12E4E /* ScrollImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollImageView.h; sourceTree = "<group>"; };
+		932FAFFA1E6A855300A12E4E /* ScrollImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollImageView.m; sourceTree = "<group>"; };
+		932FAFFD1E6A861E00A12E4E /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		932FAFFE1E6A861E00A12E4E /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		932FAFFF1E6A861E00A12E4E /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		932FB0021E6A8A4F00A12E4E /* D_Find.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = D_Find.h; sourceTree = "<group>"; };
+		932FB0031E6A8A4F00A12E4E /* D_Find.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = D_Find.m; sourceTree = "<group>"; };
+		932FB0051E6A8E1A00A12E4E /* NearMsgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NearMsgs.h; path = LK/DTO/NearMsgs.h; sourceTree = SOURCE_ROOT; };
+		932FB0061E6A8E1A00A12E4E /* NearMsgs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NearMsgs.m; path = LK/DTO/NearMsgs.m; sourceTree = SOURCE_ROOT; };
 		9334A0181E181BB40063A6A1 /* 私人订制.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "私人订制.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9334A01C1E181BB40063A6A1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9334A0251E181BB40063A6A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,8 +134,6 @@
 		9334A03C1E181BB40063A6A1 /* LKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9334A0401E181BB40063A6A1 /* LKUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKUITests.m; sourceTree = "<group>"; };
 		9334A0421E181BB40063A6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9390971B1E692E5F00B82AC8 /* StateTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateTextField.h; sourceTree = "<group>"; };
-		9390971C1E692E5F00B82AC8 /* StateTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateTextField.m; sourceTree = "<group>"; };
 		9390971E1E69333900B82AC8 /* Pictures.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Pictures.xcassets; sourceTree = "<group>"; };
 		939097231E69636700B82AC8 /* LoginVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVc.h; sourceTree = "<group>"; };
 		939097241E69636700B82AC8 /* LoginVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVc.m; sourceTree = "<group>"; };
@@ -208,6 +222,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		932FAFF61E6A855300A12E4E /* wheel */ = {
+			isa = PBXGroup;
+			children = (
+				932FAFF71E6A855300A12E4E /* DIYImageScrollView.h */,
+				932FAFF81E6A855300A12E4E /* DIYImageScrollView.m */,
+				932FAFF91E6A855300A12E4E /* ScrollImageView.h */,
+				932FAFFA1E6A855300A12E4E /* ScrollImageView.m */,
+			);
+			path = wheel;
+			sourceTree = "<group>";
+		};
 		9334A00F1E181BB30063A6A1 = {
 			isa = PBXGroup;
 			children = (
@@ -280,8 +305,7 @@
 		9390971A1E692DBD00B82AC8 /* DIY */ = {
 			isa = PBXGroup;
 			children = (
-				9390971B1E692E5F00B82AC8 /* StateTextField.h */,
-				9390971C1E692E5F00B82AC8 /* StateTextField.m */,
+				932FAFF61E6A855300A12E4E /* wheel */,
 			);
 			path = DIY;
 			sourceTree = "<group>";
@@ -376,6 +400,8 @@
 			children = (
 				9398E06B1E1B897F0008A4C9 /* D_Login.h */,
 				9398E06C1E1B897F0008A4C9 /* D_Login.m */,
+				932FB0021E6A8A4F00A12E4E /* D_Find.h */,
+				932FB0031E6A8A4F00A12E4E /* D_Find.m */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -441,6 +467,8 @@
 		93D6C5C81E181EA700FB14CB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				932FB0051E6A8E1A00A12E4E /* NearMsgs.h */,
+				932FB0061E6A8E1A00A12E4E /* NearMsgs.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -497,6 +525,9 @@
 				93052C5C1E1ABCDF00BD8D4A /* SignInCell.m */,
 				93052C651E1AC0BA00BD8D4A /* LoginTopView.xib */,
 				93052C5D1E1ABCDF00BD8D4A /* SignInCell.xib */,
+				932FAFFD1E6A861E00A12E4E /* TableViewCell.h */,
+				932FAFFE1E6A861E00A12E4E /* TableViewCell.m */,
+				932FAFFF1E6A861E00A12E4E /* TableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -620,6 +651,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93052C661E1AC0BA00BD8D4A /* LoginTopView.xib in Resources */,
+				932FB0011E6A861E00A12E4E /* TableViewCell.xib in Resources */,
 				93D6C5CF1E181ED900FB14CB /* Info.plist in Resources */,
 				93DC848A1E5AD09E00711F48 /* applicationDevelop.plist in Resources */,
 				93052C681E1AC1B700BD8D4A /* Media.xcassets in Resources */,
@@ -795,13 +827,18 @@
 				939097301E6967B200B82AC8 /* FindVc.m in Sources */,
 				93052C631E1ABCDF00BD8D4A /* SignInCell.m in Sources */,
 				939097251E69636700B82AC8 /* LoginVc.m in Sources */,
+				932FB0041E6A8A4F00A12E4E /* D_Find.m in Sources */,
+				932FB0071E6A8E1A00A12E4E /* NearMsgs.m in Sources */,
 				93D6C5CD1E181EA700FB14CB /* AppDelegate.m in Sources */,
 				93052C5E1E1ABCDF00BD8D4A /* AccountCell.m in Sources */,
 				939097361E6967C900B82AC8 /* IssueVc.m in Sources */,
 				9334A01D1E181BB40063A6A1 /* main.m in Sources */,
+				932FAFFB1E6A855300A12E4E /* DIYImageScrollView.m in Sources */,
 				9398E06D1E1B897F0008A4C9 /* D_Login.m in Sources */,
 				93DC84931E5AD79600711F48 /* UIView+Additions.m in Sources */,
+				932FAFFC1E6A855300A12E4E /* ScrollImageView.m in Sources */,
 				93052C611E1ABCDF00BD8D4A /* SecretCell.m in Sources */,
+				932FB0001E6A861E00A12E4E /* TableViewCell.m in Sources */,
 				9390973C1E6967E200B82AC8 /* PersonVc.m in Sources */,
 				93052C601E1ABCDF00BD8D4A /* EmptyCell.m in Sources */,
 				939097431E6972B800B82AC8 /* LKNavVc.m in Sources */,
@@ -810,7 +847,6 @@
 				930CA89F1E18236F007E5B4F /* LKSuperExtendVc.m in Sources */,
 				93DC84901E5AD77900711F48 /* UIButton+touch.m in Sources */,
 				939097281E69640700B82AC8 /* HomeVc.m in Sources */,
-				9390971D1E692E5F00B82AC8 /* StateTextField.m in Sources */,
 				93052C521E1AB79300BD8D4A /* LKTableTemplate.m in Sources */,
 				930CA8A21E1A6BF1007E5B4F /* LKNetworkOffVc.m in Sources */,
 				939097401E6968F900B82AC8 /* LoginUserInfo.m in Sources */,

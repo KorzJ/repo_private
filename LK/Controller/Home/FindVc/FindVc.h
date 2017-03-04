@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "D_Find.h"
 
-@interface FindVc : LKSuperExtendVc
+#import "DIYImageScrollView.h"
 
+@interface FindVc : LKTableTemplate
+@property (nonatomic,strong) D_Find *dto;
 @end

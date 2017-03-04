@@ -107,12 +107,12 @@ NSMutableArray *arryVC,*controllers;
     
     self.delegate = self;
     self.viewControllers = self.arryVC;
-//    self.tabBar.tintColor = COLORE_SYSTEM;
+    self.tabBar.tintColor = COLORE_SYSTEM;
     self.tabBar.backgroundColor = RGB(255, 255, 255, 1);
     self.tabBar.translucent  = NO;
     self.selectedIndex  = 0;
     
-    [self.tabBar setShadowImage:[UIImage new]];
+    [self.tabBar setShadowImage:IMG(@"linex")];
     [self.tabBar setBackgroundImage:[[UIImage alloc]init]];
     [self tabBarController:self didSelectViewController:self.arryVC[0]];
     
@@ -157,6 +157,17 @@ NSMutableArray *arryVC,*controllers;
     [[NSNotificationCenter defaultCenter] postNotificationName:@"appearNoCertif" object:nil];
 }
 
+-(UIImage*) createImageWithColor:(UIColor*) color
+{
+    CGRect rect=CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return theImage;
+}
 
 /*
 #pragma mark - Navigation
