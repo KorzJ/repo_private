@@ -27,6 +27,7 @@
 
 #import "LKNetoworkReqHandle+block.h"
 
+#import <UIImageView+WebCache.h>
 #import <SVProgressHUD.h>
 #import <ReactiveCocoa.h>
 #import <BlocksKit.h>
@@ -34,6 +35,7 @@
 #import <UIScrollView+EmptyDataSet.h>
 #import <MJRefresh.h>
 #import <IQKeyboardManager.h>
+#import <YYModel.h>
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 

@@ -73,9 +73,10 @@
     CGFloat gap  = 5.0f;
     
     self.name.text = self.msg.name;
-//    [self.ava sd_setImageWithURL:[NSURL URLWithString:[self.msg.avatar stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]] placeholderImage:IMG(@"default_ava")];
+    [self.ava sd_setImageWithURL:[NSURL URLWithString:self.msg.avatar] placeholderImage:IMG(@"default_ava")];
     if (self.msg.distance){
         [self.distance setTitle:[@" " stringByAppendingString:self.msg.distance] forState:UIControlStateNormal];
+        self.distance.frame = (CGRect){self.distance.x,self.distance.y,100,self.distance.height};
     }else{
         self.distance.hidden = YES;
     }

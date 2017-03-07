@@ -13,6 +13,7 @@
 @class POIVc;
 @class PersonVc;
 @class BBSVc;
+@class DemoVC9;
 
 @interface HomeVc ()<UITabBarControllerDelegate>
 @property (nonatomic, strong)
@@ -57,7 +58,7 @@ NSMutableArray *arryVC,*controllers;
                           @"title":@"找",
                           @"selectImage":@"finding",
                           @"unselectImage":@"find_unselect"},
-                        @{@"viewController":@"BBSVc",
+                        @{@"viewController":@"DemoVC9",
                           @"title":@"知道",
                           @"selectImage":@"know_select",
                           @"unselectImage":@"know_unselect"},

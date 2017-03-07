@@ -8,6 +8,7 @@
 
 #import "FindVc.h"
 
+#import "TableViewCell.h"
 @interface FindVc ()<DIYImageScrollView>
 @property (nonatomic,strong) DIYImageScrollView *imgScroll;
 @end
@@ -21,8 +22,10 @@
     [super viewDidLoad];
     
     [self.dto handleServiceGetBanner];
+    [self.dto handleServiceGetPOIListByLocation:nil];
     
     [self J_initLayout];
+    
     [self rac_addObserver];
 }
 
@@ -30,6 +33,15 @@
 #pragma mark INIT
 
 - (void)J_initLayout{
+
+    //nav
+    self.sNavTitle.text = @"找";
+    
+    [self.sNavLeft setImage:IMG(@"find") forState:UIControlStateNormal];
+    [self.sNavRight setImage:IMG(@"find_map") forState:UIControlStateNormal];
+    
+    self.sNavRight.backgroundColor = [UIColor redColor];
+    self.sNavLeft.backgroundColor = [UIColor redColor];
 
     //whell placehold
     self.tableview.tableHeaderView = self.imgScroll;
@@ -47,6 +59,32 @@
         @strongify(self);
         self.tableview.tableHeaderView = self.imgScroll;
     }];
+    
+    [[RACObserve(self.dto, dataSource) filter:^BOOL(id value) {
+        @strongify(self);
+        return self.dto.dataSource.count > 0 ? YES : NO;
+    }] subscribeNext:^(id x) {
+        @strongify(self);
+        [self.items  addObject:self.dto.dataSource];
+        [self.tableview reloadData];
+    }];
+}
+
+#pragma mark -
+#pragma mark UITableViewDataSource
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    TableViewCell *cell = [[NSBundle mainBundle] loadNibNamed:@"TableViewCell" owner:self options:nil][0];
+    cell.msg = self.items[indexPath.section][indexPath.row];
+    return cell;
+}
+
+#pragma mark -
+#pragma mark UITableViewDelegate
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 160.f;
 }
 
 #pragma mark -

@@ -10,7 +10,10 @@
 
 @interface D_Find : NSObject
 
-@property (nonatomic,strong)NSMutableArray *banners;
+@property (nonatomic,strong)
+NSMutableArray *banners,*dataSource;
 
 - (void)handleServiceGetBanner;
+- (void)handleServiceGetPOIListByLocation:(CLLocationCoordinate2D *)coor;
+
 @end

@@ -60,7 +60,11 @@ UITableViewDataSource>
     tableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height-64) style:UITableViewStyleGrouped];
     
     for (NSString *cell in self.numCell) {
-        [tableview registerNib:[UINib nibWithNibName:cell bundle:nil] forCellReuseIdentifier:cell];
+        if ([UINib nibWithNibName:cell bundle:nil]) {
+            [tableview registerNib:[UINib nibWithNibName:cell bundle:nil] forCellReuseIdentifier:cell];
+        }else{
+            [tableview registerClass:NSClassFromString(cell) forCellReuseIdentifier:cell];
+        }
     }
     
     [tableview setTableFooterView:[UIView new]];
@@ -82,14 +86,14 @@ UITableViewDataSource>
  */
 - (void)setupRefresh
 {
-    if (!self.ignorePullHeader && self.tableview.mj_header) {
+    if (!self.ignorePullHeader && !self.tableview.mj_header) {
        MJRefreshNormalHeader *head = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRereshing)];
         head.lastUpdatedTimeLabel.hidden = YES;
         head.stateLabel.font = FONT(13.0f);
         head.stateLabel.hidden = YES;
         self.tableview.mj_header  = head;;
     }
-    if (self.ignorePushFooter && self.tableview.mj_footer) {
+    if (self.ignorePushFooter && !self.tableview.mj_footer) {
         MJRefreshBackNormalFooter *footer =  [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerRereshing)];
         footer.stateLabel.hidden = YES;
         footer.automaticallyHidden = YES;
@@ -137,10 +141,6 @@ UITableViewDataSource>
 
 - (void)emptyDataSetDidTapButton:(UIScrollView *)scrollView{
     [self.tableview.mj_header beginRefreshing];
-}
-
-- (BOOL)emptyDataSetShouldAllowTouch:(UIScrollView *)scrollView{
-    return YES;
 }
 
 - (BOOL)emptyDataSetShouldAllowScroll:(UIScrollView *)scrollView{

@@ -34,6 +34,5 @@
 
 @property (nonatomic) NSString  *longitude,
                                                        *latitude;
-- (void)insertModel:(NSDictionary *)item;
 
 @end

@@ -14,6 +14,10 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    
+    if (!self.navigationController.navigationBar.hidden)self.navigationController.navigationBar.hidden = YES;
+    if (!self.navigationController.navigationBarHidden)self.navigationController.navigationBarHidden = YES;
+
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,14 +30,13 @@
 #pragma mark INIT
 
 - (void)J_initSupNavBar{
-    if (!self.navigationController.navigationBar.hidden)self.navigationController.navigationBar.hidden = YES;
 }
 - (void)J_initSupUI{
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.sNavView];
-    [self.view addSubview:self.sNavLeft];
-    [self.view addSubview:self.sNavTitle];
-    [self.view addSubview:self.sNavRight];
+    [self.sNavView addSubview:self.sNavLeft];
+    [self.sNavView addSubview:self.sNavTitle];
+    [self.sNavView addSubview:self.sNavRight];
 }
 
 #pragma mark -
@@ -67,7 +70,7 @@
     _sNavTitle = [[UILabel alloc] initWithFrame:CGRectMake(60, 24, [UIScreen mainScreen].bounds.size.width-120, 30)];
     _sNavTitle.textAlignment = NSTextAlignmentCenter;
     _sNavTitle.font = [UIFont systemFontOfSize:18.0f];
-    _sNavTitle.textColor     = [UIColor blackColor];
+    _sNavTitle.textColor = [UIColor blackColor];
     return _sNavTitle;
 }
 - (UIButton *)sNavLeft{

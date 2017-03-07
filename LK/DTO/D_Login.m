@@ -82,7 +82,4 @@
 #pragma mark -
 #pragma mark GET
 
-- (NSDictionary *)dataSource{
-    return _dataSource ? _dataSource : [NSDictionary dictionary];
-}
 @end
