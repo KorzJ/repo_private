@@ -7,21 +7,106 @@
 //
 
 #import "PersonVc.h"
+#import "TipCell.h"
 
+#import "TableViewCell.h"
 @interface PersonVc ()
-
+@property (nonatomic,strong) DIYImageScrollView *imgScroll;
 @end
 
 @implementation PersonVc
 
+#pragma mark -
+#pragma mark LIFE CYCLE
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self.dto handleServiceGetBanner];
+    [self.dto handleServiceGetPOIListByLocation:nil];
+    
+    [self J_initLayout];
+    
+    [self rac_addObserver];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark -
+#pragma mark INIT
+
+- (void)J_initLayout{
+    
+    //nav
+    self.sNavTitle.text = @"找";
+
+    //whell placehold
+    self.tableview.tableHeaderView = self.imgScroll;
+    self.tableview.tableHeaderView.height = 150.f;
+    self.tableview.backgroundColor = RGB(249, 249, 249, 1);
+    self.tableview.frame= CGRectMake(0, K_NAV_HEIGHT, self.view.width, self.view.height-K_NAV_HEIGHT-self.tabBarController.tabBar.height);
+    
+    [self.tableview registerClass:[TipCell class] forCellReuseIdentifier:@"TipCell"];
+}
+
+- (void)rac_addObserver{
+    @weakify(self);
+    [[RACObserve(self.dto, banners) filter:^BOOL(id value) {
+        @strongify(self);
+        return self.dto.banners.count > 0 ? YES : NO;
+    }] subscribeNext:^(id x) {
+        @strongify(self);
+        self.tableview.tableHeaderView = self.imgScroll;
+    }];
+    
+    [[RACObserve(self.dto, dataSource) filter:^BOOL(id value) {
+        @strongify(self);
+        return self.dto.dataSource.count > 0 ? YES : NO;
+    }] subscribeNext:^(id x) {
+        @strongify(self);
+        [self.items  addObject:self.dto.dataSource];
+        [self.tableview reloadData];
+    }];
+}
+
+#pragma mark -
+#pragma mark UITableViewDataSource
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    TipCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TipCell" forIndexPath:indexPath];
+    cell.iconIV.image = IMG(@"camera");
+    cell.titleLab.text = @"设置";
+    cell.textLab.text = @"大法师";
+    cell.tipIV.image = IMG(@"camera");
+    return cell;
+}
+
+#pragma mark -
+#pragma mark UITableViewDelegate
+
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+//    return 160.f;
+//}
+
+#pragma mark -
+#pragma mark GET
+
+- (DIYImageScrollView *)imgScroll{
+    if (_imgScroll) {
+        _imgScroll = nil;
+    }
+    CGFloat height = 150;
+    _imgScroll  = [[DIYImageScrollView alloc] initWithFrame:CGRectMake(0, 0, K_SCREEN_WIDTH, height)marrImages:self.dto.banners];
+    _imgScroll.delegate = self;
+    [_imgScroll startScroll];
+    return _imgScroll;
+}
+
+- (D_Find *)dto{
+    if (_dto) {
+        return _dto;
+    }
+    _dto = [[D_Find alloc] init];
+    return _dto;
 }
 
 /*

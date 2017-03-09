@@ -26,6 +26,7 @@
 		930CA8A81E1A786B007E5B4F /* LKNetoworkReqHandle+block.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA8A51E1A786B007E5B4F /* LKNetoworkReqHandle+block.m */; };
 		930CA8AC1E1A7B20007E5B4F /* LKNetoworkReqHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA8AB1E1A7B20007E5B4F /* LKNetoworkReqHandle.m */; };
 		930CA8B31E1A9376007E5B4F /* LKObjectUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA8B21E1A9376007E5B4F /* LKObjectUtil.m */; };
+		9329ED4D1E6FF2B40048B8C7 /* TipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9329ED4C1E6FF2B40048B8C7 /* TipCell.m */; };
 		932FAFFB1E6A855300A12E4E /* DIYImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 932FAFF81E6A855300A12E4E /* DIYImageScrollView.m */; };
 		932FAFFC1E6A855300A12E4E /* ScrollImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 932FAFFA1E6A855300A12E4E /* ScrollImageView.m */; };
 		932FB0001E6A861E00A12E4E /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 932FAFFE1E6A861E00A12E4E /* TableViewCell.m */; };
@@ -206,6 +207,8 @@
 		930CA8B01E1A8CBC007E5B4F /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		930CA8B11E1A9376007E5B4F /* LKObjectUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKObjectUtil.h; sourceTree = "<group>"; };
 		930CA8B21E1A9376007E5B4F /* LKObjectUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKObjectUtil.m; sourceTree = "<group>"; };
+		9329ED4B1E6FF2B40048B8C7 /* TipCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipCell.h; sourceTree = "<group>"; };
+		9329ED4C1E6FF2B40048B8C7 /* TipCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipCell.m; sourceTree = "<group>"; };
 		932FAFF71E6A855300A12E4E /* DIYImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYImageScrollView.h; sourceTree = "<group>"; };
 		932FAFF81E6A855300A12E4E /* DIYImageScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DIYImageScrollView.m; sourceTree = "<group>"; };
 		932FAFF91E6A855300A12E4E /* ScrollImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollImageView.h; sourceTree = "<group>"; };
@@ -449,6 +452,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9329ED4A1E6FF1670048B8C7 /* TipCell */ = {
+			isa = PBXGroup;
+			children = (
+				9329ED4B1E6FF2B40048B8C7 /* TipCell.h */,
+				9329ED4C1E6FF2B40048B8C7 /* TipCell.m */,
+			);
+			name = TipCell;
+			path = wheel;
+			sourceTree = "<group>";
+		};
 		932FAFF61E6A855300A12E4E /* wheel */ = {
 			isa = PBXGroup;
 			children = (
@@ -532,6 +545,7 @@
 		9390971A1E692DBD00B82AC8 /* DIY */ = {
 			isa = PBXGroup;
 			children = (
+				9329ED4A1E6FF1670048B8C7 /* TipCell */,
 				93E80B381E6E7CBA008C9E20 /* SDRefeshView */,
 				93E80B021E6E7C65008C9E20 /* MLEmojiLabel */,
 				93E80AE01E6E7C39008C9E20 /* SDCycleScrollView */,
@@ -1463,6 +1477,7 @@
 			files = (
 				93E80AFF1E6E7C39008C9E20 /* SDBrowserImageView.m in Sources */,
 				93E80B2D1E6E7C65008C9E20 /* NSString+MLLabel.m in Sources */,
+				9329ED4D1E6FF2B40048B8C7 /* TipCell.m in Sources */,
 				93E80ADB1E6E6667008C9E20 /* SDTimeLineTableHeaderView.m in Sources */,
 				930CA8A81E1A786B007E5B4F /* LKNetoworkReqHandle+block.m in Sources */,
 				939097301E6967B200B82AC8 /* FindVc.m in Sources */,

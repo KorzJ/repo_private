@@ -44,64 +44,6 @@ UITableViewDataSource>
 }
 
 #pragma mark -
-#pragma mark Init
-
-- (NSMutableArray *)numCell{
-    if (!_numCell) {
-        _numCell = [[NSMutableArray alloc] initWithObjects:NSStringFromClass([UITableViewCell class]), nil];
-    }
-    return _numCell;
-}
-
-- (UITableView *)tableview{
-    if (tableview) {
-        return tableview;
-    }
-    tableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height-64) style:UITableViewStyleGrouped];
-    
-    for (NSString *cell in self.numCell) {
-        if ([UINib nibWithNibName:cell bundle:nil]) {
-            [tableview registerNib:[UINib nibWithNibName:cell bundle:nil] forCellReuseIdentifier:cell];
-        }else{
-            [tableview registerClass:NSClassFromString(cell) forCellReuseIdentifier:cell];
-        }
-    }
-    
-    [tableview setTableFooterView:[UIView new]];
-    [tableview setSeparatorColor:[UIColor clearColor]];
-    [tableview setShowsVerticalScrollIndicator:NO];
-    [tableview setShowsHorizontalScrollIndicator:NO];
-    [tableview setBackgroundColor:[UIColor clearColor]];
-    
-    tableview.dataSource = self;
-    tableview.delegate = self;
-    tableview.emptyDataSetSource = self;
-    tableview.emptyDataSetDelegate = self;
-    
-    return tableview;
-}
-
-/**
- *  刷新
- */
-- (void)setupRefresh
-{
-    if (!self.ignorePullHeader && !self.tableview.mj_header) {
-       MJRefreshNormalHeader *head = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRereshing)];
-        head.lastUpdatedTimeLabel.hidden = YES;
-        head.stateLabel.font = FONT(13.0f);
-        head.stateLabel.hidden = YES;
-        self.tableview.mj_header  = head;;
-    }
-    if (self.ignorePushFooter && !self.tableview.mj_footer) {
-        MJRefreshBackNormalFooter *footer =  [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerRereshing)];
-        footer.stateLabel.hidden = YES;
-        footer.automaticallyHidden = YES;
-        self.tableview.mj_footer = footer;
-    }
-}
-
-#pragma mark -
 #pragma mark  UITableViewDataSource
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -171,6 +113,72 @@ UITableViewDataSource>
  *  网络状态改变 子类重写
  */
 - (void)networdHasChanged{}
+
+#pragma mark -
+#pragma mark Init
+
+- (NSMutableArray *)numCell{
+    if (!_numCell) {
+        _numCell = [[NSMutableArray alloc] initWithObjects:NSStringFromClass([UITableViewCell class]), nil];
+    }
+    return _numCell;
+}
+
+- (UITableView *)tableview{
+    if (tableview) {
+        return tableview;
+    }
+    tableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height-64) style:UITableViewStyleGrouped];
+    
+    for (NSString *cell in self.numCell) {
+        if ([UINib nibWithNibName:cell bundle:nil]) {
+            [tableview registerNib:[UINib nibWithNibName:cell bundle:nil] forCellReuseIdentifier:cell];
+        }else{
+            [tableview registerClass:NSClassFromString(cell) forCellReuseIdentifier:cell];
+        }
+    }
+    
+    [tableview setTableFooterView:[UIView new]];
+    [tableview setSeparatorColor:[UIColor clearColor]];
+    [tableview setShowsVerticalScrollIndicator:NO];
+    [tableview setShowsHorizontalScrollIndicator:NO];
+    [tableview setBackgroundColor:[UIColor clearColor]];
+    
+    tableview.dataSource = self;
+    tableview.delegate = self;
+    tableview.emptyDataSetSource = self;
+    tableview.emptyDataSetDelegate = self;
+    
+    return tableview;
+}
+
+- (NSMutableArray *)dataArray
+{
+    if (!_dataArray) {
+        _dataArray = [NSMutableArray new];
+    }
+    return _dataArray;
+}
+
+/**
+ *  刷新
+ */
+- (void)setupRefresh
+{
+    if (!self.ignorePullHeader && !self.tableview.mj_header) {
+        MJRefreshNormalHeader *head = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRereshing)];
+        head.lastUpdatedTimeLabel.hidden = YES;
+        head.stateLabel.font = FONT(13.0f);
+        head.stateLabel.hidden = YES;
+        self.tableview.mj_header  = head;;
+    }
+    if (self.ignorePushFooter && !self.tableview.mj_footer) {
+        MJRefreshBackNormalFooter *footer =  [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerRereshing)];
+        footer.stateLabel.hidden = YES;
+        footer.automaticallyHidden = YES;
+        self.tableview.mj_footer = footer;
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

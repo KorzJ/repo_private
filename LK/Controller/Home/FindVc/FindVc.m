@@ -39,9 +39,6 @@
     
     [self.sNavLeft setImage:IMG(@"find") forState:UIControlStateNormal];
     [self.sNavRight setImage:IMG(@"find_map") forState:UIControlStateNormal];
-    
-    self.sNavRight.backgroundColor = [UIColor redColor];
-    self.sNavLeft.backgroundColor = [UIColor redColor];
 
     //whell placehold
     self.tableview.tableHeaderView = self.imgScroll;

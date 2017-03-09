@@ -18,6 +18,6 @@ NSInteger iPage;//页码
 
 @property (nonatomic, strong) UITableView *tableview;
 @property (nonatomic, strong)
-NSMutableArray *items,*numCell;
+NSMutableArray *items,*numCell,*dataArray;
 
 @end

@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PersonVc : LKSuperExtendVc
+#import "D_Find.h"
 
+#import "DIYImageScrollView.h"
+
+@interface PersonVc : LKTableTemplate
+@property (nonatomic,strong) D_Find *dto;
 @end

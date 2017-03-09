@@ -1,10 +1,3 @@
-//
-//  SDTimeLineCellOperationMenu.m
-//  GSD_WeiXin(wechat)
-//
-//  Created by aier on 16/4/2.
-//  Copyright © 2016年 GSD. All rights reserved.
-//
 
 #import "SDTimeLineCellOperationMenu.h"
 #import "UIView+SDAutoLayout.h"

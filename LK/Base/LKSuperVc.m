@@ -77,8 +77,8 @@
     if (_sNavLeft) {
         return _sNavLeft;
     }
-    _sNavLeft = [[UIButton alloc] initWithFrame:CGRectMake(10, 35/2.0f, 60, 40)];
-    _sNavLeft.titleLabel.textAlignment = NSTextAlignmentLeft;
+    _sNavLeft = [[UIButton alloc] initWithFrame:CGRectMake(10, 35/2.0f, 50, 40)];
+    _sNavLeft.backgroundColor = [UIColor redColor];
     [_sNavLeft addTarget:self action:@selector(navLeftPressed:) forControlEvents:UIControlEventTouchUpInside];
     return _sNavLeft;
 }
@@ -87,7 +87,7 @@
     if (_sNavRight) {
         return _sNavRight;
     }
-    _sNavRight = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width-10-60, 35/2.0f, 60, 40)];
+    _sNavRight = [[UIButton alloc] initWithFrame:CGRectMake(self.view.frame.size.width-10-50, 35/2.0f, 50, 40)];
     [_sNavRight addTarget:self action:@selector(navRightPressed:) forControlEvents:UIControlEventTouchUpInside];
     [_sNavRight setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     return _sNavRight;
