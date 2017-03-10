@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		190AF4D46DA2A66C206061A7 /* libPods-LK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B752448B67C9D1319C2E7D4 /* libPods-LK.a */; };
-		55E89C0919FAB716A26758E4 /* libPods-LKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 166BCEC2BC3985AAB2EE92B8 /* libPods-LKTests.a */; };
+		54798F60F7AEC7AD212D6A58 /* libPods-LKTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 934D40C57842D7C000CBA73D /* libPods-LKTests.a */; };
 		93052C521E1AB79300BD8D4A /* LKTableTemplate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93052C511E1AB79300BD8D4A /* LKTableTemplate.m */; };
 		93052C5E1E1ABCDF00BD8D4A /* AccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93052C541E1ABCDF00BD8D4A /* AccountCell.m */; };
 		93052C5F1E1ABCDF00BD8D4A /* AccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93052C551E1ABCDF00BD8D4A /* AccountCell.xib */; };
@@ -26,6 +25,8 @@
 		930CA8A81E1A786B007E5B4F /* LKNetoworkReqHandle+block.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA8A51E1A786B007E5B4F /* LKNetoworkReqHandle+block.m */; };
 		930CA8AC1E1A7B20007E5B4F /* LKNetoworkReqHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA8AB1E1A7B20007E5B4F /* LKNetoworkReqHandle.m */; };
 		930CA8B31E1A9376007E5B4F /* LKObjectUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 930CA8B21E1A9376007E5B4F /* LKObjectUtil.m */; };
+		9319564E1E7241E2002F4B05 /* LKRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9319564D1E7241E2002F4B05 /* LKRefreshGifHeader.m */; };
+		931956501E72435C002F4B05 /* Assets1.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9319564F1E72435C002F4B05 /* Assets1.xcassets */; };
 		9329ED4D1E6FF2B40048B8C7 /* TipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9329ED4C1E6FF2B40048B8C7 /* TipCell.m */; };
 		932FAFFB1E6A855300A12E4E /* DIYImageScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 932FAFF81E6A855300A12E4E /* DIYImageScrollView.m */; };
 		932FAFFC1E6A855300A12E4E /* ScrollImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 932FAFFA1E6A855300A12E4E /* ScrollImageView.m */; };
@@ -147,7 +148,8 @@
 		93E80BA91E6E7F97008C9E20 /* test2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 93E80B7A1E6E7F97008C9E20 /* test2.jpg */; };
 		93E80BAA1E6E7F97008C9E20 /* test3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 93E80B7B1E6E7F97008C9E20 /* test3.jpg */; };
 		93E80BAB1E6E7F97008C9E20 /* test4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 93E80B7C1E6E7F97008C9E20 /* test4.jpg */; };
-		F96C452D2666863E923B3F52 /* libPods-LKUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD7A642E0591D094066CA67F /* libPods-LKUITests.a */; };
+		A73989C83596B6DEC24319F4 /* libPods-LKUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89F58785E26FE69DDA9345E9 /* libPods-LKUITests.a */; };
+		EFBACF414C05ACD5A1F12DC0 /* libPods-LK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E62D4FB8AFAD41F9B87CBD0C /* libPods-LK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -170,11 +172,10 @@
 /* Begin PBXFileReference section */
 		1183F29ED15FAF0595B07302 /* Pods-LKUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LKUITests/Pods-LKUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		15E4FAE28CEA0DDE18735F4C /* Pods-LK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LK.release.xcconfig"; path = "Pods/Target Support Files/Pods-LK/Pods-LK.release.xcconfig"; sourceTree = "<group>"; };
-		166BCEC2BC3985AAB2EE92B8 /* libPods-LKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4612A4BF8DA8810AF80444BE /* Pods-LKTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LKTests/Pods-LKTests.debug.xcconfig"; sourceTree = "<group>"; };
-		6B752448B67C9D1319C2E7D4 /* libPods-LK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		783463C0A7AD7491CBE6739F /* Pods-LK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LK/Pods-LK.debug.xcconfig"; sourceTree = "<group>"; };
 		7E8FBDC2E1AD7E49F263328E /* Pods-LKTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LKTests/Pods-LKTests.release.xcconfig"; sourceTree = "<group>"; };
+		89F58785E26FE69DDA9345E9 /* libPods-LKUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LKUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93052C501E1AB79300BD8D4A /* LKTableTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKTableTemplate.h; sourceTree = "<group>"; };
 		93052C511E1AB79300BD8D4A /* LKTableTemplate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKTableTemplate.m; sourceTree = "<group>"; };
 		93052C531E1ABCDF00BD8D4A /* AccountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountCell.h; sourceTree = "<group>"; };
@@ -207,6 +208,9 @@
 		930CA8B01E1A8CBC007E5B4F /* Define.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		930CA8B11E1A9376007E5B4F /* LKObjectUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKObjectUtil.h; sourceTree = "<group>"; };
 		930CA8B21E1A9376007E5B4F /* LKObjectUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKObjectUtil.m; sourceTree = "<group>"; };
+		9319564C1E7241E2002F4B05 /* LKRefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKRefreshGifHeader.h; sourceTree = "<group>"; };
+		9319564D1E7241E2002F4B05 /* LKRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKRefreshGifHeader.m; sourceTree = "<group>"; };
+		9319564F1E72435C002F4B05 /* Assets1.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets1.xcassets; sourceTree = "<group>"; };
 		9329ED4B1E6FF2B40048B8C7 /* TipCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TipCell.h; sourceTree = "<group>"; };
 		9329ED4C1E6FF2B40048B8C7 /* TipCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TipCell.m; sourceTree = "<group>"; };
 		932FAFF71E6A855300A12E4E /* DIYImageScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DIYImageScrollView.h; sourceTree = "<group>"; };
@@ -229,6 +233,7 @@
 		9334A03C1E181BB40063A6A1 /* LKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9334A0401E181BB40063A6A1 /* LKUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LKUITests.m; sourceTree = "<group>"; };
 		9334A0421E181BB40063A6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		934D40C57842D7C000CBA73D /* libPods-LKTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LKTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9390971E1E69333900B82AC8 /* Pictures.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Pictures.xcassets; sourceTree = "<group>"; };
 		939097231E69636700B82AC8 /* LoginVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVc.h; sourceTree = "<group>"; };
 		939097241E69636700B82AC8 /* LoginVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVc.m; sourceTree = "<group>"; };
@@ -398,7 +403,7 @@
 		93E80B7B1E6E7F97008C9E20 /* test3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test3.jpg; sourceTree = "<group>"; };
 		93E80B7C1E6E7F97008C9E20 /* test4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test4.jpg; sourceTree = "<group>"; };
 		99A413A343DC3F81739280DF /* Pods-LKUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LKUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LKUITests/Pods-LKUITests.release.xcconfig"; sourceTree = "<group>"; };
-		FD7A642E0591D094066CA67F /* libPods-LKUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LKUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E62D4FB8AFAD41F9B87CBD0C /* libPods-LK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -406,7 +411,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				190AF4D46DA2A66C206061A7 /* libPods-LK.a in Frameworks */,
+				EFBACF414C05ACD5A1F12DC0 /* libPods-LK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +419,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55E89C0919FAB716A26758E4 /* libPods-LKTests.a in Frameworks */,
+				54798F60F7AEC7AD212D6A58 /* libPods-LKTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +427,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F96C452D2666863E923B3F52 /* libPods-LKUITests.a in Frameworks */,
+				A73989C83596B6DEC24319F4 /* libPods-LKUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,11 +450,20 @@
 		51805CC7DA10F3C87D3E3976 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6B752448B67C9D1319C2E7D4 /* libPods-LK.a */,
-				166BCEC2BC3985AAB2EE92B8 /* libPods-LKTests.a */,
-				FD7A642E0591D094066CA67F /* libPods-LKUITests.a */,
+				E62D4FB8AFAD41F9B87CBD0C /* libPods-LK.a */,
+				934D40C57842D7C000CBA73D /* libPods-LKTests.a */,
+				89F58785E26FE69DDA9345E9 /* libPods-LKUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9319564B1E7241A6002F4B05 /* RefreshGif */ = {
+			isa = PBXGroup;
+			children = (
+				9319564C1E7241E2002F4B05 /* LKRefreshGifHeader.h */,
+				9319564D1E7241E2002F4B05 /* LKRefreshGifHeader.m */,
+			);
+			path = RefreshGif;
 			sourceTree = "<group>";
 		};
 		9329ED4A1E6FF1670048B8C7 /* TipCell */ = {
@@ -545,11 +559,12 @@
 		9390971A1E692DBD00B82AC8 /* DIY */ = {
 			isa = PBXGroup;
 			children = (
+				93E80AF01E6E7C39008C9E20 /* PhotoBrowser */,
+				9319564B1E7241A6002F4B05 /* RefreshGif */,
 				9329ED4A1E6FF1670048B8C7 /* TipCell */,
-				93E80B381E6E7CBA008C9E20 /* SDRefeshView */,
-				93E80B021E6E7C65008C9E20 /* MLEmojiLabel */,
-				93E80AE01E6E7C39008C9E20 /* SDCycleScrollView */,
-				93E80AF01E6E7C39008C9E20 /* SDPhotoBrowser */,
+				93E80B381E6E7CBA008C9E20 /* RefeshView */,
+				93E80B021E6E7C65008C9E20 /* EmojiLabel */,
+				93E80AE01E6E7C39008C9E20 /* CycleScrollView */,
 				93E80AAD1E6E6667008C9E20 /* TimeLine */,
 				932FAFF61E6A855300A12E4E /* wheel */,
 			);
@@ -736,6 +751,7 @@
 			isa = PBXGroup;
 			children = (
 				93E80B4B1E6E7F97008C9E20 /* Images */,
+				9319564F1E72435C002F4B05 /* Assets1.xcassets */,
 				9390971E1E69333900B82AC8 /* Pictures.xcassets */,
 				930CA88A1E181FD6007E5B4F /* Assets.xcassets */,
 				93052C671E1AC1B700BD8D4A /* Media.xcassets */,
@@ -917,7 +933,7 @@
 			path = TimeLineRefreshHeader;
 			sourceTree = "<group>";
 		};
-		93E80AE01E6E7C39008C9E20 /* SDCycleScrollView */ = {
+		93E80AE01E6E7C39008C9E20 /* CycleScrollView */ = {
 			isa = PBXGroup;
 			children = (
 				93E80AE11E6E7C39008C9E20 /* PageControl */,
@@ -928,6 +944,7 @@
 				93E80AEE1E6E7C39008C9E20 /* UIView+SDExtension.h */,
 				93E80AEF1E6E7C39008C9E20 /* UIView+SDExtension.m */,
 			);
+			name = CycleScrollView;
 			path = SDCycleScrollView;
 			sourceTree = "<group>";
 		};
@@ -946,7 +963,7 @@
 			path = PageControl;
 			sourceTree = "<group>";
 		};
-		93E80AF01E6E7C39008C9E20 /* SDPhotoBrowser */ = {
+		93E80AF01E6E7C39008C9E20 /* PhotoBrowser */ = {
 			isa = PBXGroup;
 			children = (
 				93E80AF11E6E7C39008C9E20 /* SDBrowserImageView.h */,
@@ -957,10 +974,11 @@
 				93E80AF61E6E7C39008C9E20 /* SDWaitingView.h */,
 				93E80AF71E6E7C39008C9E20 /* SDWaitingView.m */,
 			);
+			name = PhotoBrowser;
 			path = SDPhotoBrowser;
 			sourceTree = "<group>";
 		};
-		93E80B021E6E7C65008C9E20 /* MLEmojiLabel */ = {
+		93E80B021E6E7C65008C9E20 /* EmojiLabel */ = {
 			isa = PBXGroup;
 			children = (
 				93E80B031E6E7C65008C9E20 /* MLEmoji_Expression.bundle */,
@@ -971,6 +989,7 @@
 				93E80B081E6E7C65008C9E20 /* MLLabel */,
 				93E80B241E6E7C65008C9E20 /* TTTAttributedLabel */,
 			);
+			name = EmojiLabel;
 			path = MLEmojiLabel;
 			sourceTree = "<group>";
 		};
@@ -1045,7 +1064,7 @@
 			path = TTTAttributedLabel;
 			sourceTree = "<group>";
 		};
-		93E80B381E6E7CBA008C9E20 /* SDRefeshView */ = {
+		93E80B381E6E7CBA008C9E20 /* RefeshView */ = {
 			isa = PBXGroup;
 			children = (
 				93E80B391E6E7CBA008C9E20 /* sdRefeshView_arrow@2x.png */,
@@ -1059,6 +1078,7 @@
 				93E80B411E6E7CBA008C9E20 /* UIView+SDExtension.h */,
 				93E80B421E6E7CBA008C9E20 /* UIView+SDExtension.m */,
 			);
+			name = RefeshView;
 			path = SDRefeshView;
 			sourceTree = "<group>";
 		};
@@ -1266,6 +1286,7 @@
 				93E80B821E6E7F97008C9E20 /* 13.jpg in Resources */,
 				93D6C5CF1E181ED900FB14CB /* Info.plist in Resources */,
 				93E80B921E6E7F97008C9E20 /* 7.jpg in Resources */,
+				931956501E72435C002F4B05 /* Assets1.xcassets in Resources */,
 				93DC848A1E5AD09E00711F48 /* applicationDevelop.plist in Resources */,
 				93E80BAB1E6E7F97008C9E20 /* test4.jpg in Resources */,
 				93E80B941E6E7F97008C9E20 /* 9.jpg in Resources */,
@@ -1487,6 +1508,7 @@
 				939097251E69636700B82AC8 /* LoginVc.m in Sources */,
 				93E80B301E6E7C65008C9E20 /* NSAttributedString+MLExpression.m in Sources */,
 				932FB0041E6A8A4F00A12E4E /* D_Find.m in Sources */,
+				9319564E1E7241E2002F4B05 /* LKRefreshGifHeader.m in Sources */,
 				93E80AD81E6E6667008C9E20 /* SDTimeLineTableViewController.m in Sources */,
 				93E80AFD1E6E7C39008C9E20 /* SDCycleScrollView.m in Sources */,
 				93E80B2F1E6E7C65008C9E20 /* MLTextAttachment.m in Sources */,

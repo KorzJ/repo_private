@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TipCell : UITableViewCell
+#import <MGSwipeTableCell.h>
+
+@interface TipCell : MGSwipeTableCell
 
 
 @property (nonatomic,strong) UIImageView *iconIV;

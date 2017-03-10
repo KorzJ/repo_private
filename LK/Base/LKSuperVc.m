@@ -78,7 +78,6 @@
         return _sNavLeft;
     }
     _sNavLeft = [[UIButton alloc] initWithFrame:CGRectMake(10, 35/2.0f, 50, 40)];
-    _sNavLeft.backgroundColor = [UIColor redColor];
     [_sNavLeft addTarget:self action:@selector(navLeftPressed:) forControlEvents:UIControlEventTouchUpInside];
     return _sNavLeft;
 }

@@ -77,6 +77,17 @@
     cell.titleLab.text = @"设置";
     cell.textLab.text = @"大法师";
     cell.tipIV.image = IMG(@"camera");
+    
+    cell.leftButtons = @[[MGSwipeButton buttonWithTitle:@"" icon:[UIImage imageNamed:@"check.png"] backgroundColor:[UIColor greenColor]],
+                         [MGSwipeButton buttonWithTitle:@"" icon:[UIImage imageNamed:@"fav.png"] backgroundColor:[UIColor blueColor]]];
+    
+    cell.leftSwipeSettings.transition = MGSwipeTransition3D;
+    
+    //configure right buttons
+    cell.rightButtons = @[[MGSwipeButton buttonWithTitle:@"Delete" backgroundColor:[UIColor redColor]],
+                          [MGSwipeButton buttonWithTitle:@"More" backgroundColor:[UIColor lightGrayColor]]];
+    cell.rightSwipeSettings.transition = MGSwipeTransition3D;
+    
     return cell;
 }
 

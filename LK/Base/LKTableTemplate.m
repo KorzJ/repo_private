@@ -7,6 +7,7 @@
 
 #import "LKTableTemplate.h"
 
+#import "LKRefreshGifHeader.h"
 #define DefaultCellIdentify @"UITableViewCell"
 
 @interface LKTableTemplate ()<
@@ -165,19 +166,39 @@ UITableViewDataSource>
  */
 - (void)setupRefresh
 {
+    
+    @weakify(self);
+    LKRefreshGifHeader *header = [LKRefreshGifHeader headerWithRefreshingBlock:^{\
+        @strongify(self);
+        self.view.userInteractionEnabled = NO;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            self.view.userInteractionEnabled = YES;
+            [self.tableview.mj_header endRefreshing];
+        });
+    }];
+    NSArray *imageArr = @[[UIImage imageNamed:@"refresh1"], [UIImage imageNamed:@"refresh2"], [UIImage imageNamed:@"refresh3"], [UIImage imageNamed:@"refresh4"]];
+    [header setImages:imageArr duration:0.5 forState:MJRefreshStateIdle];
+    [header setImages:imageArr duration:0.5 forState:MJRefreshStatePulling];
+    [header setImages:imageArr duration:0.5 forState:MJRefreshStateRefreshing];
+    [header setImages:imageArr duration:0.5 forState:MJRefreshStateWillRefresh];
     if (!self.ignorePullHeader && !self.tableview.mj_header) {
-        MJRefreshNormalHeader *head = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRereshing)];
-        head.lastUpdatedTimeLabel.hidden = YES;
-        head.stateLabel.font = FONT(13.0f);
-        head.stateLabel.hidden = YES;
-        self.tableview.mj_header  = head;;
+        self.tableview.mj_header = header;
     }
-    if (self.ignorePushFooter && !self.tableview.mj_footer) {
-        MJRefreshBackNormalFooter *footer =  [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerRereshing)];
-        footer.stateLabel.hidden = YES;
-        footer.automaticallyHidden = YES;
-        self.tableview.mj_footer = footer;
-    }
+
+    
+//    if (!self.ignorePullHeader && !self.tableview.mj_header) {
+//        MJRefreshNormalHeader *head = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRereshing)];
+//        head.lastUpdatedTimeLabel.hidden = YES;
+//        head.stateLabel.font = FONT(13.0f);
+//        head.stateLabel.hidden = YES;
+//        self.tableview.mj_header  = head;;
+//    }
+//    if (self.ignorePushFooter && !self.tableview.mj_footer) {
+//        MJRefreshBackNormalFooter *footer =  [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(footerRereshing)];
+//        footer.stateLabel.hidden = YES;
+//        footer.automaticallyHidden = YES;
+//        self.tableview.mj_footer = footer;
+//    }
 }
 
 - (void)didReceiveMemoryWarning {

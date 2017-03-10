@@ -19,12 +19,14 @@ target 'LK' do
     pod "BlocksKit"
     pod "pop"
     pod "YYModel"
-    
+
+    pod 'AMap2DMap'
     pod 'MJRefresh'
     pod 'YYCache'
     pod 'SDWebImage'
     pod 'IQKeyboardManager'
-
+    pod 'MGSwipeTableCell'
+    pod 'GPUImage'
   target 'LKTests' do
     inherit! :search_paths
     # Pods for testing

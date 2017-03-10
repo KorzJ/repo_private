@@ -11,6 +11,7 @@
 #import "AccountCell.h"
 #import "SecretCell.h"
 
+#import <POP.h>
 @implementation LoginVc
 
 #pragma mark -
@@ -149,6 +150,13 @@
         if ([x boolValue])
             [cell.eye
              startWithTime:59 title:@"重新获取" countDownTitle:@"s" mainColor:RGB(255, 133, 0, 1) countColor:RGB(255, 133, 0, 1)];
+        
+        POPSpringAnimation *spin = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerRotation];
+        spin.fromValue = @(M_PI / 4);
+        spin.toValue = @(0);
+        spin.springBounciness = 20;
+        spin.velocity = @(10);
+        [cell.eye.layer pop_addAnimation:spin forKey:@"likeAnimation"];
     }];
     cell.textChanged
     =  ^(BOOL valid, NSString *secret){
