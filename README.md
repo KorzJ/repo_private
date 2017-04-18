@@ -1,1 +1,1 @@
-###The project is aimed at MVVM
+The project is aimed at MVVM
